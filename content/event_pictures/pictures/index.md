@@ -1,4 +1,3 @@
 +++
 title = 'Event pictures list'
 +++
-
