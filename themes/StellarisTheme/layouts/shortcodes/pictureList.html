@@ -1,6 +1,7 @@
-{{ $images := readDir (printf "content/event_pictures/pictures/" .) }}
+{{ $dir := .Get "dir" }}
+{{ $images := readDir (printf "content/%s" $dir) }}
 {{ range $images }}
-  {{ if eq (.Ext) ".png" }}
+  {{ if eq (.Ext) ".jpg" }}
     <div>
       <h2>{{ .Name }}</h2>
       <img src="{{ .RelPermalink }}" alt="{{ .Name }}" />

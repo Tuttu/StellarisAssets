@@ -1,5 +1,6 @@
 <!--{{ $images := readDir (printf "content/%s/" .) }}-->
-{{ $images := readDir (printf "content/event_pictures/pictures/" .) }}
+{{ $images := readDir (printf "content/event_pictures/pictures/%s" . ) }}
+
 {{ range $images }}
   {{ if eq (.Ext) ".png" }}
     <div>
