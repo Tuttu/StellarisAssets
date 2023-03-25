@@ -1,4 +1,4 @@
-baseURL = 'https://tuttu.github.io/'
+#baseURL = 'https://tuttu.github.io/'
 languageCode = 'en-us'
 title = 'Stellaris Assets'
 theme = "StellarisTheme"
