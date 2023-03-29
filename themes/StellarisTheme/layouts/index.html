@@ -6,15 +6,8 @@
     Simply use the menu at the top to navigate between the sections.</p>
 </div>
 
-<img src="./event_pictures/pictures/{{ (index (readDir "/content/event_pictures/pictures" | shuffle | first 1) 0).Name }}" />
-<img src="./event_pictures/pictures/GFX_evt_aggressive_flora.png" />
-
-<!-- Display a random image from the "event_pictures/pictures" directory -->
-{{ $files := readDir "/content/event_pictures/pictures" }}
-{{ $file := index (shuffle $files) 0 }}
-<img src="./event_pictures/pictures/{{ $file.Name }}" alt="Random Event Picture">
-<img id="random-pic" alt="Random Event Picture">
-<img id="random-pic2" alt="Random Event Picture 2">
-<img id="random-pic3" alt="Random Event Picture 3">
+<div id="random-pic-container" class="text-center">
+    <img id="random-pic" class="border border-white" alt="Random Event Picture">
+</div>
 
 {{ end }}

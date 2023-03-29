@@ -2,56 +2,16 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <script>
-    $.getJSON('./event_pictures/pictures', data => {
-        console.log(data); //["doc1.jpg", "doc2.jpg", "doc3.jpg"] 
-    });
-</script>
-
-<script>
     $(function() {
         var folderPath = "./event_pictures/pictures";
         $.get(folderPath)
             .done(function(data) {
-                var files = $(data).find("a").map(function() { return $(this).text(); }).get().filter(function(name) { return ![".", ".."].includes(name); });
+                var files = $(data).find("#linklist a").map(function() { return $(this).attr("href"); }).get().filter(function(name) { return ![".", ".."].includes(name); });
                 var file = files[Math.floor(Math.random() * files.length)];
-                $("#random-pic").attr("src", folderPath + "/" + file);
+                $("#random-pic").attr("src", file);
             })
             .fail(function(error) {
                 console.error("Error fetching files:", error);
             });
     });
-</script>
-
-<script>
-    $(function() {
-        var folderPath = "./event_pictures/pictures";
-        $.get(folderPath)
-            .done(function(data) {
-                var files = $(data).find("a").map(function() { return $(this).attr("href"); }).get().filter(function(name) { return ![".", ".."].includes(name); });
-                var file = files[Math.floor(Math.random() * files.length)];
-                $("#random-pic2").attr("src", folderPath + "/" + file);
-            })
-            .fail(function(error) {
-                console.error("Error fetching files:", error);
-            });
-    });
-</script>
-
-<script>
-    // Function to select a random image from the "event_pictures/pictures" directory
-    function randomPic() {
-        var folderPath = "event_pictures/pictures";
-        fetch(folderPath)
-            .then(response => response.text())
-            .then(text => {
-                var parser = new DOMParser();
-                var html = parser.parseFromString(text, 'text/html');
-                var files = Array.from(html.querySelectorAll("a")).map(a => a.textContent).filter(name => ![".", ".."].includes(name));
-                var file = files[Math.floor(Math.random() * files.length)];
-                document.getElementById("random-pic3").src = folderPath + "/" + file;
-            })
-            .catch(error => console.error("Error fetching files:", error));
-    }
-    // Call the randomPic function when the page loads
-    window.addEventListener("load", randomPic);
 </script>
