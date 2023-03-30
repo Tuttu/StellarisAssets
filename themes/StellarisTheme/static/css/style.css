@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
 
+/* Body CSS */
 body {
     background:#222222;
     font-family: 'Orbitron', sans-serif;
     color: #FFFFFF;
+}
+
+/* Menu CSS */
+#nav a {
+    font-size: 1.4em;
+}
+
+#nav a:not(:last-child) {
+    border-right: solid 1px #FFFFFF;
 }

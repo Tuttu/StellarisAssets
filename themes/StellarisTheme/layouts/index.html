@@ -1,13 +1,13 @@
 {{ define "main" }}
-<div id="home-jumbotron" class="jumbotron text-center">
-    <!--<h1 class="title">{{ .Site.Title }}</h1>-->
-    <h1 class="title">Welcome on this Stellaris Assets Repository</h1>
-    <p id="welcome">This place aims to give you a quick access to some of the graphical and audio assets used in Stellaris to help choose the right picture or find its name quickly. In some sections, assets made specifically for MEM are also displayed.<br /><br />
-    Simply use the menu at the top to navigate between the sections.</p>
+<div class="container-xl">
+    <div id="home-jumbotron" class="jumbotron text-center">
+        <h1 class="title">Welcome on this Stellaris Assets Repository</h1>
+        <p id="welcome">This place aims to give you a quick access to some of the graphical and audio assets used in Stellaris to help choose the right picture or find its name quickly. In some sections, assets made specifically for MEM are also displayed.<br /><br />
+        Simply use the menu at the top to navigate between the sections.</p>
+    </div>
+    
+    <div id="random-pic-container" class="text-center">
+        <img id="random-pic" src="event_pictures/pictures/GFX_evt_mem_placeholder.png" class="border border-white" alt="Random Event Picture">
+    </div>
 </div>
-
-<div id="random-pic-container" class="text-center">
-    <img id="random-pic" class="border border-white" alt="Random Event Picture">
-</div>
-
 {{ end }}
