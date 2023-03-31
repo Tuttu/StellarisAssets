@@ -1,7 +1,7 @@
-{{ with .Page.Resources.ByType "image" }}
-    <div id="linklist">
+{{ with $.Page.Resources.ByType "image" }}
+    <div id="linklistshort">
         {{ range . }}
             <a href="{{ .RelPermalink }}" alt="{{ .Name }}">{{ .Name }}</a>
         {{ end }}
-    </div>>
+    </div>
 {{ end }}
