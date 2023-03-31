@@ -1,9 +1,8 @@
 {{ with $.Page.Resources.ByType "image" }}
     <div id="linklistshort">
         {{ range . }}
-            <img src="{{ .RelPermalink }}" class="border border-white" alt="{{ .Name }}" />
             <div class="item_evt">
-                <img class="evt_img" src="pictures/GFX_evt_mem_placeholder.png" data-src="{{ .RelPermalink }}" data-clipboard-text="{{ .Name }}"/>
+                <img class="evt_img" src="{{ .RelPermalink }}" class="border border-white" data-src="{{ .RelPermalink }}" data-clipboard-text="{{ .Name }}"/>
                 <span>{{ .Name }}</span>
             </div>
         {{ end }}

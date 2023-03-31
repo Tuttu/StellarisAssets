@@ -2,22 +2,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <script src="{{ relURL "js/clipboard.min.js" }}"></script>
-<script src="{{ relURL "js/jquery.unveil.js" }}"></script>
-
-<script>
-    var clipboard = new Clipboard('.evt_img');
-
-    clipboard.on('success', function(e) {
-    console.log(e);
-    });
-
-    clipboard.on('error', function(e) {
-    console.log(e);
-    });
-    $(document).ready(function(){
-    $("img").unveil();
-    });
-</script>
 
 <script>
     $(function() {
