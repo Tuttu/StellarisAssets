@@ -15,3 +15,24 @@ body {
 #nav a:not(:last-child) {
     border-right: solid 1px #FFFFFF;
 }
+
+/* Event pictures CSS */
+.item_evt {
+    width: 470px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.item_evt img {
+    width: 450px;
+    height: 150px;
+    border: solid 1px #FFFFFF;
+    box-shadow: 0 5px 35px #000000;
+}
+
+/* Footer CSS */
+.icon {
+    height: 1em;
+margin: 0 .05em 0 .1em;
+
+}

@@ -2,4 +2,18 @@ baseURL = 'https://tuttu.github.io/StellarisAssets/'
 languageCode = 'en-us'
 title = 'Stellaris Assets'
 theme = "StellarisTheme"
-sectionPagesMenu = 'main'
+#sectionPagesMenu = 'main'
+
+[menu]
+[[menu.main]]
+    name = 'Event Pictures'
+    pageRef = '/event_pictures'
+    weight = 10
+[[menu.main]]
+    name = 'Sounds'
+    pageRef = '/sounds'
+    weight = 10
+[[menu.main]]
+    name = 'Origin Pictures'
+    pageRef = '/origin_pictures'
+    weight = 10
