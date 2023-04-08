@@ -19,6 +19,7 @@
     });
 </script>
 
+{{ if .IsHome }}
 <script>
     $(function() {
         var folderPath = "./event_pictures";
@@ -33,3 +34,4 @@
             });
     });
 </script>
+{{ end }}

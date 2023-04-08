@@ -16,6 +16,16 @@ body {
     border-right: solid 1px #FFFFFF;
 }
 
+/* Pictures gallery CSS */
+.pictures_flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    /* max-width: 1000px; */
+    flex: 1 1 0;
+}
+
 /* Event pictures CSS */
 .item_evt {
     width: 470px;
