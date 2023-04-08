@@ -3,8 +3,8 @@
 {{ with $.Page.Resources.Match (printf "pictures/%s/*" ($source|string)) }}
     <div class="pictures_flex">
         {{ range . }}
-            <div class="item_evt">
-                <img class="evt_img" src="pictures/GFX_evt_mem_placeholder.png" class="border border-white" data-src="{{ .RelPermalink }}" data-clipboard-text="{{ path.Base .Name }}"/>
+            <div class="picture_block">
+                <img src="pictures/GFX_evt_mem_placeholder.png" class="border border-white" data-src="{{ .RelPermalink }}" data-clipboard-text="{{ path.Base .Name }}"/>
                 <span>{{ path.BaseName .Name }}</span>
             </div>
         {{ end }}

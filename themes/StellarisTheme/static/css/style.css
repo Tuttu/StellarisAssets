@@ -26,16 +26,24 @@ body {
     flex: 1 1 0;
 }
 
-/* Event pictures CSS */
-.item_evt {
-    width: 470px;
-    text-align: center;
-    margin-bottom: 15px;
+.picture_name {
+    display: block;
 }
 
-.item_evt img {
-    width: 450px;
-    height: 150px;
+/* Event pictures CSS */
+.picture_block {
+    text-align: center;
+    margin-bottom: 15px;
+    flex: 1 1 0;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.picture_block span {
+    display: block;
+}
+
+.picture_block img {
     border: solid 1px #FFFFFF;
     box-shadow: 0 5px 35px #000000;
 }
