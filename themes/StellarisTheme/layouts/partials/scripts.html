@@ -1,11 +1,12 @@
 <script src="{{ relURL "js/bootstrap.bundle.min.js" }}"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+{{ if not .IsHome }}
 <script src="{{ relURL "js/clipboard.min.js" }}"></script>
 <script src="{{ relURL "js/jquery.unveil.js" }}"></script>
 
 <script>
-    var clipboard = new Clipboard('.evt_img');
+    var clipboard = new Clipboard('.picture_block img, .icon_block img');
 
     clipboard.on('success', function(e) {
     console.log(e);
@@ -18,6 +19,7 @@
     $("img").unveil();
     });
 </script>
+{{end}}
 
 {{ if .IsHome }}
 <script>
@@ -25,7 +27,7 @@
         var folderPath = "./event_pictures";
         $.get(folderPath)
             .done(function(data) {
-                var files = $(data).find(".evt_img").map(function() { return $(this).attr("data-src"); }).get().filter(function(name) { return ![".", ".."].includes(name); });
+                var files = $(data).find(".picture_block img").map(function() { return $(this).attr("data-src"); }).get().filter(function(name) { return ![".", ".."].includes(name); });
                 var file = files[Math.floor(Math.random() * files.length)];
                 $("#random-pic").attr("src", file);
             })

@@ -5,6 +5,7 @@ body {
     background:#222222;
     font-family: 'Orbitron', sans-serif;
     color: #FFFFFF;
+    position: relative;
 }
 
 /* Menu CSS */
@@ -30,7 +31,6 @@ body {
     display: block;
 }
 
-/* Event pictures CSS */
 .picture_block {
     text-align: center;
     margin-bottom: 15px;
@@ -48,9 +48,58 @@ body {
     box-shadow: 0 5px 35px #000000;
 }
 
+/* Icons gallery CSS */
+.icons_flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    /* max-width: 1000px; */
+    flex: 1 1 0;
+}
+
+.icon_block {
+    text-align: center;
+    margin-bottom: 15px;
+    flex: 1 1 0;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.icon_block span {
+    display: block;
+}
+
 /* Footer CSS */
 .icon {
     height: 1em;
 margin: 0 .05em 0 .1em;
 
+}
+
+/* Back to top CSS */
+.scroll-container {
+    position: absolute;
+    top: 0;
+    right:0;
+    height: 100%;
+}
+
+.scroll-container:before {
+    content: '';
+    display: block;
+    height: 100vh;
+    pointer-events: none;
+}
+
+.scroll-container a {
+    position: sticky;
+    top: 88vh;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.scroll-container img {
+    border: 2px solid white;
+    border-radius: 25pX;
 }

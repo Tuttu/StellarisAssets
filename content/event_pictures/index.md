@@ -1,6 +1,5 @@
 +++
 title = 'Event Pictures'
-layout = 'eventpictures'
 +++
 
 # VANILLA EVENT PICTURES

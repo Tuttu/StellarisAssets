@@ -8,5 +8,10 @@
         </div>
         {{- partial "footer.html" . -}}
         {{- partial "scripts.html" . -}}
+        {{ if not .IsHome }}
+        <div class="scroll-container">
+            <a href="#top"><img src="{{ relURL "img/ToTop.png" }}" alt="Scroll to Top" Title="Scroll to Top" /></a>
+        </div>
+        {{ end }}
     </body>
 </html>

@@ -1,0 +1,11 @@
+{{/* with $.Page.Resources.ByType "image" */}}
+{{ $source := .Get "source" }}
+{{ with $.Page.Resources.Match (printf "pictures/%s/*" ($source|string)) }}
+    <div class="icons_flex">
+        {{ range . }}
+            <div class="icon_block">
+                <img src="pictures/MEM/GFX_evt_mem_placeholder.png" alt="{{ path.BaseName .Name }}" title="{{ path.BaseName .Name }}" data-src="{{ .RelPermalink }}" data-clipboard-text="{{ path.BaseName .Name }}"/>
+            </div>
+        {{ end }}
+    </div>
+{{ end }}
