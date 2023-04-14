@@ -1,0 +1,13 @@
+{{ $source := .Get "source" }}
+{{ with $.Page.Resources.Match (printf "sounds/%s/*" ($source|string)) }}
+    <div class="sounds_flex">
+        {{ range . }}
+            <div class="sound_block">
+                <audio class="audio_player" controls preload="none">
+                    <source src="{{ .RelPermalink }}" type="audio/wav">
+                </audio>				
+                <span>{{ path.BaseName .Name }}</span>
+            </div>
+        {{ end }}
+    </div>
+{{ end }}

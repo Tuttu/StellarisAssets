@@ -1,0 +1,75 @@
+{{ $source := .Get "source" }}
+{{ $type := .Get "type" }}
+{{ $.Scratch.Set "triadPart" 1 }}
+{{ with $.Page.Resources.Match (printf "pictures/%s/*" ($source|string)) }}
+    <div class="icons_flex">
+        {{ range . }}
+            {{ if eq ($.Scratch.Get "triadPart") 1 }}
+            <div class="icon_block">
+            {{ end }}
+                {{ $nameparts := split (path.BaseName .Name) "+" }}
+                {{ $shortname := printf "%s" (index $nameparts 0) }}
+                {{ if eq $type "planetModifier" }}
+                    {{ $clipboardTemp := printf ".dds\"\nicon_frame = %s" (index $nameparts 1) | printf "icon = \"gfx/interface/icons/planet_modifiers/%s%s" (index $nameparts 0) }}
+                    {{ $.Scratch.Set "clipboardText" $clipboardTemp }}
+                {{ else }}
+                    {{ $clipboardTemp := printf "\nicon_background = %s" (index $nameparts 1) | printf "icon = %s%s" (index $nameparts 0) }}
+                    {{ $.Scratch.Set "clipboardText" $clipboardTemp }}
+                {{ end }}                
+                <img src="pictures/MEM/GFX_evt_mem_placeholder.png" alt="{{ $shortname }}" title="{{ $shortname }}" data-src="{{ .RelPermalink }}" data-clipboard-text="{{ $.Scratch.Get "clipboardText" }}"/>
+            {{ if eq ($.Scratch.Get "triadPart") 3 }}
+            </div>
+            {{ $.Scratch.Set "triadPart" 0 }}
+            {{ end }}
+            {{ $.Scratch.Set "triadPart" (add ($.Scratch.Get "triadPart") 1) }}
+        {{ end }}
+    </div>
+{{ end }}
+
+{{/*
+    icon = GFX_situation_approach_gift
+icon_background = Green
+
+icon = GFX_situation_outcome_positive
+icon_background = Blue
+
+icon = GFX_situation_approach_genetics
+icon_background = Yellow
+
+    {{ if condition }}
+    {{ else if condition }}
+    {{ else }}
+    {{ end }}
+
+See that extra %s on second set. thats for the output coming from the first command.
+so if I want $a + $b + $c i will have to do it this way.
+printf "%s" $c | printf "%s%s" $b | printf "%s%s" $a | printf "%s"
+
+data-clipboard-text='icon = "gfx/interface/icons/planet_modifiers/<?php echo $pm_name; ?>.dds"
+    icon_frame = <?php echo $frame_number; ?>'
+
+    icon = 'gfx/interface/icons/planet_modifiers/pm_alien_propaganda.dds' icon_frame = 1
+    icon = "gfx/interface/icons/planet_modifiers/pm_archaeological_dig.dds"
+icon_frame = 1
+
+{{ $.Scratch.Set "counter" 0 }}
+{{range sort .Params.employees}}
+  {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+  I am the number {{$.Scratch.Get "counter"}} in loop!
+{{end}}
+
+{{ $slug := .URL }}
+{{ .Scratch.Add "i" 0 }}
+{{ range first 3 (where .Site.RegularPages "Section" "blog") }}
+{{ $k := .Scratch.Get "i" }}
+{{ if lt $k 2 }}
+{{ if and ((ne .URL $slug) (lt $k 2) ) }}
+{{ .Scratch.Add "i" 1 }}
+
+{{ .Title }}
+
+{{ end }}
+{{ end }}
+{{ end }}
+
+*/}}

@@ -6,12 +6,12 @@ title = 'Origin Pictures'
 
 HINT : If you are lazy, just click a picture to get its name copied to your clipboard.
 
-{{< pictureGallery source="Vanilla">}}
+{{< simplePictureGallery source="Vanilla">}}
 
 # MEM ORIGIN PICTURES
 
-{{< pictureGallery source="MEM">}}
+{{< simplePictureGallery source="MEM">}}
 
 # MOM ORIGIN PICTURES
 
-{{< pictureGallery source="MOM">}}
+{{< simplePictureGallery source="MOM">}}

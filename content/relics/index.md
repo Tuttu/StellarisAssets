@@ -6,8 +6,12 @@ title = 'Relics'
 
 HINT : If you are lazy, just click a picture to get its name copied to your clipboard.
 
-{{< pictureGallery source="Vanilla">}}
+{{< simplePictureGallery source="Vanilla">}}
+
+# VANILLA RELIC ACTIVATION SOUNDS
+
+{{< simpleSoundGallery source="Vanilla">}}
 
 # MEM RELICS
 
-{{< pictureGallery source="MEM">}}
+{{< simplePictureGallery source="MEM">}}

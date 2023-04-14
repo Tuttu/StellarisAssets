@@ -6,8 +6,8 @@ title = 'Planet Modifiers'
 
 HINT : If you are lazy, just click a picture to get its name copied to your clipboard.
 
-{{< triadPictureGallery source="Vanilla">}}
+{{< complexPictureGallery source="Vanilla" type="planetModifier" >}}
 
 # MEM PLANET MODIFIERS
 
-{{< triadPictureGallery source="MEM">}}
+{{< complexPictureGallery source="MEM" type="planetModifier" >}}

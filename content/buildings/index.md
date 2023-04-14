@@ -6,8 +6,8 @@ title = 'Buildings'
 
 HINT : If you are lazy, just click a picture to get its name copied to your clipboard.
 
-{{< pictureGallery source="Vanilla">}}
+{{< simplePictureGallery source="Vanilla">}}
 
 # MEM BUILDINGS
 
-{{< pictureGallery source="MEM">}}
+{{< simplePictureGallery source="MEM">}}
