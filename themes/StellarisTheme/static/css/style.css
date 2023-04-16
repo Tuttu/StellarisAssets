@@ -17,13 +17,20 @@ body {
     border-right: solid 1px #FFFFFF;
 }
 
+.flex-even {
+    flex: 1 1 0;
+}
+
+.picture_block {
+    min-width: 325px;
+}
+
 /* Pictures gallery CSS */
-.pictures_flex {
+/*.pictures_flex {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     margin: auto;
-    /* max-width: 1000px; */
     flex: 1 1 0;
 }
 
@@ -46,7 +53,7 @@ body {
 .picture_block img {
     border: solid 1px #FFFFFF;
     box-shadow: 0 5px 35px #000000;
-}
+}*/
 
 /* Icons gallery CSS */
 .icons_flex {
@@ -54,7 +61,6 @@ body {
     flex-flow: row wrap;
     justify-content: space-evenly;
     margin: auto;
-    /* max-width: 1000px; */
     flex: 1 1 0;
 }
 
@@ -102,4 +108,52 @@ margin: 0 .05em 0 .1em;
 .scroll-container img {
     border: 2px solid white;
     border-radius: 25pX;
+}
+
+
+/* Sounds CSS */
+.sounds_flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    flex: 1 1 0;
+}
+
+.sound_block {
+    text-align: center;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 2px;
+    border: 1px solid #FFFFFF;
+    flex: 1 1 0;
+}
+
+.sound_block table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.sound_block tr:first-of-type {
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.sound_block td {
+    padding: 3px;
+    border-bottom: 1px solid #FFFFFF;
+    text-align: left;
+    width: 50%;
+}
+
+.sound_block td:first-of-type {
+    border-right: 1px solid #FFFFFF;
+}
+
+.sound_block td:nth-child(2) {
+    padding-left: 5px;
+}
+
+.sound_block tr:last-of-type td {
+    border-bottom: none;
 }

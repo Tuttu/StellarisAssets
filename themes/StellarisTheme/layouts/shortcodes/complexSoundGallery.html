@@ -1,98 +1,45 @@
 {{ $source := .Get "source" }}
 {{ $.Scratch.Set "previousGroup" "" }}
+{{ $.Scratch.Set "nextGroup" "" }}
+{{ $allSounds := ($.Page.Resources.Match (printf "sounds/%s/*" ($source|string))) }}
+{{ $numberSounds := (len $allSounds) }}
+
 {{ with $.Page.Resources.Match (printf "sounds/%s/*" ($source|string)) }}
     <div class="sounds_flex">
-        {{ range . }}
+        {{ range $index, $sound := . }}
         {{ $nameParts := split (path.BaseName .Name) "-" }}
         {{ $currentGroup := printf "%s" (index $nameParts 0) }}
+        {{ $simpleSoundName := printf "%s" (index $nameParts 1) }}
 
-        {{ .Name }} | {{ $currentGroup }}
-        <br/>
-        {{ path.BaseName .Name }}
-        <br />
-        <br />
+        {{ if eq (add $index 1) $numberSounds }}
+            {{ $.Scratch.Set "nextGroup" "" }}
+        {{ else }}
+        {{ $nextGroupNameParts := split (path.BaseName (index $allSounds (add $index 1))) "-" }}
+        {{ $.Scratch.Set "nextGroup" (printf "%s" (index $nextGroupNameParts 0)) }}
+        {{ end }}
+
+        {{ if ne $currentGroup ($.Scratch.Get "previousGroup")  }}
+        <div class="sound_block">
+            <table class="soundsTable">
+                <tr>
+                    <th colspan="2" class="soundGroup" data-clipboard-text="{{ $currentGroup }}">{{ $currentGroup }}</th>
+                </tr>
+        {{ end }}
+                <tr>
+                    <td>
+                        <audio controls preload="none">
+                            <source src="{{ .RelPermalink }}" type="audio/wav">
+                        </audio>
+                    </td>
+                    <td>
+                        <span>{{ $simpleSoundName }}</span>
+                    </td>
+                </tr>
+        {{ if ne $currentGroup ($.Scratch.Get "nextGroup")  }}
+            </table>
+        </div>
+        {{ end }}
+        {{ $.Scratch.Set "previousGroup" $currentGroup }}
         {{ end }}
     </div>
 {{ end }}
-
-{{/*
-    $previousGroup = "";
-
-    $sounds = glob($folder_path . "*.{wav}", GLOB_BRACE);
-
-    foreach ($sounds as $key => $value) {
-        $soundWithoutPath = explode("/", $sounds[$key])[1];
-        $currentGroup = explode("-", $soundWithoutPath)[0];
-        if(array_key_exists($key + 1, $sounds )) {
-            $nextGroup =  explode("-", explode("/", $sounds[$key+1])[1])[0];
-        }
-        else {
-            $nextGroup = '';
-        }
-        $soundName = explode(".", explode("-", $soundWithoutPath)[1])[0];
-        if ($soundName == "event_activating_unknown_technology") {
-            $soundName = wordwrap($soundName, 25, "<br />\n", true);
-        }
-        else { $mysoundName = $soundName;}
-
-        if ($currentGroup != $previousGroup) {
-            ?>
-                <div class="item_sound">
-                    <table class="soundsTable">
-                        <tr>
-                            <th colspan="2" class="soundGroup" data-clipboard-text="<?php echo $currentGroup; ?>"><?php echo $currentGroup; ?></th>
-                        </tr>
-            <?php
-        }
-        ?>
-            <tr>
-                <td>
-                    <audio controls preload="none">
-                        <source src="<?php echo $sounds[$key]; ?>" type="audio/wav">
-                    </audio>
-                </td>
-                <td>
-                    <span><?php echo $soundName; ?></span>
-                </td>
-            </tr>
-        <?php
-            if ($currentGroup != $nextGroup)
-            {
-                ?>
-                    </table>
-                </div>
-            <?php
-            }
-            $previousGroup = $currentGroup;
-    }
-
-    {{ if condition }}
-    {{ else if condition }}
-    {{ else }}
-    {{ end }}
-
-See that extra %s on second set. thats for the output coming from the first command.
-so if I want $a + $b + $c i will have to do it this way.
-printf "%s" $c | printf "%s%s" $b | printf "%s%s" $a | printf "%s"
-
-{{ $.Scratch.Set "counter" 0 }}
-{{range sort .Params.employees}}
-  {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
-  I am the number {{$.Scratch.Get "counter"}} in loop!
-{{end}}
-
-{{ $slug := .URL }}
-{{ .Scratch.Add "i" 0 }}
-{{ range first 3 (where .Site.RegularPages "Section" "blog") }}
-{{ $k := .Scratch.Get "i" }}
-{{ if lt $k 2 }}
-{{ if and ((ne .URL $slug) (lt $k 2) ) }}
-{{ .Scratch.Add "i" 1 }}
-
-{{ .Title }}
-
-{{ end }}
-{{ end }}
-{{ end }}
-
-*/}}
