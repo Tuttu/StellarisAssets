@@ -1,15 +1,13 @@
 <div class="container-xl">
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-        <a href="{{ relURL "" }}" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+    <header class="border-bottom d-flex justify-content-start align-items-center">
+        <a href="{{ relURL "" }}" class="d-flex text-dark text-decoration-none">
             <img src="{{ relURL "img/Stellaris-Icon-Small.png" }}" alt="Stellaris-Icon"/>
         </a>
-        <nav id="nav" class="nav d-flex justify-content-center py-3">
+        <nav id="nav" class="nav d-flex justify-content-center p-3 flex-grow-1">
             {{ $currentPage := . }}
             {{ range .Site.Menus.main }}
             <a class="nav-link{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} link-secondary{{else}} link-light{{end}}" href="{{.URL}}">{{ .Name }}</a>
             {{ end }}
         </nav>
-        <div class="col-md-3 text-end">
-        </div>
     </header>
 </div>
