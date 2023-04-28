@@ -9,12 +9,37 @@ body {
 }
 
 /* Menu CSS */
+.navbar {
+    background:#222222;
+}
+
 #nav a {
     font-size: 1.4em;
 }
 
-#nav a:not(:last-child) {
-    border-right: solid 1px #FFFFFF;
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+.dropdown-toggle {
+    background-color: transparent;
+}
+
+.dropdown-menu{
+    background-color: #222222;
+}
+
+.dropdown-item:hover{
+    background-color: #171717;
+}
+
+#content {
+    margin-top: 100px;
 }
 
 .flex-even {
@@ -82,34 +107,6 @@ body {
 margin: 0 .05em 0 .1em;
 
 }
-
-/* Back to top CSS */
-.scroll-container {
-    position: absolute;
-    top: 0;
-    right:0;
-    height: 100%;
-}
-
-.scroll-container:before {
-    content: '';
-    display: block;
-    height: 100vh;
-    pointer-events: none;
-}
-
-.scroll-container a {
-    position: sticky;
-    top: 88vh;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-.scroll-container img {
-    border: 2px solid white;
-    border-radius: 25pX;
-}
-
 
 /* Sounds CSS */
 .sounds_flex {

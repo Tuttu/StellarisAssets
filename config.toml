@@ -6,70 +6,108 @@ theme = "StellarisTheme"
 
 [menu]
 [[menu.main]]
+    identifier = "events"
+    name = "Events"
+    weight = 1
+[[menu.main]]
+    identifier = "event_pictures"
+    name = 'Pictures'
+    url = '/event_pictures'
+    parent = "events"
+    weight = 1
+[[menu.main]]
+    identifier = "event_sounds"
+    name = 'Sounds'
+    url = '/sounds'
+    parent = "events"
+    weight = 1
+[[menu.main]]
+    identifier = "origins"
+    name = "Origins"
+    weight = 1
+[[menu.main]]
+    identifier = "origin_icons"
+    name = 'Icons'
+    url = '/origin_icons'
+    parent = "origins"
+    weight = 1
+[[menu.main]]
+    identifier = "origin_pictures"
+    name = 'Pictures'
+    url = '/origin_pictures'
+    parent = "origins"
+    weight = 1
+[[menu.main]]
+    identifier = "planets"
+    name = "Planets"
+    weight = 1
+[[menu.main]]
+    identifier = "planet_buildings"
     name = 'Buildings'
-    pageRef = '/buildings'
-    weight = 10
+    url = '/buildings'
+    parent = "planets"
+    weight = 1
 [[menu.main]]
+    identifier = "planet_decisions"
     name = 'Decisions'
-    pageRef = '/decisions'
-    weight = 10
+    url = '/decisions'
+    parent = "planets"
+    weight = 1
 [[menu.main]]
+    identifier = "planet_deposits"
     name = 'Deposits'
-    pageRef = '/deposits'
-    weight = 10
+    url = '/deposits'
+    parent = "planets"
+    weight = 1
 [[menu.main]]
-    name = 'Event Pictures'
-    pageRef = '/event_pictures'
-    weight = 10
-[[menu.main]]
+    identifier = "planet_jobs"
     name = 'Jobs'
-    pageRef = '/jobs'
-    weight = 10
+    url = '/jobs'
+    parent = "planets"
+    weight = 1
+[[menu.main]]
+    identifier = "planet_modifiers"
+    name = 'Planet Modifiers'
+    url = '/planet_modifiers'
+    parent = "planets"
+    weight = 1
 [[menu.main]]
     name = 'Modifiers'
-    pageRef = '/modifiers'
-    weight = 10
+    url = '/modifiers'
+    weight = 1
 [[menu.main]]
     name = 'Modules'
-    pageRef = '/modules'
-    weight = 10
-[[menu.main]]
-    name = 'Origin Icons'
-    pageRef = '/origin_icons'
-    weight = 10
-[[menu.main]]
-    name = 'Origin Pictures'
-    pageRef = '/origin_pictures'
-    weight = 10
-[[menu.main]]
-    name = 'Planet Modifiers'
-    pageRef = '/planet_modifiers'
-    weight = 10
+    url = '/modules'
+    weight = 1
 [[menu.main]]
     name = 'Relics'
-    pageRef = '/relics'
-    weight = 10
+    url = '/relics'
+    weight = 1
 [[menu.main]]
     name = 'Rooms'
-    pageRef = '/rooms'
-    weight = 10
+    url = '/rooms'
+    weight = 1
 [[menu.main]]
     name = 'Runes'
-    pageRef = '/runes'
-    weight = 10
+    url = '/runes'
+    weight = 1
 [[menu.main]]
+    identifier = "situations"
+    name = "Situations"
+    weight = 1
+[[menu.main]]
+    identifier = "situation_icons"
     name = 'Situation Icons'
-    pageRef = '/situation_icons'
-    weight = 10
+    url = '/situation_icons'
+    parent = "situations"
+    weight = 1
 [[menu.main]]
+    identifier = "situation_logs"
     name = 'Situation Log'
-    pageRef = '/situation_log'
-    weight = 10
-[[menu.main]]
-    name = 'Sounds'
-    pageRef = '/sounds'
-    weight = 10
+    url = '/situation_log'
+    parent = "situations"
+    weight = 1
 [[menu.main]]
     name = 'Traits'
-    pageRef = '/traits'
-    weight = 10
+    url = '/traits'
+    weight = 1
