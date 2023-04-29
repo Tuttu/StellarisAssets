@@ -8,3 +8,13 @@
         {{ end }}
     </div>
 {{ end }}
+
+{{ with $.Page.Resources.Match (printf "pictures/%s/*" ($source|string)) }}
+    <div class="icons_flex">
+        {{ range . }}
+            <div class="icon_block">
+                <span>{{ path.BaseName .Name }}</span>
+            </div>
+        {{ end }}
+    </div>
+{{ end }}

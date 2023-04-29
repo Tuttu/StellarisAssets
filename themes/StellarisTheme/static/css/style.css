@@ -3,9 +3,8 @@
 /* Body CSS */
 body {
     background:#222222;
-    font-family: 'Orbitron', sans-serif;
     color: #FFFFFF;
-    position: relative;
+    font-family: 'Orbitron', sans-serif;
 }
 
 /* Menu CSS */
@@ -17,12 +16,13 @@ body {
     font-size: 1.4em;
 }
 
+/* Shows the menu subitems on hovering the category */
 .dropdown:hover>.dropdown-menu {
     display: block;
 }
 
 .dropdown>.dropdown-toggle:active {
-    /*Without this, clicking will make it sticky*/
+    /* Without this, clicking will make it sticky */
     pointer-events: none;
 }
 
@@ -38,16 +38,14 @@ body {
     background-color: #171717;
 }
 
+/* Moves the content down because of the menu's fixed position */
 #content {
     margin-top: 100px;
 }
 
+
 .flex-even {
     flex: 1 1 0;
-}
-
-.picture_block {
-    min-width: 325px;
 }
 
 /* Pictures gallery CSS */
@@ -104,8 +102,7 @@ body {
 /* Footer CSS */
 .icon {
     height: 1em;
-margin: 0 .05em 0 .1em;
-
+    margin: 0 .05em 0 .1em;
 }
 
 /* Sounds CSS */

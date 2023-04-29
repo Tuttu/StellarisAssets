@@ -67,7 +67,7 @@ theme = "StellarisTheme"
         weight = 1
     [[menu.main]]
         identifier = "planet_modifiers"
-        name = 'Planet Modifiers'
+        name = 'Modifiers'
         pageref = '/planet_modifiers'
         parent = "planets"
         weight = 1
@@ -102,13 +102,13 @@ theme = "StellarisTheme"
         weight = 1
     [[menu.main]]
         identifier = "situation_icons"
-        name = 'Situation Icons'
+        name = 'Icons'
         pageref = '/situation_icons'
         parent = "situations"
         weight = 1
     [[menu.main]]
         identifier = "situation_logs"
-        name = 'Situation Log'
+        name = 'Logs'
         pageref = '/situation_log'
         parent = "situations"
         weight = 1

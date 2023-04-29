@@ -1,0 +1,68 @@
+{{ $source := .Get "source" }}
+{{ $.Scratch.Set "previousGroup" "" }}
+{{ $.Scratch.Set "nextGroup" "" }}
+{{ $allIcons := ($.Page.Resources.Match (printf "sounds/%s/*" ($source|string))) }}
+{{ $numberSounds := (len $allIcons) }}
+
+{{ with $.Page.Resources.Match (printf "pictures/%s/*" ($source|string)) }}
+    <div class="icons_flex">
+        {{ range $index, $icon := . }}
+        {{ $nameParts := split (path.BaseName .Name) "-" }}
+        {{ $currentGroup := printf "%s" (index $nameParts 0) }}
+        {{ $simpleSoundName := printf "%s" (index $nameParts 1) }}
+            <div class="icon_block">
+                <img src="pictures/MEM/GFX_evt_mem_placeholder.png" alt="{{ path.BaseName .Name }}" title="{{ path.BaseName .Name }}" data-src="{{ .RelPermalink }}" data-clipboard-text="{{ path.BaseName .Name }}"/>
+            </div>
+        {{ end }}
+    </div>
+{{ end }}
+
+{{/*
+
+    {{ $source := .Get "source" }}
+    {{ $.Scratch.Set "previousGroup" "" }}
+    {{ $.Scratch.Set "nextGroup" "" }}
+    {{ $allSounds := ($.Page.Resources.Match (printf "sounds/%s/*" ($source|string))) }}
+    {{ $numberSounds := (len $allSounds) }}
+    
+    {{ with $.Page.Resources.Match (printf "sounds/%s/*" ($source|string)) }}
+        <div class="sounds_flex">
+            {{ range $index, $sound := . }}
+            {{ $nameParts := split (path.BaseName .Name) "-" }}
+            {{ $currentGroup := printf "%s" (index $nameParts 0) }}
+            {{ $simpleSoundName := printf "%s" (index $nameParts 1) }}
+    
+            {{ if eq (add $index 1) $numberSounds }}
+                {{ $.Scratch.Set "nextGroup" "" }}
+            {{ else }}
+            {{ $nextGroupNameParts := split (path.BaseName (index $allSounds (add $index 1))) "-" }}
+            {{ $.Scratch.Set "nextGroup" (printf "%s" (index $nextGroupNameParts 0)) }}
+            {{ end }}
+    
+            {{ if ne $currentGroup ($.Scratch.Get "previousGroup")  }}
+            <div class="sound_block">
+                <table class="soundsTable">
+                    <tr>
+                        <th colspan="2" class="soundGroup" data-clipboard-text="{{ $currentGroup }}">{{ $currentGroup }}</th>
+                    </tr>
+            {{ end }}
+                    <tr>
+                        <td>
+                            <audio controls preload="none">
+                                <source src="{{ .RelPermalink }}" type="audio/wav">
+                            </audio>
+                        </td>
+                        <td>
+                            <span>{{ $simpleSoundName }}</span>
+                        </td>
+                    </tr>
+            {{ if ne $currentGroup ($.Scratch.Get "nextGroup")  }}
+                </table>
+            </div>
+            {{ end }}
+            {{ $.Scratch.Set "previousGroup" $currentGroup }}
+            {{ end }}
+        </div>
+    {{ end }}
+
+*/}}

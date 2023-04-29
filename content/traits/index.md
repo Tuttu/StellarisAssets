@@ -6,16 +6,16 @@ title = 'Traits'
 
 HINT : If you are lazy, just click a picture to get its name copied to your clipboard.
 
-{{< iconGallery source="Vanilla">}}
+{{< simpleIconGallery source="Vanilla">}}
 
 # VANILLA LEADER TRAITS
 
-{{< iconGallery source="Vanilla_Leader">}}
+{{< simpleIconGallery source="Vanilla_Leader">}}
 
 # MEM TRAITS
 
-{{< iconGallery source="MEM">}}
+{{< simpleIconGallery source="MEM">}}
 
 # MEM LEADER TRAITS
 
-{{< iconGallery source="MEM_Leader">}}
+{{< simpleIconGallery source="MEM_Leader">}}

@@ -6,12 +6,12 @@ title = 'Origin Icons'
 
 HINT : If you are lazy, just click a picture to get its name copied to your clipboard.
 
-{{< iconGallery source="Vanilla">}}
+{{< simpleIconGallery source="Vanilla">}}
 
 # MEM ORIGIN ICONS
 
-{{< iconGallery source="MEM">}}
+{{< simpleIconGallery source="MEM">}}
 
 # MOM ORIGIN ICONS
 
-{{< iconGallery source="MOM">}}
+{{< simpleIconGallery source="MOM">}}

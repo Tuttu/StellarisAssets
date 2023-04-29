@@ -1,33 +1,35 @@
 <nav class="navbar navbar-expand-xl fixed-top">
     <div class="container-xl border-bottom">
-        <a href="{{ relURL "" }}" class="navbar-brand">
+        <a class="navbar-brand" href="{{ relURL "" }}">
             <img src="{{ relURL "img/Stellaris-Icon-Small.png" }}" alt="Stellaris-Icon"/>
         </a>
-        <div id="nav" class="collapse navbar-collapse nav d-flex justify-content-center p-3 flex-grow-1">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav" class="collapse navbar-collapse">
             <ul class="navbar-nav">
-                {{ $currentPage := . }}
-                {{ range .Site.Menus.main }}
-                    {{ if .HasChildren }}
+            {{ $currentPage := . }}
+            {{ range .Site.Menus.main }}
+                {{ if .HasChildren }}
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle link-light {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} border-bottom border-3{{end}}" href="#" role="button" data-bs-toggle="dropdown">
-                          {{ .Name }}
+                        {{ .Name }}
                         </a>
                         <ul class="dropdown-menu">
-                            {{ range .Children }}
+                        {{ range .Children }}
                             <li class="nav-item">
                                 <a class="dropdown-item nav-link link-light {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} border-bottom border-3{{end}}" href="{{.URL}}">{{ .Name }}</a>
                             </li>
-                            {{ end }}
+                        {{ end }}
                         </ul>
                     </li>
-                    {{ else }}
+                {{ else }}
                     <li class="nav-item">
                         <a class="nav-link link-light {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} border-bottom border-3{{end}}" href="{{.URL}}">{{ .Name }}</a>
                     </li>
-                    {{ end }}
                 {{ end }}
+            {{ end }}
             </ul>
         </div>
-
     </div>
 </nav>
