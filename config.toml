@@ -1,113 +1,119 @@
-baseURL = 'https://tuttu.github.io/StellarisAssets/'
+basepageref = 'https://tuttu.github.io/StellarisAssets/'
 languageCode = 'en-us'
 title = 'Stellaris Assets'
 theme = "StellarisTheme"
 #sectionPagesMenu = 'main'
 
 [menu]
-[[menu.main]]
-    identifier = "events"
-    name = "Events"
-    weight = 1
-[[menu.main]]
-    identifier = "event_pictures"
-    name = 'Pictures'
-    url = '/event_pictures'
-    parent = "events"
-    weight = 1
-[[menu.main]]
-    identifier = "event_sounds"
-    name = 'Sounds'
-    url = '/sounds'
-    parent = "events"
-    weight = 1
-[[menu.main]]
-    identifier = "origins"
-    name = "Origins"
-    weight = 1
-[[menu.main]]
-    identifier = "origin_icons"
-    name = 'Icons'
-    url = '/origin_icons'
-    parent = "origins"
-    weight = 1
-[[menu.main]]
-    identifier = "origin_pictures"
-    name = 'Pictures'
-    url = '/origin_pictures'
-    parent = "origins"
-    weight = 1
-[[menu.main]]
-    identifier = "planets"
-    name = "Planets"
-    weight = 1
-[[menu.main]]
-    identifier = "planet_buildings"
-    name = 'Buildings'
-    url = '/buildings'
-    parent = "planets"
-    weight = 1
-[[menu.main]]
-    identifier = "planet_decisions"
-    name = 'Decisions'
-    url = '/decisions'
-    parent = "planets"
-    weight = 1
-[[menu.main]]
-    identifier = "planet_deposits"
-    name = 'Deposits'
-    url = '/deposits'
-    parent = "planets"
-    weight = 1
-[[menu.main]]
-    identifier = "planet_jobs"
-    name = 'Jobs'
-    url = '/jobs'
-    parent = "planets"
-    weight = 1
-[[menu.main]]
-    identifier = "planet_modifiers"
-    name = 'Planet Modifiers'
-    url = '/planet_modifiers'
-    parent = "planets"
-    weight = 1
-[[menu.main]]
-    name = 'Modifiers'
-    url = '/modifiers'
-    weight = 1
-[[menu.main]]
-    name = 'Modules'
-    url = '/modules'
-    weight = 1
-[[menu.main]]
-    name = 'Relics'
-    url = '/relics'
-    weight = 1
-[[menu.main]]
-    name = 'Rooms'
-    url = '/rooms'
-    weight = 1
-[[menu.main]]
-    name = 'Runes'
-    url = '/runes'
-    weight = 1
-[[menu.main]]
-    identifier = "situations"
-    name = "Situations"
-    weight = 1
-[[menu.main]]
-    identifier = "situation_icons"
-    name = 'Situation Icons'
-    url = '/situation_icons'
-    parent = "situations"
-    weight = 1
-[[menu.main]]
-    identifier = "situation_logs"
-    name = 'Situation Log'
-    url = '/situation_log'
-    parent = "situations"
-    weight = 1
-[[menu.main]]
-    name = 'Traits'
-    url = '/traits'
-    weight = 1
+    [[menu.main]]
+        identifier = "events"
+        name = "Events"
+        weight = 1
+    [[menu.main]]
+        identifier = "event_pictures"
+        name = 'Pictures'
+        pageref = '/event_pictures'
+        parent = "events"
+        weight = 1
+    [[menu.main]]
+        identifier = "event_sounds"
+        name = 'Sounds'
+        pageref = '/sounds'
+        parent = "events"
+        weight = 1
+    [[menu.main]]
+        identifier = "origins"
+        name = "Origins"
+        weight = 1
+    [[menu.main]]
+        identifier = "origin_icons"
+        name = 'Icons'
+        pageref = '/origin_icons'
+        parent = "origins"
+        weight = 1
+    [[menu.main]]
+        identifier = "origin_pictures"
+        name = 'Pictures'
+        pageref = '/origin_pictures'
+        parent = "origins"
+        weight = 1
+    [[menu.main]]
+        identifier = "planets"
+        name = "Planets"
+        weight = 1
+    [[menu.main]]
+        identifier = "planet_buildings"
+        name = 'Buildings'
+        pageref = '/buildings'
+        parent = "planets"
+        weight = 1
+    [[menu.main]]
+        identifier = "planet_decisions"
+        name = 'Decisions'
+        pageref = '/decisions'
+        parent = "planets"
+        weight = 1
+    [[menu.main]]
+        identifier = "planet_deposits"
+        name = 'Deposits'
+        pageref = '/deposits'
+        parent = "planets"
+        weight = 1
+    [[menu.main]]
+        identifier = "planet_jobs"
+        name = 'Jobs'
+        pageref = '/jobs'
+        parent = "planets"
+        weight = 1
+    [[menu.main]]
+        identifier = "planet_modifiers"
+        name = 'Planet Modifiers'
+        pageref = '/planet_modifiers'
+        parent = "planets"
+        weight = 1
+    [[menu.main]]
+        identifier = "modifiers"
+        name = 'Modifiers'
+        pageref = '/modifiers'
+        weight = 1
+    [[menu.main]]
+        identifier = "modules"
+        name = 'Modules'
+        pageref = '/modules'
+        weight = 1
+    [[menu.main]]
+        identifier = "relics"
+        name = 'Relics'
+        pageref = '/relics'
+        weight = 1
+    [[menu.main]]
+        identifier = "rooms"
+        name = 'Rooms'
+        pageref = '/rooms'
+        weight = 1
+    [[menu.main]]
+        identifier = "runes"
+        name = 'Runes'
+        pageref = '/runes'
+        weight = 1
+    [[menu.main]]
+        identifier = "situations"
+        name = "Situations"
+        weight = 1
+    [[menu.main]]
+        identifier = "situation_icons"
+        name = 'Situation Icons'
+        pageref = '/situation_icons'
+        parent = "situations"
+        weight = 1
+    [[menu.main]]
+        identifier = "situation_logs"
+        name = 'Situation Log'
+        pageref = '/situation_log'
+        parent = "situations"
+        weight = 1
+    [[menu.main]]
+        identifier = "traits"
+        name = 'Traits'
+        pageref = '/traits'
+        weight = 1
