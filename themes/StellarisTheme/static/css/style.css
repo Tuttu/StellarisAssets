@@ -2,16 +2,10 @@
 
 /* Body CSS */
 body {
-    background:#222222;
-    color: #FFFFFF;
     font-family: 'Orbitron', sans-serif;
 }
 
 /* Menu CSS */
-.navbar {
-    background:#222222;
-}
-
 #nav a {
     font-size: 1.4em;
 }
@@ -26,7 +20,7 @@ body {
     pointer-events: none;
 }
 
-.dropdown-toggle {
+/* .dropdown-toggle {
     background-color: transparent;
 }
 
@@ -36,13 +30,12 @@ body {
 
 .dropdown-item:hover, .nav-item:hover{
     background-color: #171717;
-}
+} */
 
 /* Moves the content down because of the menu's fixed position */
 #content {
     margin-top: 100px;
 }
-
 
 .flex-even {
     flex: 1 1 0;
