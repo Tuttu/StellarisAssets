@@ -41,6 +41,27 @@ body {
     flex: 1 1 0;
 }
 
+.picture_block {
+    flex-basis: 20%;
+}
+
+/* .picture_text{
+    max-width:200px;
+    text-overflow: ellipsis;
+    margin-bottom: 12px;
+    word-break: break-all;
+    overflow:hidden;
+    white-space: nowrap;
+}
+
+.picture_block:hover>.picture_text {
+    overflow: visible; 
+    white-space: normal;
+    /*height:auto;  /* just added this line 
+    width: auto;
+    max-width: 100%;
+} */
+
 /* Pictures gallery CSS */
 /*.pictures_flex {
     display: flex;

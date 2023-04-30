@@ -2,9 +2,9 @@
 {{ with $.Page.Resources.Match (printf "pictures/%s/*" ($source|string)) }}
     <div class="pictures_flex d-flex justify-content-evenly flex-wrap">
         {{ range . }}
-            <div class="picture_block d-block flex-even p-2">
+            <div class="picture_block d-block flex-even p-2 text-center">
                 <img src="pictures/MEM/GFX_evt_mem_placeholder.png" alt="{{ path.BaseName .Name }}" title="{{ path.BaseName .Name }}" class="border border-white" data-src="{{ .RelPermalink }}" data-clipboard-text="{{ path.BaseName .Name }}"/>
-                <span class="d-block p-2 flex-fill">{{ path.BaseName .Name }}</span>
+                <span class="d-block p-2 picture_text">{{ path.BaseName .Name }}</span>
             </div>
         {{ end }}
     </div>
