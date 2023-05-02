@@ -48,6 +48,12 @@ jobs:
         uses: actions/configure-pages@v3
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: Cache Hugo resources
+        id: cache-hugo-resources
+        uses: actions/cache@v3
+        with:
+          path: resources
+          key: ${{ runner.os }}-hugo-resources
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
