@@ -10,7 +10,7 @@
         {{ $nameParts := split (path.BaseName .Name) "-" }}
         {{ $currentGroup := printf "%s" (index $nameParts 0) }}
         {{ $simpleSoundName := printf "%s" (index $nameParts 1) }}
-            <div class="icon_block">
+            <div class="complex_icon_block">
                 <img src="pictures/MEM/GFX_evt_mem_placeholder.png" alt="{{ path.BaseName .Name }}" title="{{ path.BaseName .Name }}" data-src="{{ .RelPermalink }}" data-clipboard-text="{{ path.BaseName .Name }}"/>
             </div>
         {{ end }}

@@ -41,26 +41,26 @@ body {
     flex: 1 1 0;
 }
 
-.picture_block {
+.simple_picture_block, .complex_picture_block {
     flex-basis: 20%;
 }
 
-/* .picture_text{
+.picture_text{
     max-width:200px;
     text-overflow: ellipsis;
-    margin-bottom: 12px;
+    margin: auto;
     word-break: break-all;
     overflow:hidden;
     white-space: nowrap;
 }
 
-.picture_block:hover>.picture_text {
+.simple_picture_block:hover>.picture_text, .complex_picture_block:hover>.picture_text {
     overflow: visible; 
     white-space: normal;
-    /*height:auto;  /* just added this line 
+    /*height:auto;  /* just added this line */
     width: auto;
     max-width: 100%;
-} */
+}
 
 /* Pictures gallery CSS */
 /*.pictures_flex {
@@ -75,7 +75,7 @@ body {
     display: block;
 }
 
-.picture_block {
+.simple_picture_block {
     text-align: center;
     margin-bottom: 15px;
     flex: 1 1 0;
@@ -83,11 +83,11 @@ body {
     margin-right: 5px;
 }
 
-.picture_block span {
+.simple_picture_block span {
     display: block;
 }
 
-.picture_block img {
+.simple_picture_block img {
     border: solid 1px #FFFFFF;
     box-shadow: 0 5px 35px #000000;
 }*/

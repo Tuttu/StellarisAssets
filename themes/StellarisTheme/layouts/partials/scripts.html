@@ -6,7 +6,7 @@
 <script src="{{ relURL "js/jquery.unveil.js" }}"></script>
 
 <script>
-    var clipboard = new Clipboard('.picture_block img, .icon_block img, .soundGroup');
+    var clipboard = new Clipboard('.simple_picture_block img, .icon_block img, .soundGroup');
 
     clipboard.on('success', function(e) {
     console.log(e);
@@ -27,7 +27,7 @@
         var folderPath = "./event_pictures";
         $.get(folderPath)
             .done(function(data) {
-                var files = $(data).find(".picture_block img").map(function() { return $(this).attr("data-src"); }).get().filter(function(name) { return ![".", ".."].includes(name); });
+                var files = $(data).find(".simple_picture_block img").map(function() { return $(this).attr("data-src"); }).get().filter(function(name) { return ![".", ".."].includes(name); });
                 var file = files[Math.floor(Math.random() * files.length)];
                 $("#random-pic").attr("src", file);
             })

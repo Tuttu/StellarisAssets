@@ -5,7 +5,7 @@
     <div class="icons_flex">
         {{ range . }}
             {{ if eq ($.Scratch.Get "triadPart") 1 }}
-            <div class="icon_block flex-fill">
+            <div class="complex_picture_block d-block flex-even p-2">
             {{ end }}
                 {{ $nameparts := split (path.BaseName .Name) "+" }}
                 {{ $shortname := printf "%s" (index $nameparts 0) }}
@@ -18,7 +18,7 @@
                 {{ end }}                
                 <img src="pictures/MEM/GFX_evt_mem_placeholder.png" alt="{{ $shortname }}" title="{{ $shortname }}" data-src="{{ .RelPermalink }}" data-clipboard-text="{{ $.Scratch.Get "clipboardText" }}"/>
             {{ if eq ($.Scratch.Get "triadPart") 3 }}
-                <span class="d-block p-2 flex-fill">{{ $shortname }}</span>
+                <span class="d-block p-2 picture_text">{{ $shortname }}</span>
             </div>
             {{ $.Scratch.Set "triadPart" 0 }}
             {{ end }}
