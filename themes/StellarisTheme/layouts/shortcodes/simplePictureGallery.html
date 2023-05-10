@@ -1,3 +1,4 @@
+{{/*
 {{ $source := .Get "source" }}
 {{ with $.Page.Resources.Match (printf "pictures/%s/*" ($source|string)) }}
     <div class="pictures_flex d-flex justify-content-evenly flex-wrap">
@@ -9,3 +10,49 @@
         {{ end }}
     </div>
 {{ end }}
+*/}}
+
+{{/*
+{{ $local := resources.Get "pictures/event_pictures/MEM/GFX_evt_mem_airial_assault.png" }}
+{{ with resources.Get "pictures/event_pictures/MEM/GFX_evt_mem_airial_assault.png" }}
+    <div class="simple_picture_block d-block flex-even p-2">
+        <img src="{{ .RelPermalink }}" loading="lazy" alt="{{ path.BaseName .Name }}" title="{{ path.BaseName .Name }}" class="border border-white" data-clipboard-text="{{ path.BaseName .Name }}"/>
+        <span class="d-block p-2 picture_text">{{ path.BaseName .Name }}</span>
+    </div>
+{{ end }}
+
+<img src="{{ relURL $local }}" loading="lazy" alt="{{ path.BaseName .Name }}" title="{{ path.BaseName .Name }}" class="border border-white" data-clipboard-text="{{ path.BaseName .Name }}"/>
+*/}}
+
+{{ $source := .Get "source" }}
+{{ with $.Page.Resources.Match (printf "pictures/%s/*" ($source|string)) }}
+    <div class="pictures_flex d-flex justify-content-evenly flex-wrap">
+        {{ range . }}
+            <div class="simple_picture_block d-block flex-even p-2">
+                <img src="{{ .RelPermalink }}" loading="lazy" alt="{{ path.BaseName .Name }}" title="{{ path.BaseName .Name }}" class="border border-white" data-clipboard-text="{{ path.BaseName .Name }}"/>
+                <span class="d-block p-2 picture_text">{{ path.BaseName .Name }}</span>
+            </div>
+        {{ end }}
+    </div>
+{{ end }}
+
+{{/*
+    {{ with $.Page.Resources.Match (printf "pictures/%s/*" ($source|string)) }}
+    {{ with .Resources.GetMatch (printf "pictures/event_pictures/%s/*" ($source|string)) }}
+
+{{ $source := .Get "source" }}
+{{ with $.Page.Resources.Match (printf "pictures/%s/*" ($source|string)) }}
+  {{ with .Resources.ByType "image" }}
+    {{ $imgToGet := . }}
+    <div class="pictures_flex d-flex justify-content-evenly flex-wrap">
+        {{ range . }}
+            <div class="simple_picture_block d-block flex-even p-2">
+                <img src="{{ $imgToGet }}" alt="{{ path.BaseName .Name }}" title="{{ path.BaseName .Name }}" class="border border-white" data-clipboard-text="{{ path.BaseName .Name }}"/>
+                
+                <span class="d-block p-2 picture_text">{{ path.BaseName .Name }}</span>
+            </div>
+        {{ end }}
+    </div>
+  {{ end }}
+{{ end }}
+*/}}
