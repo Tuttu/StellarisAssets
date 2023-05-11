@@ -28,7 +28,7 @@
         var folderPath = "./event_pictures";
         $.get(folderPath)
             .done(function(data) {
-                var files = $(data).find(".simple_picture_block img").map(function() { return $(this).attr("data-src"); }).get().filter(function(name) { return ![".", ".."].includes(name); });
+                var files = $(data).find(".simple_picture_block img").map(function() { return $(this).attr("src"); }).get().filter(function(name) { return ![".", ".."].includes(name); });
                 var file = files[Math.floor(Math.random() * files.length)];
                 $("#random-pic").attr("src", file);
             })
