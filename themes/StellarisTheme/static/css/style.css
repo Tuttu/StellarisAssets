@@ -42,11 +42,11 @@ body {
 }
 
 .simple_picture_block, .complex_picture_block {
-    flex-basis: 20%;
+    flex-basis: 25%;
 }
 
 .picture_text{
-    max-width:200px;
+    max-width:400px;
     text-overflow: ellipsis;
     margin: auto;
     word-break: break-all;
