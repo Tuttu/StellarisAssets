@@ -10,12 +10,12 @@ HINT : If you are lazy, just click a picture to get its name copied to your clip
 
 # VANILLA LEADER TRAITS
 
-{{< simpleIconGallery source="Vanilla_Leader">}}
+{{< isotopeIconGallery source="Vanilla_Leader" >}}
 
 # MEM TRAITS
 
-{{< simpleIconGallery source="MEM">}}
+{{< simpleIconGallery source="MEM" >}}
 
 # MEM LEADER TRAITS
 
-{{< simpleIconGallery source="MEM_Leader">}}
+{{< simpleIconGallery source="MEM_Leader" >}}

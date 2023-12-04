@@ -4,6 +4,7 @@
 {{ if not .IsHome }}
 <script src="{{ relURL "js/clipboard.min.js" }}"></script>
 <script src="{{ relURL "js/jquery.unveil.js" }}"></script>
+<script src="{{ relURL "js/isotope.pkgd.min.js" }}"></script>
 
 <script>
     var clipboard = new Clipboard('.simple_picture_block img, .icon_block img, .soundGroup');
@@ -16,11 +17,102 @@
     console.log(e);
     });
     
-    $(document).ready(function(){
-    $("img").unveil();
-    });
+    //$(document).ready(function(){
+    //$("img").unveil();
+    //});
 </script>
 {{end}}
+
+{{ if eq .Title "Traits" }}
+<script>
+    // init Isotope
+    var $grid = $('.isotope_icons').isotope({
+        itemSelector: '.icon_block',
+        layoutMode: 'fitRows'
+    });
+
+    // store filters for each group
+    var filters = {};
+
+    // change active class on buttons
+    $('.filters').on('click', 'button', function (event) {
+        var $target = $(event.currentTarget);
+        var group = $target.attr('data-group');
+        $target.toggleClass('active');
+
+        // Initialize the group filter if it doesn't exist
+        if (!filters[group]) {
+            filters[group] = [];
+        }
+
+        var isChecked = $target.hasClass('active');
+        var filter = $target.attr('data-filter');
+
+        if (isChecked) {
+            addFilter(group, filter);
+        } else {
+            removeFilter(group, filter);
+        }
+
+        // Combine filters and filter isotope
+        var filterValues = Object.values(filters).reduce(function (result, groupFilters, index) {
+            if (groupFilters.length > 0) {
+                var combinations = [];
+                for (var i = 0; i < groupFilters.length; i++) {
+                    for (var j = 0; j < result.length; j++) {
+                        combinations.push(result[j] + groupFilters[i]);
+                    }
+                }
+                return combinations;
+            } else {
+                return result;
+            }
+        }, ['']);
+
+        console.log(filterValues);
+
+        $grid.isotope({
+            filter: filterValues.join(',')
+        });
+    });
+
+    function addFilter(group, filter) {
+        // Initialize the group filter array if it doesn't exist
+        if (!filters[group]) {
+            filters[group] = [];
+        }
+
+        // If the filter is not already in the group, add it
+        if (filters[group].indexOf(filter) == -1) {
+            filters[group].push(filter);
+        }
+    }
+
+    function removeFilter(group, filter) {
+        var index = filters[group].indexOf(filter);
+        if (index != -1) {
+            filters[group].splice(index, 1);
+        }
+    }
+
+    // Wait for all images to load
+    var lazyImages = document.querySelectorAll('.isotope_icons img[loading="lazy"]');
+    var imagesLoaded = 0;
+
+    lazyImages.forEach(function (lazyImage) {
+        lazyImage.addEventListener('load', function () {
+            imagesLoaded++;
+            if (imagesLoaded === lazyImages.length) {
+                // All lazy-loaded images have loaded, trigger Isotope layout
+                $grid.isotope('layout');
+            }
+        });
+    });
+</script>
+{{ end }}
+
+
+
 
 {{ if .IsHome }}
 <script>

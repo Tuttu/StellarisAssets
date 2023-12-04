@@ -3,7 +3,7 @@
     <div class="icons_flex">
         {{ range . }}
             <div class="icon_block">
-                <img src="pictures/MEM/GFX_evt_mem_placeholder.png" alt="{{ path.BaseName .Name }}" title="{{ path.BaseName .Name }}" data-src="{{ .RelPermalink }}" data-clipboard-text="{{ path.BaseName .Name }}"/>
+                <img src="{{ .RelPermalink }}" alt="{{ path.BaseName .Name }}" title="{{ path.BaseName .Name }}" data-clipboard-text="{{ path.BaseName .Name }}"/>
             </div>
         {{ end }}
     </div>
