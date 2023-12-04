@@ -165,3 +165,9 @@ body {
 .sound_block tr:last-of-type td {
     border-bottom: none;
 }
+
+.is-checked {
+    background-color: red;
+    color: red;
+    text-decoration: underline;
+}

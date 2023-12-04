@@ -1,7 +1,7 @@
 {{ $source := .Get "source" }}
 {{ $.Scratch.Set "previousGroup" "" }}
 {{ $.Scratch.Set "nextGroup" "" }}
-{{ $allIcons := ($.Page.Resources.Match (printf "sounds/%s/*" ($source|string))) }}
+{{ $allIcons := ($.Page.Resources.Match (printf "pictures/%s/*" ($source|string))) }}
 {{ $numberSounds := (len $allIcons) }}
 
 {{ with $.Page.Resources.Match (printf "pictures/%s/*" ($source|string)) }}
@@ -18,6 +18,8 @@
 {{ end }}
 
 {{/*
+
+WIP for the modifier icon that will be grouped by category
 
     {{ $source := .Get "source" }}
     {{ $.Scratch.Set "previousGroup" "" }}
