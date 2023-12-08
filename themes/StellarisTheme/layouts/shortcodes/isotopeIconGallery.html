@@ -1,77 +1,104 @@
-<div class="d-flex justify-content-center">
-    <div class="filters btn-toolbar" role="toolbar">
-        <span class="p-2 text-decoration-underline">Council:</span>
-        <div class="ui-group btn-group me-2" role="group">
-            <button type="button" class="btn btn-dark" data-group="council" data-filter=".Councilyes">Yes</button>
-            <button type="button" class="btn btn-dark" data-group="council" data-filter=".Councilno">No</button>
+<div class="container-fluid">
+    <div class="row">
+        <div class="d-flex justify-content-center">
+            <div class="filters btn-toolbar" role="toolbar">
+                <div>
+                    <span class="p-2 text-decoration-underline">Council:</span>
+                    <div class="ui-group btn-group me-2" role="group">
+                        <button type="button" class="btn btn-dark" data-group="council" data-filter=".Councilyes">Yes</button>
+                        <button type="button" class="btn btn-dark" data-group="council" data-filter=".Councilno">No</button>
+                    </div>
+                </div>
+                <div>
+                    <span class="p-2 text-decoration-underline">Class:</span>
+                    <div class="ui-group btn-group me-2" role="group">
+                        <button type="button" class="btn btn-dark" data-group="class" data-filter=".Classnone">None</button>
+                        <button type="button" class="btn btn-dark" data-group="class" data-filter=".Classcommander">Commander</button>
+                        <button type="button" class="btn btn-dark" data-group="class" data-filter=".Classleader">Leader</button>
+                        <button type="button" class="btn btn-dark" data-group="class" data-filter=".Classofficial">Official</button>
+                        <button type="button" class="btn btn-dark" data-group="class" data-filter=".Classscientist">Scientist</button>
+                    </div>
+                </div>
+                <div>
+                    <span class="p-2 text-decoration-underline">Rarity:</span>
+                    <div class="ui-group btn-group me-2" role="group">
+                        <button type="button" class="btn btn-dark" data-group="rarity" data-filter=".Raritynone">None</button>
+                        <button type="button" class="btn btn-dark" data-group="rarity" data-filter=".Raritycommon">Common</button>
+                        <button type="button" class="btn btn-dark" data-group="rarity" data-filter=".Rarityparagon">Paragon</button>
+                        <button type="button" class="btn btn-dark" data-group="rarity" data-filter=".Rarityveteran">Veteran</button>
+                    </div>
+                </div>
+                <div>
+                    <span class="p-2 text-decoration-underline">Tier:</span>
+                    <div class="ui-group btn-group" role="group">
+                        <button type="button" class="btn btn-dark" data-group="tier" data-filter=".Tiernone">None</button>
+                        <button type="button" class="btn btn-dark" data-group="tier" data-filter=".Tier1">Tier 1</button>
+                        <button type="button" class="btn btn-dark" data-group="tier" data-filter=".Tier2">Tier 2</button>
+                        <button type="button" class="btn btn-dark" data-group="tier" data-filter=".Tier3">Tier 3</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <span class="p-2 text-decoration-underline">Class:</span>
-        <div class="ui-group btn-group me-2" role="group">
-            <button type="button" class="btn btn-dark" data-group="class" data-filter=".Classnone">None</button>
-            <button type="button" class="btn btn-dark" data-group="class" data-filter=".Classcommander">Commander</button>
-            <button type="button" class="btn btn-dark" data-group="class" data-filter=".Classleader">Leader</button>
-            <button type="button" class="btn btn-dark" data-group="class" data-filter=".Classofficial">Official</button>
-            <button type="button" class="btn btn-dark" data-group="class" data-filter=".Classscientist">Scientist</button>
+    </div>
+    <div class="row">
+        <!-- Larger column (3/4 width) -->
+        <div class="col-md-9">            
+        {{ $source := .Get "source" }}
+        {{ $leaderTraitsMetadata := site.Data.leader_traits_metadata }}
+
+        {{ with $.Page.Resources.Match (printf "pictures/%s/*" ($source|string)) }}
+            <div class="isotope_icons d-flex justify-content-evenly flex-wrap">
+                {{ range . }}
+                    {{ $imageName := path.BaseName .Name }}
+                    {{ $imageMetadata := index (where $leaderTraitsMetadata "Name" $imageName) 0 }}
+                    {{ $Class := "" }}
+                    {{ $Rarity := "" }}
+                    {{ $Tier := "" }}
+                    {{ if $imageMetadata }}
+                        {{ if eq $imageMetadata.Class nil }}
+                            {{ $Class = "none" }}
+                        {{ else }}
+                            {{ $Class = $imageMetadata.Class }}
+                        {{ end }}
+                        {{ if eq $imageMetadata.Rarity nil }}
+                        {{ $Rarity = "none" }}
+                            {{ else if eq $imageMetadata.Rarity "free_or_veteran" }}
+                        {{ $Rarity = "veteran" }}
+                        {{ else }}
+                            {{ $Rarity = $imageMetadata.Rarity }}
+                        {{ end }}
+                        {{ if eq $imageMetadata.Tier nil }}
+                            {{ $Tier = "none" }}
+                        {{ else }}
+                            {{ $Tier = $imageMetadata.Tier }}
+                        {{ end }}
+                        <div class="icon_block Council{{ $imageMetadata.Council }} Class{{ $Class }} Rarity{{ $Rarity }} Tier{{ $Tier }}">
+                            <img src="{{ .RelPermalink }}" loading="lazy" alt="{{ $imageName }}" title="{{ $imageName }}" data-clipboard-text="{{ $imageName }}" />
+                            {{/*<span class="d-block p-2 picture_text">{{ $imageName }}</span>*/}}
+                        </div>
+                    {{ end }}
+                {{ end }}
+            </div>
+        {{ end }}
         </div>
-        <span class="p-2 text-decoration-underline">Rarity:</span>
-        <div class="ui-group btn-group me-2" role="group">
-            <button type="button" class="btn btn-dark" data-group="rarity" data-filter=".Raritynone">None</button>
-            <button type="button" class="btn btn-dark" data-group="rarity" data-filter=".Raritycommon">Common</button>
-            <button type="button" class="btn btn-dark" data-group="rarity" data-filter=".Rarityparagon">Paragon</button>
-            <button type="button" class="btn btn-dark" data-group="rarity" data-filter=".Rarityveteran">Veteran</button>
-        </div>
-        <span class="p-2 text-decoration-underline">Tier:</span>
-        <div class="ui-group btn-group" role="group">
-            <button type="button" class="btn btn-dark" data-group="tier" data-filter=".Tiernone">None</button>
-            <button type="button" class="btn btn-dark" data-group="tier" data-filter=".Tier1">Tier 1</button>
-            <button type="button" class="btn btn-dark" data-group="tier" data-filter=".Tier2">Tier 2</button>
-            <button type="button" class="btn btn-dark" data-group="tier" data-filter=".Tier3">Tier 3</button>
+  
+        <!-- Smaller column (1/4 width) -->
+        <div class="col-md-3 text-start">
+            <div>
+                <h5 id="copy-script">Icon script (Click me to copy)</h5>
+                <pre class="border border-white p-2"><code id="script-to-copy">inline_script = {
+        script = <span id="icon-script"></span>
+        CLASS = <span id="icon-class"></span>
+        ICON = <span id="icon-icon"></span>
+        RARITY = <span id="icon-rarity"></span>
+        COUNCIL = <span id="icon-council"></span>
+        TIER = <span id="icon-tier"></span>
+    }</code></pre>
+            </div>
         </div>
     </div>
 </div>
-
-
-{{ $source := .Get "source" }}
-{{ $leaderTraitsMetadata := site.Data.leader_traits_metadata }}
-
-{{ with $.Page.Resources.Match (printf "pictures/%s/*" ($source|string)) }}
-    <div class="isotope_icons d-flex justify-content-evenly flex-wrap">
-        {{ range . }}
-            {{ $imageName := path.BaseName .Name }}
-            {{ $imageMetadata := index (where $leaderTraitsMetadata "Name" $imageName) 0 }}
-            {{ $Class := "" }}
-            {{ $Rarity := "" }}
-            {{ $Tier := "" }}
-            {{ if $imageMetadata }}
-                {{ if eq $imageMetadata.Class nil }}
-                    {{ $Class = "none" }}
-                {{ else }}
-                    {{ $Class = $imageMetadata.Class }}
-                {{ end }}
-                {{ if eq $imageMetadata.Rarity nil }}
-                {{ $Rarity = "none" }}
-                    {{ else if eq $imageMetadata.Rarity "free_or_veteran" }}
-                {{ $Rarity = "veteran" }}
-                {{ else }}
-                    {{ $Rarity = $imageMetadata.Rarity }}
-                {{ end }}
-                {{ if eq $imageMetadata.Tier nil }}
-                    {{ $Tier = "none" }}
-                {{ else }}
-                    {{ $Tier = $imageMetadata.Tier }}
-                {{ end }}
-                <div class="icon_block Council{{ $imageMetadata.Council }} Class{{ $Class }} Rarity{{ $Rarity }} Tier{{ $Tier }}">
-                    <img src="{{ .RelPermalink }}" loading="lazy" alt="{{ $imageName }}" title="{{ $imageName }}" data-clipboard-text="{{ $imageName }}" />
-                    {{/*<span class="d-block p-2 picture_text">{{ $imageName }}</span>*/}}
-                </div>
-            {{ end }}
-        {{ end }}
-    </div>
-{{ end }}
-
-
-
-
+ 
 {{/*
 {{ $source := .Get "source" }}
 {{ $leaderTraitsMetadata := site.Data.leader_traits_metadata }}
