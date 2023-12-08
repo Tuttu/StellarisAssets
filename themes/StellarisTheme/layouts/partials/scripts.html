@@ -111,7 +111,66 @@
 </script>
 {{ end }}
 
+{{ if eq .Title "Traits" }}
+<script>
+    function fetchDataFromJson(title, callback) {
+        // You need to replace 'yourJsonFile.json' with the actual path to your JSON file
+        $.getJSON('/json/leader_traits_metadata.json', function (data) {
+            var matchingObject = data.find(function (item) {
+                return item.Name === title;
+            });
+    
+            callback(matchingObject);
+        });
+    }
+    
+    $(document).ready(function () {
+        $('.icon_block').on('click', function () {
+            // Handle click event
+            var title = $(this).find('img').attr('title');
+    
+            fetchDataFromJson(title, function (jsonData) {
+                if (jsonData) {
+                    // Update span content using the data from the JSON file
+                    $('#icon-script').text(jsonData.Script);                    
+                    $('#icon-class').text(jsonData.Class);                    
+                    $('#icon-icon').text(jsonData.Icon);                    
+                    $('#icon-rarity').text(jsonData.Rarity);                    
+                    $('#icon-council').text(jsonData.Council);                    
+                    $('#icon-tier').text(jsonData.Tier);                    
+                } else {
+                    // Handle the case where no matching object is found
+                    console.log('No matching object found for title: ' + title);
+                }
+            });
+        });
+    });
+    </script>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize Clipboard.js
+            var clipboard = new Clipboard('#copy-script', {
+                target: function (trigger) {
+                    // Specify the target element to copy its text
+                    return trigger.nextElementSibling.querySelector('#script-to-copy');
+                }
+            });
+
+            // Event handler for success
+            clipboard.on('success', function(e) {
+                console.log(e);
+            });
+        
+            // Event handler for error
+            clipboard.on('error', function(e) {
+                console.log(e);
+            });
+        });
+        </script>
+
+    
+{{ end }}
 
 
 {{ if .IsHome }}

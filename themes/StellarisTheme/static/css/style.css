@@ -166,8 +166,11 @@ body {
     border-bottom: none;
 }
 
-.is-checked {
-    background-color: red;
-    color: red;
-    text-decoration: underline;
-}
+.fixed-sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    padding-top: 20px; /* Adjust as needed for spacing */
+}  
