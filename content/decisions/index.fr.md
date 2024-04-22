@@ -1,13 +1,14 @@
 +++
-title = 'Event Pictures'
+title = 'Decisions'
+url = '/MEM/decisions'
 +++
 
-# VANILLA EVENT PICTURES
+# VANILLA DECISIONS
 
 HINT : If you are lazy, just click a picture to get its name copied to your clipboard.
 
 {{< simplePictureGallery source="Vanilla">}}
 
-# MEM EVENT PICTURES
+# MEM DECISIONS
 
 {{< simplePictureGallery source="MEM">}}

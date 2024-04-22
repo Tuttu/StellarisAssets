@@ -1,13 +1,13 @@
 +++
-title = 'Deposits'
+title = 'Relics'
 +++
 
-# VANILLA DECISIONS
+# VANILLA RELICS
 
 HINT : If you are lazy, just click a picture to get its name copied to your clipboard.
 
 {{< simplePictureGallery source="Vanilla">}}
 
-# MEM DECISIONS
+# VANILLA RELIC ACTIVATION SOUNDS
 
-{{< simplePictureGallery source="MEM">}}
+{{< simpleSoundGallery source="Vanilla">}}

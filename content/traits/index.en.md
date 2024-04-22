@@ -11,11 +11,3 @@ HINT : If you are lazy, just click a picture to get its name copied to your clip
 # VANILLA LEADER TRAITS
 
 {{< isotopeIconGallery source="Vanilla_Leader" >}}
-
-# MEM TRAITS
-
-{{< simpleIconGallery source="MEM" >}}
-
-# MEM LEADER TRAITS
-
-{{< simpleIconGallery source="MEM_Leader" >}}

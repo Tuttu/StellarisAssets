@@ -1,13 +1,18 @@
 +++
-title = 'Buildings'
+title = 'Relics'
+url = '/MEM/relics'
 +++
 
-# VANILLA BUILDINGS
+# VANILLA RELICS
 
 HINT : If you are lazy, just click a picture to get its name copied to your clipboard.
 
 {{< simplePictureGallery source="Vanilla">}}
 
-# MEM BUILDINGS
+# VANILLA RELIC ACTIVATION SOUNDS
+
+{{< simpleSoundGallery source="Vanilla">}}
+
+# MEM RELICS
 
 {{< simplePictureGallery source="MEM">}}

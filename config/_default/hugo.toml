@@ -1,0 +1,17 @@
+basepageref = 'https://tuttu.github.io/StellarisAssets/'
+defaultContentLanguage = 'en'
+title = 'Stellaris Assets'
+theme = "StellarisTheme"
+#sectionPagesMenu = 'main'
+
+[languages]
+  [languages.en]
+    disabled = false
+    languageCode = 'en'
+    languageDirection = 'ltr'
+    weight = 0
+  [languages.fr]
+    disabled = false
+    languageCode = 'fr'
+    languageDirection = 'ltr'
+    weight = 1

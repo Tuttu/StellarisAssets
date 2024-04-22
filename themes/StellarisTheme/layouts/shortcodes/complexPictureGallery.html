@@ -16,7 +16,7 @@
                     {{ $clipboardTemp := printf "\nicon_background = %s" (index $nameparts 1) | printf "icon = %s%s" (index $nameparts 0) }}
                     {{ $.Scratch.Set "clipboardText" $clipboardTemp }}
                 {{ end }}                
-                <img src="pictures/MEM/GFX_evt_mem_placeholder.png" alt="{{ $shortname }}" title="{{ $shortname }}" data-src="{{ .RelPermalink }}" data-clipboard-text="{{ $.Scratch.Get "clipboardText" }}"/>
+                <img src="{{ .RelPermalink }}" loading="lazy" alt="{{ $shortname }}" title="{{ $shortname }}" data-clipboard-text="{{ $.Scratch.Get "clipboardText" }}"/>
             {{ if eq ($.Scratch.Get "triadPart") 3 }}
                 <span class="d-block p-2 picture_text">{{ $shortname }}</span>
             </div>
