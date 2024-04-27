@@ -1,4 +1,4 @@
 +++
 title = 'Nothing'
-url = '/MEM/'
+aliases = ['/MEM']
 +++
