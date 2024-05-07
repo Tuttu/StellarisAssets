@@ -1,0 +1,32 @@
+{{ $source := .Get "source" }}
+{{ $modifiers := site.Data.modifiers_metadata }}
+
+<div class="complex_icon_flex d-flex justify-content-evenly flex-wrap">
+	{{ range $modifiers }}
+	<div class="complex_icon_block d-block flex-even p-2 text-nowrap">
+		<table class="iconTable table table-bordered table-sm w-auto">
+			<thead class="thead-light">
+				<tr>
+					<th colspan="2" scope="col">{{ .GroupName }}</th>
+				</tr>
+			</thead>
+			<tbody>				
+				{{ range .ModifierGroups }}
+				{{ range $key, $_ := . }}
+					<tr>
+					<td>{{ $key }}</td>
+					{{ range . }}
+						<td>
+						{{ range $k, $v := . }}
+							<img src="/StellarisAssets/modifiers/pictures/{{ $source }}/{{ $v }}.png" alt="{{ $k }}" title="{{ $k }}" data-clipboard-text="{{ $v }}">
+						{{ end }}
+						</td>
+					{{ end }}
+					</tr>
+				{{ end }}
+				{{ end }}
+			</tbody>
+		</table>
+	</div>	
+	{{ end }}
+</div>
