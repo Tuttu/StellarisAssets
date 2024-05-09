@@ -945,6 +945,15 @@
     "Tier": "none"
   },
   {
+    "Name": "leader_trait_tactical_algorithms",
+    "Script": "trait/icon",
+    "Class": "commander",
+    "Icon": "GFX_leader_trait_tactical_algorithms",
+    "Rarity": "veteran",
+    "Council": "no",
+    "Tier": "none"
+  },
+  {
     "Name": "leader_trait_shroudwalker",
     "Script": "trait/icon_psionic",
     "Class": "leader",
@@ -2804,7 +2813,7 @@
     "Class": "official",
     "Icon": "GFX_leader_trait_cartographer",
     "Rarity": "veteran",
-    "Council": "no",
+    "Council": "yes",
     "Tier": "2"
   },
   {
@@ -2813,7 +2822,7 @@
     "Class": "official",
     "Icon": "GFX_leader_trait_cartographer",
     "Rarity": "veteran",
-    "Council": "no",
+    "Council": "yes",
     "Tier": "3"
   },
   {
@@ -3848,7 +3857,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_materials",
     "Rarity": "free_or_veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "1"
   },
   {
@@ -3857,7 +3866,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_materials",
     "Rarity": "free_or_veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "2"
   },
   {
@@ -3866,7 +3875,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_materials",
     "Rarity": "veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "3"
   },
   {
@@ -3875,7 +3884,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_propulsion",
     "Rarity": "free_or_veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "1"
   },
   {
@@ -3884,7 +3893,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_propulsion",
     "Rarity": "free_or_veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "2"
   },
   {
@@ -3893,7 +3902,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_propulsion",
     "Rarity": "veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "3"
   },
   {
@@ -3902,7 +3911,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_voidcraft",
     "Rarity": "free_or_veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "1"
   },
   {
@@ -3911,7 +3920,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_voidcraft",
     "Rarity": "free_or_veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "2"
   },
   {
@@ -3920,7 +3929,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_voidcraft",
     "Rarity": "veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "3"
   },
   {
@@ -3929,7 +3938,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_industry",
     "Rarity": "free_or_veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "1"
   },
   {
@@ -3938,7 +3947,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_industry",
     "Rarity": "free_or_veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "2"
   },
   {
@@ -3947,7 +3956,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_industry",
     "Rarity": "veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "3"
   },
   {
@@ -3956,7 +3965,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_field_manipulation",
     "Rarity": "free_or_veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "1"
   },
   {
@@ -3965,7 +3974,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_field_manipulation",
     "Rarity": "free_or_veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "2"
   },
   {
@@ -3974,7 +3983,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_field_manipulation",
     "Rarity": "veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "3"
   },
   {
@@ -3983,7 +3992,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_particles",
     "Rarity": "free_or_veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "1"
   },
   {
@@ -3992,7 +4001,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_particles",
     "Rarity": "free_or_veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "2"
   },
   {
@@ -4001,7 +4010,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_particles",
     "Rarity": "veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "3"
   },
   {
@@ -4010,7 +4019,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_computing",
     "Rarity": "free_or_veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "1"
   },
   {
@@ -4019,7 +4028,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_computing",
     "Rarity": "free_or_veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "2"
   },
   {
@@ -4028,7 +4037,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_computing",
     "Rarity": "veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "3"
   },
   {
@@ -4037,7 +4046,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_psionics",
     "Rarity": "free_or_veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "1"
   },
   {
@@ -4046,7 +4055,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_psionics",
     "Rarity": "free_or_veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "2"
   },
   {
@@ -4055,7 +4064,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_psionics",
     "Rarity": "veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "3"
   },
   {
@@ -4064,7 +4073,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_new_worlds",
     "Rarity": "free_or_veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "1"
   },
   {
@@ -4073,7 +4082,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_new_worlds",
     "Rarity": "free_or_veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "2"
   },
   {
@@ -4082,7 +4091,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_new_worlds",
     "Rarity": "veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "3"
   },
   {
@@ -4091,7 +4100,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_statecraft",
     "Rarity": "free_or_veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "1"
   },
   {
@@ -4100,7 +4109,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_statecraft",
     "Rarity": "free_or_veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "2"
   },
   {
@@ -4109,7 +4118,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_statecraft",
     "Rarity": "veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "3"
   },
   {
@@ -4118,7 +4127,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_biology",
     "Rarity": "free_or_veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "1"
   },
   {
@@ -4127,7 +4136,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_biology",
     "Rarity": "free_or_veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "2"
   },
   {
@@ -4136,7 +4145,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_biology",
     "Rarity": "free_or_veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "3"
   },
   {
@@ -4145,7 +4154,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_military_theory",
     "Rarity": "free_or_veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "1"
   },
   {
@@ -4154,7 +4163,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_military_theory",
     "Rarity": "free_or_veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "2"
   },
   {
@@ -4163,7 +4172,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_military_theory",
     "Rarity": "veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "3"
   },
   {
@@ -4172,7 +4181,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_archaeostudies",
     "Rarity": "free_or_veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "1"
   },
   {
@@ -4181,7 +4190,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_archaeostudies",
     "Rarity": "free_or_veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "2"
   },
   {
@@ -4190,7 +4199,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_expertise_archaeostudies",
     "Rarity": "veteran",
-    "Council": "triggered",
+    "Council": "yes",
     "Tier": "3"
   },
   {
@@ -4244,7 +4253,7 @@
     "Class": "scientist",
     "Icon": "GFX_leader_trait_experimenter",
     "Rarity": "paragon",
-    "Council": "no",
+    "Council": "yes",
     "Tier": "none"
   },
   {
@@ -4524,6 +4533,33 @@
     "Icon": "GFX_leader_trait_ancient_knowledge",
     "Rarity": "common",
     "Council": "no",
+    "Tier": "none"
+  },
+  {
+    "Name": "leader_trait_hacked",
+    "Script": "trait/icon_negative",
+    "Class": null,
+    "Icon": "GFX_leader_trait_cyber_puppet",
+    "Rarity": null,
+    "Council": "no",
+    "Tier": "none"
+  },
+  {
+    "Name": "leader_trait_firewalled",
+    "Script": "trait/icon",
+    "Class": null,
+    "Icon": "GFX_leader_trait_firewalled",
+    "Rarity": "common",
+    "Council": "no",
+    "Tier": "none"
+  },
+  {
+    "Name": "leader_trait_virtual",
+    "Script": "trait/icon",
+    "Class": "leader",
+    "Icon": "GFX_leader_trait_virtual",
+    "Rarity": "common",
+    "Council": "triggered",
     "Tier": "none"
   },
   {
@@ -5652,6 +5688,24 @@
     "Tier": "none"
   },
   {
+    "Name": "leader_trait_unholy",
+    "Script": "trait/icon",
+    "Class": "commander",
+    "Icon": "GFX_leader_trait_unification_hero",
+    "Rarity": "paragon",
+    "Council": "yes",
+    "Tier": "none"
+  },
+  {
+    "Name": "leader_trait_unholy_node",
+    "Script": "trait/icon",
+    "Class": "commander",
+    "Icon": "GFX_leader_trait_unification_hero",
+    "Rarity": "paragon",
+    "Council": "yes",
+    "Tier": "none"
+  },
+  {
     "Name": "leader_trait_ambassador_ear_to_the_ground",
     "Script": "trait/icon",
     "Class": "official",
@@ -6558,6 +6612,42 @@
     "Icon": "GFX_leader_trait_energy_weapon_specialist",
     "Rarity": "veteran",
     "Council": "no",
+    "Tier": "none"
+  },
+  {
+    "Name": "leader_trait_blorg_insight",
+    "Script": "trait/icon",
+    "Class": "official",
+    "Icon": "GFX_leader_trait_blorg_insight",
+    "Rarity": "paragon",
+    "Council": "yes",
+    "Tier": "none"
+  },
+  {
+    "Name": "leader_trait_limited_cyborg",
+    "Script": "trait/icon",
+    "Class": null,
+    "Icon": "GFX_leader_trait_limited_cyborg",
+    "Rarity": "common",
+    "Council": "triggered",
+    "Tier": "none"
+  },
+  {
+    "Name": "leader_trait_robotic_surrogate",
+    "Script": "trait/icon",
+    "Class": "leader",
+    "Icon": "GFX_leader_trait_virtual",
+    "Rarity": "common",
+    "Council": "triggered",
+    "Tier": "none"
+  },
+  {
+    "Name": "leader_trait_ritualistic_implants_cyborg",
+    "Script": "trait/icon",
+    "Class": "leader",
+    "Icon": "GFX_leader_trait_ritualistic_implants_cyborg",
+    "Rarity": "common",
+    "Council": "triggered",
     "Tier": "none"
   },
   {

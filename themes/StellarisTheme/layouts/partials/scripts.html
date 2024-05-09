@@ -31,6 +31,13 @@
         layoutMode: 'fitRows'
     });
 
+    var iso = $grid.data('isotope');
+    var totalTraitNumber = iso.length
+    var $filterCount = $('.filterCount');
+    var $totalCount = $('.totalCount');
+    $totalCount.text( iso.filteredItems.length );
+
+
     // store filters for each group
     var filters = {};
 
@@ -74,7 +81,14 @@
         $grid.isotope({
             filter: filterValues.join(',')
         });
+        updateFilterCount();
     });
+
+    function updateFilterCount() {
+        $filterCount.text( iso.filteredItems.length );
+    }
+      
+    updateFilterCount();
 
     function addFilter(group, filter) {
         // Initialize the group filter array if it doesn't exist
@@ -108,6 +122,9 @@
             }
         });
     });
+
+    
+
 </script>
 {{ end }}
 
