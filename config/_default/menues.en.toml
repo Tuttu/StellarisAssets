@@ -90,8 +90,14 @@
     pageref = '/runes'
     weight = 1
 [[menu.main]]
+    identifier = "ship_parts"
+    name = "Ship Parts"
+    pageref = '/ship_parts'
+    weight = 1
+[[menu.main]]
     identifier = "situations"
     name = "Situations"
+    pageref = '/situations'
     weight = 1
 [[menu.main]]
     identifier = "situation_icons"
