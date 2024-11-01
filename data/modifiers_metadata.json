@@ -4,10 +4,10 @@
     "GroupDisplayName": "Advanced Logic",
     "ModifierGroups": [
       {
-        "Produces": [
+        "Upkeep": [
           {
-            "Mult": "mod_advanced_logic_produces_mult",
-            "Add": "mod_advanced_logic_produces_add"
+            "Mult": "mod_advanced_logic_upkeep_mult",
+            "Add": "mod_advanced_logic_upkeep_add"
           }
         ],
         "Cost": [
@@ -16,10 +16,23 @@
             "Add": "mod_advanced_logic_cost_add"
           }
         ],
-        "Upkeep": [
+        "Produces": [
           {
-            "Mult": "mod_advanced_logic_upkeep_mult",
-            "Add": "mod_advanced_logic_upkeep_add"
+            "Mult": "mod_advanced_logic_produces_mult",
+            "Add": "mod_advanced_logic_produces_add"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Aesthetic Wonder",
+    "GroupDisplayName": "Aesthetic Wonder",
+    "ModifierGroups": [
+      {
+        "Specimens Produces": [
+          {
+            "Mult": "mod_aesthetic_wonder_specimens_produces_mult"
           }
         ]
       }
@@ -30,16 +43,16 @@
     "GroupDisplayName": "Agenda",
     "ModifierGroups": [
       {
-        "Other": [
-          {
-            "Favored Society": "mod_agenda_favored_society",
-            "Open Markets": "mod_agenda_open_markets"
-          }
-        ],
         "Gestalt": [
           {
-            "Purge Traits": "mod_agenda_gestalt_purge_traits",
-            "Boost": "mod_agenda_gestalt_boost"
+            "Boost": "mod_agenda_gestalt_boost",
+            "Purge Traits": "mod_agenda_gestalt_purge_traits"
+          }
+        ],
+        "Other": [
+          {
+            "Open Markets": "mod_agenda_open_markets",
+            "Favored Society": "mod_agenda_favored_society"
           }
         ]
       }
@@ -50,10 +63,11 @@
     "GroupDisplayName": "Alloys",
     "ModifierGroups": [
       {
-        "Produces": [
+        "Upkeep": [
           {
-            "Mult": "mod_alloys_produces_mult",
-            "Add": "mod_alloys_produces_add"
+            "Add": "mod_alloys_upkeep_add",
+            "Increased": "mod_alloys_upkeep_increased",
+            "Mult": "mod_alloys_upkeep_mult"
           }
         ],
         "Cost": [
@@ -62,11 +76,10 @@
             "Add": "mod_alloys_cost_add"
           }
         ],
-        "Upkeep": [
+        "Produces": [
           {
-            "Add": "mod_alloys_upkeep_add",
-            "Mult": "mod_alloys_upkeep_mult",
-            "Increased": "mod_alloys_upkeep_increased"
+            "Mult": "mod_alloys_produces_mult",
+            "Add": "mod_alloys_produces_add"
           }
         ]
       }
@@ -77,19 +90,19 @@
     "GroupDisplayName": "Army",
     "ModifierGroups": [
       {
-        "Misc": [
+        "Defense": [
           {
-            "Experience Gain Mult": "mod_army_experience_gain_mult",
-            "Health": "mod_army_health",
-            "Disengage Chance Mult": "mod_army_disengage_chance_mult",
-            "Starting Experience": "mod_army_starting_experience_add"
+            "Health": "mod_army_defense_health_mult",
+            "Morale": "mod_army_defense_morale_mult",
+            "Damage": "mod_army_defense_damage_mult"
           }
         ],
-        "Morale": [
+        "Damage": [
           {
-            "Base": "mod_army_morale",
-            "Mult": "mod_army_morale_damage_mult",
-            "Mult Taken": "mod_army_morale_damage_taken_mult"
+            "Empire Sprawl Penalty Mult": "mod_army_damage_empire_sprawl_penalty_mult",
+            "Collateral Damage Mult": "mod_army_collateral_damage_mult",
+            "Damage Taken": "mod_army_damage_taken_mult",
+            "Mult": "mod_army_damage_mult"
           }
         ],
         "Upkeep": [
@@ -97,31 +110,31 @@
             "Mult": "mod_army_upkeep_mult"
           }
         ],
+        "Morale": [
+          {
+            "Mult Taken": "mod_army_morale_damage_taken_mult",
+            "Morale": "mod_army_morale",
+            "Mult": "mod_army_morale_damage_mult"
+          }
+        ],
+        "Misc": [
+          {
+            "Starting Experience": "mod_army_starting_experience_add",
+            "Experience Gain Mult": "mod_army_experience_gain_mult",
+            "Health": "mod_army_health",
+            "Disengage Chance Mult": "mod_army_disengage_chance_mult"
+          }
+        ],
         "Build": [
           {
             "Speed": "mod_army_build_speed_mult"
           }
         ],
-        "Damage": [
-          {
-            "Collateral Damage Mult": "mod_army_collateral_damage_mult",
-            "Mult": "mod_army_damage_mult",
-            "Empire Sprawl Penalty Mult": "mod_army_damage_empire_sprawl_penalty_mult",
-            "Damage Taken": "mod_army_damage_taken_mult"
-          }
-        ],
         "Attack": [
           {
-            "Morale": "mod_army_attack_morale_mult",
             "Health": "mod_army_attack_health_mult",
+            "Morale": "mod_army_attack_morale_mult",
             "Damage": "mod_army_attack_damage_mult"
-          }
-        ],
-        "Defense": [
-          {
-            "Morale": "mod_army_defense_morale_mult",
-            "Health": "mod_army_defense_health_mult",
-            "Damage": "mod_army_defense_damage_mult"
           }
         ]
       }
@@ -132,16 +145,6 @@
     "GroupDisplayName": "Astral Rift",
     "ModifierGroups": [
       {
-        "Clues": [
-          {
-            "Add": "mod_ship_astral_rift_clues_add"
-          }
-        ],
-        "Speed": [
-          {
-            "Mult": "mod_ship_astral_rift_speed_mult"
-          }
-        ],
         "Difficulty": [
           {
             "Add": "mod_astral_rift_difficulty_add"
@@ -155,10 +158,10 @@
     "GroupDisplayName": "Astral Threads",
     "ModifierGroups": [
       {
-        "Produces": [
+        "Upkeep": [
           {
-            "Mult": "mod_astral_threads_produces_mult",
-            "Add": "mod_astral_threads_produces_add"
+            "Mult": "mod_astral_threads_upkeep_mult",
+            "Add": "mod_astral_threads_upkeep_add"
           }
         ],
         "Cost": [
@@ -167,10 +170,10 @@
             "Add": "mod_astral_threads_cost_add"
           }
         ],
-        "Upkeep": [
+        "Produces": [
           {
-            "Mult": "mod_astral_threads_upkeep_mult",
-            "Add": "mod_astral_threads_upkeep_add"
+            "Mult": "mod_astral_threads_produces_mult",
+            "Add": "mod_astral_threads_produces_add"
           }
         ]
       }
@@ -183,10 +186,10 @@
       {
         "Monthly": [
           {
-            "Add": "mod_auto_mod_monthly_add",
-            "Mult": "mod_auto_mod_monthly_mult",
             "Mult Negative": "mod_auto_mod_monthly_mult_negative",
-            "Add Negatie": "mod_auto_mod_monthly_add_negative"
+            "Add": "mod_auto_mod_monthly_add",
+            "Add Negative": "mod_auto_mod_monthly_add_negative",
+            "Mult": "mod_auto_mod_monthly_mult"
           }
         ]
       }
@@ -202,6 +205,62 @@
             "Medium": "mod_the_beholder_energy_medium",
             "Small": "mod_the_beholder_energy_small",
             "Big": "mod_the_beholder_energy_big"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Branch Office",
+    "GroupDisplayName": "Branch Office",
+    "ModifierGroups": [
+      {
+        "Criminal Syndicate Value": [
+          {
+            "Add": "mod_branch_office_criminal_syndicate_value_add"
+          }
+        ],
+        "Value": [
+          {
+            "Mult": "mod_branch_office_value_mult"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Building",
+    "GroupDisplayName": "Building",
+    "ModifierGroups": [
+      {
+        "Maximum": [
+          {
+            "Add": "mod_max_buildings_add"
+          }
+        ],
+        "Gas Extractors": [
+          {
+            "Max": "mod_building_gas_extractors_max"
+          }
+        ],
+        "Betharian Power Plant": [
+          {
+            "Max": "mod_building_betharian_power_plant_max"
+          }
+        ],
+        "Crystal Mines": [
+          {
+            "Max": "mod_building_crystal_mines_max"
+          }
+        ],
+        "Mote Harvesting Traps": [
+          {
+            "Max": "mod_building_mote_harvesting_traps_max"
+          }
+        ],
+        "Xeno Zoo": [
+          {
+            "Max": "mod_building_xeno_zoo_max"
           }
         ]
       }
@@ -228,14 +287,68 @@
     ]
   },
   {
+    "GroupName": "Colony",
+    "GroupDisplayName": "Colony",
+    "ModifierGroups": [
+      {
+        "Start Number Pops": [
+          {
+            "Add": "mod_colony_start_num_pops_add"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Command Limit",
+    "GroupDisplayName": "Command Limit",
+    "ModifierGroups": [
+      {
+        "Command Limit": [
+          {
+            "Mult": "mod_command_limit_mult",
+            "Add": "mod_command_limit_add"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "component",
+    "GroupDisplayName": "component",
+    "ModifierGroups": [
+      {
+        "Lifesteal": [
+          {
+            "Add": "mod_component_lifesteal_add"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Consecrated World",
+    "GroupDisplayName": "Consecrated World",
+    "ModifierGroups": [
+      {
+        "Consecrated World": [
+          {
+            "Yellow": "mod_consecrated_world_yellow",
+            "Green": "mod_consecrated_world_green"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "GroupName": "Consumer Goods",
     "GroupDisplayName": "Consumer Goods",
     "ModifierGroups": [
       {
-        "Produces": [
+        "Upkeep": [
           {
-            "Mult": "mod_consumer_goods_produces_mult",
-            "Add": "mod_consumer_goods_produces_add"
+            "Mult": "mod_consumer_goods_upkeep_mult",
+            "Add": "mod_consumer_goods_upkeep_add"
           }
         ],
         "Cost": [
@@ -244,10 +357,23 @@
             "Add": "mod_consumer_goods_cost_add"
           }
         ],
-        "Upkeep": [
+        "Produces": [
           {
-            "Mult": "mod_consumer_goods_upkeep_mult",
-            "Add": "mod_consumer_goods_upkeep_add"
+            "Mult": "mod_consumer_goods_produces_mult",
+            "Add": "mod_consumer_goods_produces_add"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Cosmogenesis",
+    "GroupDisplayName": "Cosmogenesis",
+    "ModifierGroups": [
+      {
+        "World Max Buildings": [
+          {
+            "Add": "mod_pc_cosmogenesis_world_max_buildings_add"
           }
         ]
       }
@@ -258,7 +384,7 @@
     "GroupDisplayName": "Cost Of Freedom",
     "ModifierGroups": [
       {
-        "Base": [
+        "Cost Of Freedom": [
           {
             "Penalty": "cost_of_freedom_penalty",
             "Bonus": "cost_of_freedom_bonus"
@@ -268,13 +394,33 @@
     ]
   },
   {
-    "GroupName": "Country",
-    "GroupDisplayName": "Country",
+    "GroupName": "Council",
+    "GroupDisplayName": "Council",
     "ModifierGroups": [
       {
-        "": [
+        "In Tatters": [
           {
-            "": "mod_country_organic_trust_cap_add"
+            "In Tatters": "mod_council_in_tatters"
+          }
+        ],
+        "Agenda Progress Speed": [
+          {
+            "Agenda Progress Speed": "mod_council_agenda_progress_speed"
+          }
+        ],
+        "Agenda Finishing Effect Duration": [
+          {
+            "Mult": "mod_council_agenda_finishing_effect_duration_mult"
+          }
+        ],
+        "Skill": [
+          {
+            "Add": "mod_councilor_skill_add"
+          }
+        ],
+        "Position Exp Gain": [
+          {
+            "Position Exp Gain": "mod_council_position_exp_gain"
           }
         ]
       }
@@ -285,29 +431,47 @@
     "GroupDisplayName": "Country",
     "ModifierGroups": [
       {
-        "Astral Rift": [
+        "Rejuvenation": [
           {
-            "Fail Mult": "mod_country_astral_rift_fail_mult",
-            "Speed Mult": "mod_country_astral_rift_speed_mult"
+            "Rejuvenation": "mod_country_rejuvenation"
           }
-        ],
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Country",
+    "GroupDisplayName": "Country",
+    "ModifierGroups": [
+      {
         "Admin Capacity": [
           {
             "Mult": "mod_country_admin_cap_mult",
             "Add": "mod_country_admin_cap_add"
           }
         ],
+        "Research Speed": [
+          {
+            "Engineering Tech": "mod_country_engineering_tech_research_speed",
+            "Physics Tech": "mod_country_physics_tech_research_speed",
+            "All Tech": "mod_country_all_tech_research_speed",
+            "Society Tech": "mod_country_society_tech_research_speed"
+          }
+        ],
+        "Astral Rift": [
+          {
+            "Fail Mult": "mod_country_astral_rift_fail_mult",
+            "Speed Mult": "mod_country_astral_rift_speed_mult"
+          }
+        ],
+        "Organic Trust Cap": [
+          {
+            "Add": "mod_country_organic_trust_cap_add"
+          }
+        ],
         "Ascension Perks": [
           {
             "Add": "mod_country_ascension_perks_add"
-          }
-        ],
-        "Research Speed": [
-          {
-            "Society Tech": "mod_country_society_tech_research_speed",
-            "Physics Tech": "mod_country_physics_tech_research_speed",
-            "All Tech": "mod_country_all_tech_research_speed",
-            "Engineering Tech": "mod_country_engineering_tech_research_speed"
           }
         ]
       }
@@ -318,10 +482,9 @@
     "GroupDisplayName": "Country",
     "ModifierGroups": [
       {
-        "Border": [
+        "Capture Chance": [
           {
-            "Friction Mult": "mod_country_border_friction_mult",
-            "Mult": "mod_country_border_mult"
+            "Add": "mod_country_capture_chance_add"
           }
         ],
         "Emigration Push": [
@@ -332,12 +495,24 @@
         ],
         "Misc": [
           {
+            "Claim Influence Cost": "mod_country_claim_influence_cost",
+            "Commercial Pact Mult": "mod_country_commercial_pact_mult",
             "Custodian": "mod_country_custodian",
             "Commander Cap Add": "mod_country_commander_cap_add",
-            "Diplomacy Influence Cost": "mod_country_diplomacy_influence_cost",
-            "Claim Influence Cost": "mod_country_claim_influence_cost",
             "Defensive War Influence Gain Add": "mod_country_defensive_war_influence_gain_add",
-            "Commercial Pact Mult": "mod_country_commercial_pact_mult"
+            "Diplomacy Influence Cost": "mod_country_diplomacy_influence_cost"
+          }
+        ],
+        "Capture Amount": [
+          {
+            "Mult": "mod_country_capture_amount_mult",
+            "Add": "mod_country_capture_amount_add"
+          }
+        ],
+        "Border": [
+          {
+            "Mult": "mod_country_border_mult",
+            "Friction Mult": "mod_country_border_friction_mult"
           }
         ]
       }
@@ -348,9 +523,10 @@
     "GroupDisplayName": "Country",
     "ModifierGroups": [
       {
-        "Edict Cost": [
+        "Edict Capacity": [
           {
-            "Base": "mod_country_edict_cost"
+            "Mult": "mod_country_edict_cap_mult",
+            "Add": "mod_country_edict_cap_add"
           }
         ],
         "Edict Length": [
@@ -358,10 +534,9 @@
             "Mult": "mod_country_edict_length_mult"
           }
         ],
-        "Edict Capacity": [
+        "Edict Cost": [
           {
-            "Mult": "mod_country_edict_cap_mult",
-            "Add": "mod_country_edict_cap_add"
+            "Edict Cost": "mod_country_edict_cost"
           }
         ],
         "Edict Fund": [
@@ -378,25 +553,25 @@
     "GroupDisplayName": "Country",
     "ModifierGroups": [
       {
-        "Strategic Resource Nanoscale": [
-          {
-            "Add": "country_resource_sr_distar_nanoscale_add"
-          }
-        ],
         "Strategic Resource Nanoactuator": [
           {
             "Add": "country_resource_sr_distar_nanoactuator_add"
-          }
-        ],
-        "Strategic Resource Nanodust": [
-          {
-            "Add": "country_resource_sr_distar_nanodust_add"
           }
         ],
         "Strategic Resource Nanocrystal": [
           {
             "Add": "country_resource_sr_distar_nanocrystal_add"
           }
+        ],
+        "Strategic Resource Nanoscale": [
+          {
+            "Add": "country_resource_sr_distar_nanoscale_add"
+          }
+        ],
+        "Strategic Resource Nanodust": [
+          {
+            "Add": "country_resource_sr_distar_nanodust_add"
+          }
         ]
       }
     ]
@@ -406,31 +581,31 @@
     "GroupDisplayName": "Country",
     "ModifierGroups": [
       {
-        "Leader Pool Size": [
-          {
-            "Add": "mod_country_leader_pool_size"
-          }
-        ],
         "Scientist Capacity": [
           {
             "Add": "mod_country_scientist_cap_add"
           }
         ],
-        "Leader Capacity": [
+        "Leader Pool Size": [
           {
-            "Add": "mod_country_leader_cap_add",
-            "Base": "mod_country_leader_cap"
+            "Add": "mod_country_leader_pool_size"
           }
         ],
-        "Official Capacity": [
+        "Leader Capacity": [
           {
-            "Add": "mod_country_official_cap_add"
+            "Leader Capacity": "mod_country_leader_cap",
+            "Add": "mod_country_leader_cap_add"
           }
         ],
         "General Capacity": [
           {
             "Add": "mod_country_general_cap_add"
           }
+        ],
+        "Official Capacity": [
+          {
+            "Add": "mod_country_official_cap_add"
+          }
         ]
       }
     ]
@@ -440,61 +615,44 @@
     "GroupDisplayName": "Country",
     "ModifierGroups": [
       {
-        "Rivalry Influence Gain": [
+        "Resettlement Cost": [
           {
-            "Base": "mod_country_rivalry_influence_gain"
+            "Mult": "mod_country_resettlement_cost_mult"
           }
         ],
-        "Piracy Risk": [
+        "Resource Max": [
           {
-            "Mult": "mod_country_piracy_risk_mult"
+            "Add": "mod_country_resource_max_add"
           }
         ],
-        "External Leader Pool Size": [
+        "Ship Upgrade Cost": [
           {
-            "Base": "mod_country_external_leader_pool_size"
+            "Mult": "mod_country_ship_upgrade_cost_mult"
           }
         ],
-        "Naval Capacity Contribution From Overlord": [
+        "Trade Fee": [
           {
-            "Mult": "mod_country_naval_capacity_contribution_to_overlord_mult"
+            "Trade Fee": "mod_country_trade_fee"
           }
         ],
-        "Max Rivalries": [
+        "Scavenge Desbris": [
           {
-            "Base": "mod_country_max_rivalries"
+            "Mult": "mod_country_scavenge_debris_mult"
           }
         ],
-        "Insult Efficiency": [
+        "Trust Capacity": [
           {
-            "Base": "mod_country_insult_efficiency"
+            "Add": "mod_country_trust_cap_add"
           }
         ],
-        "Federation Fleet Naval Capacity Contribution": [
+        "Slave Market Cost": [
           {
-            "Mult": "mod_country_federation_naval_cap_contribution_mult"
+            "Mult": "mod_country_slave_market_cost_mult"
           }
         ],
-        "Naval Coverage": [
+        "Integration Cooldown": [
           {
-            "Mult": "mod_country_naval_coverage_mult",
-            "Add": "mod_country_naval_coverage_add"
-          }
-        ],
-        "Immigration Pull": [
-          {
-            "Mult": "mod_country_immigration_pull_mult",
-            "Add": "mod_country_immigration_pull_add"
-          }
-        ],
-        "Election Cost": [
-          {
-            "Base": "mod_country_election_cost"
-          }
-        ],
-        "Hostile Claim Influence Cost": [
-          {
-            "Mult": "mod_country_hostile_claim_influence_cost_mult"
+            "Mult": "mod_country_integration_cooldown_mult"
           }
         ],
         "Faction Influence": [
@@ -503,127 +661,32 @@
             "Add": "mod_country_faction_influence_add"
           }
         ],
-        "Slave Market Cost": [
-          {
-            "Mult": "mod_country_slave_market_cost_mult"
-          }
-        ],
-        "Synthetic Trust Capacity": [
-          {
-            "Add": "mod_country_synthetic_trust_cap_add"
-          }
-        ],
-        "Improve Relation Cost": [
-          {
-            "Base": "mod_country_improve_relations_cost"
-          }
-        ],
-        "Modify Species Cost": [
-          {
-            "Mult": "mod_country_modify_species_cost_mult"
-          }
-        ],
-        "Naval Capacity Contribution From Subjects": [
-          {
-            "Mult": "mod_country_naval_capacity_contribution_from_subjects_mult"
-          }
-        ],
-        "Trust Growth": [
-          {
-            "Base": "mod_country_trust_growth"
-          }
-        ],
         "Terraform Speed": [
           {
             "Mult": "mod_country_terraform_speed_mult"
           }
         ],
-        "Resource Max": [
-          {
-            "Add": "mod_country_resource_max_add"
-          }
-        ],
-        "Specialist Subject Conversion Time": [
-          {
-            "Mult": "mod_country_specialist_subject_conversion_time_mult"
-          }
-        ],
         "Number Tech Alternatives": [
           {
             "Add": "mod_country_num_tech_alternatives_add",
-            "Add Positive": "mod_country_num_tech_alternatives_add_positive",
             "Add Negative": "mod_country_num_tech_alternatives_add_negative",
-            "Negative": "mod_country_num_tech_alternatives_negative"
+            "Negative": "mod_country_num_tech_alternatives_negative",
+            "Add Positive": "mod_country_num_tech_alternatives_add_positive"
           }
         ],
-        "Resettlement Cost": [
+        "Envoys": [
           {
-            "Mult": "mod_country_resettlement_cost_mult"
+            "Add": "mod_country_envoys_add"
           }
         ],
-        "Ship Upgrade Cost": [
+        "Insult Efficiency": [
           {
-            "Mult": "mod_country_ship_upgrade_cost_mult"
+            "Insult Efficiency": "mod_country_insult_efficiency"
           }
         ],
-        "Previous Deals": [
+        "Naval Capacity Contribution From Overlord": [
           {
-            "Base": "mod_country_previous_deals"
-          }
-        ],
-        "Trust Capacity": [
-          {
-            "Add": "mod_country_trust_cap_add"
-          }
-        ],
-        "Trade Attractiveness": [
-          {
-            "Base": "mod_country_trade_attractiveness"
-          }
-        ],
-        "Trade Fee": [
-          {
-            "Base": "mod_country_trade_fee"
-          }
-        ],
-        "Occupation Armies": [
-          {
-            "Add": "mod_country_occupation_armies_add"
-          }
-        ],
-        "War Exhaustion": [
-          {
-            "Mult": "mod_country_war_exhaustion_mult"
-          }
-        ],
-        "Local Trade Proctection": [
-          {
-            "Add": "mod_country_local_trade_protection_add"
-          }
-        ],
-        "Max Embassies": [
-          {
-            "Base": "mod_country_max_embassies"
-          }
-        ],
-        "Terraforming Cost": [
-          {
-            "Mult": "mod_country_terraforming_cost_mult"
-          }
-        ],
-        "Scavenge Desbris": [
-          {
-            "Mult": "mod_country_scavenge_debris_mult"
-          }
-        ],
-        "Pop Enslaved": [
-          {
-            "Mult": "mod_country_pop_enslaved_mult"
-          }
-        ],
-        "Federation Fleet Contribution Discount": [
-          {
-            "Base": "mod_country_federation_fleet_contribution_discount"
+            "Mult": "mod_country_naval_capacity_contribution_to_overlord_mult"
           }
         ],
         "Megastructure Build Capacity": [
@@ -631,9 +694,45 @@
             "Add": "mod_country_megastructure_build_cap_add"
           }
         ],
-        "Government Civic Points": [
+        "Immigration Pull": [
           {
-            "Add": "mod_country_government_civic_points_add"
+            "Mult": "mod_country_immigration_pull_mult",
+            "Add": "mod_country_immigration_pull_add"
+          }
+        ],
+        "Trust Growth": [
+          {
+            "Trust Growth": "mod_country_trust_growth"
+          }
+        ],
+        "Federation Fleet Naval Capacity Contribution": [
+          {
+            "Mult": "mod_country_federation_naval_cap_contribution_mult"
+          }
+        ],
+        "Federation Fleet Contribution Discount": [
+          {
+            "Federation Fleet Contribution Discount": "mod_country_federation_fleet_contribution_discount"
+          }
+        ],
+        "Modify Species Cost": [
+          {
+            "Mult": "mod_country_modify_species_cost_mult"
+          }
+        ],
+        "Improve Relation Cost": [
+          {
+            "Improve Relation Cost": "mod_country_improve_relations_cost"
+          }
+        ],
+        "Terraforming Cost": [
+          {
+            "Mult": "mod_country_terraforming_cost_mult"
+          }
+        ],
+        "Previous Deals": [
+          {
+            "Previous Deals": "mod_country_previous_deals"
           }
         ],
         "Influence Gain": [
@@ -642,9 +741,60 @@
             "Add": "mod_country_influence_gain_add"
           }
         ],
-        "Integration Cooldown": [
+        "External Leader Pool Size": [
           {
-            "Mult": "mod_country_integration_cooldown_mult"
+            "External Leader Pool Size": "mod_country_external_leader_pool_size"
+          }
+        ],
+        "Government Civic Points": [
+          {
+            "Add": "mod_country_government_civic_points_add"
+          }
+        ],
+        "Synthetic Trust Capacity": [
+          {
+            "Add": "mod_country_synthetic_trust_cap_add"
+          }
+        ],
+        "Pop Enslaved": [
+          {
+            "Mult": "mod_country_pop_enslaved_mult"
+          }
+        ],
+        "Election Cost": [
+          {
+            "Election Cost": "mod_country_election_cost"
+          }
+        ],
+        "War Exhaustion": [
+          {
+            "Mult": "mod_country_war_exhaustion_mult"
+          }
+        ],
+        "Naval Capacity Contribution From Subjects": [
+          {
+            "Mult": "mod_country_naval_capacity_contribution_from_subjects_mult"
+          }
+        ],
+        "Max Rivalries": [
+          {
+            "Max Rivalries": "mod_country_max_rivalries"
+          }
+        ],
+        "Piracy Risk": [
+          {
+            "Mult": "mod_country_piracy_risk_mult"
+          }
+        ],
+        "Hostile Claim Influence Cost": [
+          {
+            "Mult": "mod_country_hostile_claim_influence_cost_mult"
+          }
+        ],
+        "Naval Coverage": [
+          {
+            "Mult": "mod_country_naval_coverage_mult",
+            "Add": "mod_country_naval_coverage_add"
           }
         ],
         "Vassal Naval Capacity Contribution": [
@@ -652,14 +802,39 @@
             "Mult": "mod_country_vassal_naval_capacity_contribution_mult"
           }
         ],
-        "Envoys": [
-          {
-            "Add": "mod_country_envoys_add"
-          }
-        ],
         "Market Fee": [
           {
             "Mult": "mod_country_market_fee_mult"
+          }
+        ],
+        "Local Trade Proctection": [
+          {
+            "Add": "mod_country_local_trade_protection_add"
+          }
+        ],
+        "Rivalry Influence Gain": [
+          {
+            "Rivalry Influence Gain": "mod_country_rivalry_influence_gain"
+          }
+        ],
+        "Occupation Armies": [
+          {
+            "Add": "mod_country_occupation_armies_add"
+          }
+        ],
+        "Specialist Subject Conversion Time": [
+          {
+            "Mult": "mod_country_specialist_subject_conversion_time_mult"
+          }
+        ],
+        "Max Embassies": [
+          {
+            "Max Embassies": "mod_country_max_embassies"
+          }
+        ],
+        "Trade Attractiveness": [
+          {
+            "Trade Attractiveness": "mod_country_trade_attractiveness"
           }
         ]
       }
@@ -670,18 +845,6 @@
     "GroupDisplayName": "Country",
     "ModifierGroups": [
       {
-        "Starbase Influence Cost": [
-          {
-            "Mult": "mod_country_starbase_influence_cost_mult",
-            "Distance Mult": "mod_country_starbase_influence_cost_distance_mult"
-          }
-        ],
-        "Starbase Capacity": [
-          {
-            "Mult": "mod_country_starbase_capacity_mult",
-            "Add": "mod_country_starbase_capacity_add"
-          }
-        ],
         "Starbase Upkeep": [
           {
             "Mult": "mod_country_starbase_upkeep_mult"
@@ -691,6 +854,18 @@
           {
             "Mult": "mod_country_starbase_cost_mult"
           }
+        ],
+        "Starbase Capacity": [
+          {
+            "Mult": "mod_country_starbase_capacity_mult",
+            "Add": "mod_country_starbase_capacity_add"
+          }
+        ],
+        "Starbase Influence Cost": [
+          {
+            "Mult": "mod_country_starbase_influence_cost_mult",
+            "Distance Mult": "mod_country_starbase_influence_cost_distance_mult"
+          }
         ]
       }
     ]
@@ -700,19 +875,9 @@
     "GroupDisplayName": "Country",
     "ModifierGroups": [
       {
-        "Storm Location Intel": [
+        "Storm Attraction": [
           {
-            "Add": "mod_country_storm_location_intel_add"
-          }
-        ],
-        "Storm Influence": [
-          {
-            "Mult": "mod_country_storm_influence_mult"
-          }
-        ],
-        "Storm Repelling": [
-          {
-            "Add": "mod_country_storm_repelling_add"
+            "Add": "mod_country_storm_attraction_add"
           }
         ],
         "Storm Movement Intel": [
@@ -720,14 +885,24 @@
             "Add": "mod_country_storm_movement_intel_add"
           }
         ],
-        "Storm Attraction": [
+        "Storm Location Intel": [
           {
-            "Add": "mod_country_storm_attraction_add"
+            "Add": "mod_country_storm_location_intel_add"
+          }
+        ],
+        "Storm Repelling": [
+          {
+            "Add": "mod_country_storm_repelling_add"
           }
         ],
         "Storm Protection Tech Level": [
           {
             "Add": "mod_country_storm_protection_tech_level_add"
+          }
+        ],
+        "Storm Influence": [
+          {
+            "Mult": "mod_country_storm_influence_mult"
           }
         ]
       }
@@ -738,29 +913,14 @@
     "GroupDisplayName": "Country",
     "ModifierGroups": [
       {
-        "Subject Technology Sharing": [
-          {
-            "Mult": "mod_country_subject_technology_sharing_mult"
-          }
-        ],
         "Subject Integration Speed": [
           {
             "Add": "mod_country_subject_integration_speed_add"
           }
         ],
-        "Subject Power Penaly": [
+        "Subject Integration Influence Cost": [
           {
-            "Base": "mod_country_subject_power_penalty"
-          }
-        ],
-        "Subject Tribute": [
-          {
-            "Mult": "mod_country_subject_tribute_mult"
-          }
-        ],
-        "Subject Trust Cap": [
-          {
-            "Add": "mod_country_subject_trust_cap_add"
+            "Mult": "mod_country_subject_integration_influence_cost_mult"
           }
         ],
         "Subject Acceptance": [
@@ -768,14 +928,29 @@
             "Add": "mod_country_subject_acceptance_add"
           }
         ],
+        "Subject Trust Cap": [
+          {
+            "Add": "mod_country_subject_trust_cap_add"
+          }
+        ],
         "Subject Influence Gain": [
           {
             "Mult": "mod_country_subject_influence_gain_mult"
           }
         ],
-        "Subject Integration Influence Cost": [
+        "Subject Technology Sharing": [
           {
-            "Mult": "mod_country_subject_integration_influence_cost_mult"
+            "Mult": "mod_country_subject_technology_sharing_mult"
+          }
+        ],
+        "Subject Power Penaly": [
+          {
+            "Subject Power Penaly": "mod_country_subject_power_penalty"
+          }
+        ],
+        "Subject Tribute": [
+          {
+            "Mult": "mod_country_subject_tribute_mult"
           }
         ]
       }
@@ -786,29 +961,62 @@
     "GroupDisplayName": "Cybernetic Creed",
     "ModifierGroups": [
       {
+        "War": [
+          {
+            "War": "cybernetic_creed_war"
+          }
+        ],
         "No Creed": [
           {
-            "Base": "mod_cyber_creed_no_creed"
-          }
-        ],
-        "Labor": [
-          {
-            "Base": "cybernetic_creed_labor"
-          }
-        ],
-        "Research": [
-          {
-            "Base": "cybernetic_creed_research"
+            "No Creed": "mod_cyber_creed_no_creed"
           }
         ],
         "Construction": [
           {
-            "Base": "cybernetic_creed_construction"
+            "Construction": "cybernetic_creed_construction"
           }
         ],
-        "War": [
+        "Research": [
           {
-            "Base": "cybernetic_creed_war"
+            "Research": "cybernetic_creed_research"
+          }
+        ],
+        "Labor": [
+          {
+            "Labor": "cybernetic_creed_labor"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Damage",
+    "GroupDisplayName": "Damage",
+    "ModifierGroups": [
+      {
+        "Vs Superior Empires": [
+          {
+            "Mult": "mod_damage_vs_superior_empires_mult"
+          }
+        ],
+        "Vs Country Type": [
+          {
+            "Vs Country Type": "mod_damage_vs_country_type"
+          }
+        ],
+        "Vs Player Crisis": [
+          {
+            "Mult": "mod_damage_vs_player_crisis_mult"
+          }
+        ],
+        "Vs Rival": [
+          {
+            "Mult": "mod_damage_vs_rival_mult"
+          }
+        ],
+        "Random Nearby Enemy On Death": [
+          {
+            "Random Nearby Enemy On Death": "mod_damage_random_nearby_enemy_on_death"
           }
         ]
       }
@@ -819,10 +1027,10 @@
     "GroupDisplayName": "Dark Matter",
     "ModifierGroups": [
       {
-        "Produces": [
+        "Upkeep": [
           {
-            "Mult": "mod_sr_dark_matter_produces_mult",
-            "Add": "mod_sr_dark_matter_produces_add"
+            "Mult": "mod_sr_dark_matter_upkeep_mult",
+            "Add": "mod_sr_dark_matter_upkeep_add"
           }
         ],
         "Cost": [
@@ -831,10 +1039,29 @@
             "Add": "mod_sr_dark_matter_cost_add"
           }
         ],
-        "Upkeep": [
+        "Produces": [
           {
-            "Mult": "mod_sr_dark_matter_upkeep_mult",
-            "Add": "mod_sr_dark_matter_upkeep_add"
+            "Add": "mod_sr_dark_matter_produces_add",
+            "Add Negative": "mod_dark_matter_produces_add_negative",
+            "Mult": "mod_sr_dark_matter_produces_mult"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Dimensional Lock",
+    "GroupDisplayName": "Dimensional Lock",
+    "ModifierGroups": [
+      {
+        "Cost": [
+          {
+            "Mult": "mod_dimensional_lock_cost_mult"
+          }
+        ],
+        "Duration": [
+          {
+            "Mult": "mod_dimensional_lock_duration_mult"
           }
         ]
       }
@@ -845,19 +1072,9 @@
     "GroupDisplayName": "Diplomatic Weight",
     "ModifierGroups": [
       {
-        "Economy": [
+        "Sprawl": [
           {
-            "Mult": "mod_diplo_weight_economy_mult"
-          }
-        ],
-        "Council": [
-          {
-            "Mult": "mod_diplo_weight_council_mult"
-          }
-        ],
-        "Base": [
-          {
-            "Mult": "mod_diplo_weight_mult"
+            "Mult": "mod_diplo_weight_sprawl_mult"
           }
         ],
         "Technology": [
@@ -865,14 +1082,14 @@
             "Mult": "mod_diplo_weight_technology_mult"
           }
         ],
-        "Stance": [
+        "Naval": [
           {
-            "Mult": "mod_diplo_weight_stance_mult"
+            "Mult": "mod_diplo_weight_naval_mult"
           }
         ],
-        "Sprawl": [
+        "Diplomatic Weight": [
           {
-            "Mult": "mod_diplo_weight_sprawl_mult"
+            "Mult": "mod_diplo_weight_mult"
           }
         ],
         "Rivals": [
@@ -885,19 +1102,9 @@
             "Mult": "mod_diplo_weight_vote_mult"
           }
         ],
-        "Naval": [
-          {
-            "Mult": "mod_diplo_weight_naval_mult"
-          }
-        ],
         "Supporting": [
           {
             "Mult": "mod_diplo_weight_supporting_mult"
-          }
-        ],
-        "Opposing": [
-          {
-            "Mult": "mod_diplo_weight_opposing_mult"
           }
         ],
         "Pops": [
@@ -909,6 +1116,31 @@
           {
             "Mult": "mod_diplo_weight_delegate_mult"
           }
+        ],
+        "Council": [
+          {
+            "Mult": "mod_diplo_weight_council_mult"
+          }
+        ],
+        "Stance": [
+          {
+            "Mult": "mod_diplo_weight_stance_mult"
+          }
+        ],
+        "Economy": [
+          {
+            "Mult": "mod_diplo_weight_economy_mult"
+          }
+        ],
+        "Space Fauna": [
+          {
+            "Mult": "mod_diplo_weight_space_fauna_mult"
+          }
+        ],
+        "Opposing": [
+          {
+            "Mult": "mod_diplo_weight_opposing_mult"
+          }
         ]
       }
     ]
@@ -918,9 +1150,24 @@
     "GroupDisplayName": "District",
     "ModifierGroups": [
       {
+        "Mining": [
+          {
+            "Max": "mod_district_mining_max"
+          }
+        ],
+        "Nexus": [
+          {
+            "Max": "mod_district_nexus_max"
+          }
+        ],
         "Habitat Commercial": [
           {
             "Max": "mod_district_hab_commercial_max"
+          }
+        ],
+        "Crashed Slaver Ship": [
+          {
+            "Max": "mod_district_crashed_slaver_ship_max"
           }
         ],
         "Generator": [
@@ -933,34 +1180,9 @@
             "Max": "mod_district_farming_max"
           }
         ],
-        "Nexus": [
-          {
-            "Max": "mod_district_nexus_max"
-          }
-        ],
-        "Habitat Energy": [
-          {
-            "Max": "mod_district_hab_energy_max"
-          }
-        ],
         "City": [
           {
             "Max": "mod_district_city_max"
-          }
-        ],
-        "Hive": [
-          {
-            "Max": "mod_district_hive_max"
-          }
-        ],
-        "Habitat Mining": [
-          {
-            "Max": "mod_district_hab_mining_max"
-          }
-        ],
-        "Crashed Slaver Ship": [
-          {
-            "Max": "mod_district_crashed_slaver_ship_max"
           }
         ],
         "Habitat Science": [
@@ -968,9 +1190,52 @@
             "Max": "mod_district_hab_science_max"
           }
         ],
-        "Mining": [
+        "Habitat Energy": [
           {
-            "Max": "mod_district_mining_max"
+            "Max": "mod_district_hab_energy_max"
+          }
+        ],
+        "Habitat Mining": [
+          {
+            "Max": "mod_district_hab_mining_max"
+          }
+        ],
+        "Hive": [
+          {
+            "Max": "mod_district_hive_max"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Election Term",
+    "GroupDisplayName": "Election Term",
+    "ModifierGroups": [
+      {
+        "Years": [
+          {
+            "Mult": "mod_election_term_years_mult",
+            "Add": "mod_election_term_years_add"
+          }
+        ],
+        "Variance": [
+          {
+            "Mult": "mod_election_term_variance_mult",
+            "Add": "mod_election_term_variance_add"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Empire",
+    "GroupDisplayName": "Empire",
+    "ModifierGroups": [
+      {
+        "Build Speed": [
+          {
+            "Add": "mod_empire_build_speed_add"
           }
         ]
       }
@@ -981,26 +1246,11 @@
     "GroupDisplayName": "Empire Size",
     "ModifierGroups": [
       {
-        "Systems": [
+        "Empire Size": [
           {
-            "Mult": "mod_empire_size_systems_mult"
-          }
-        ],
-        "Colonies": [
-          {
-            "Mult": "mod_empire_size_colonies_mult"
-          }
-        ],
-        "Pops": [
-          {
-            "Mult": "mod_empire_size_pops_mult"
-          }
-        ],
-        "Base": [
-          {
+            "Mult Negative": "mod_empire_size_mult_negative",
             "Add": "mod_empire_size_add",
-            "Mult": "mod_empire_size_mult",
-            "Mult Negative": "mod_empire_size_mult_negative"
+            "Mult": "mod_empire_size_mult"
           }
         ],
         "Penalty": [
@@ -1008,9 +1258,24 @@
             "Mult": "mod_empire_size_penalty_mult"
           }
         ],
+        "Colonies": [
+          {
+            "Mult": "mod_empire_size_colonies_mult"
+          }
+        ],
         "District": [
           {
             "Mult": "mod_empire_size_districts_mult"
+          }
+        ],
+        "Pops": [
+          {
+            "Mult": "mod_empire_size_pops_mult"
+          }
+        ],
+        "Systems": [
+          {
+            "Mult": "mod_empire_size_systems_mult"
           }
         ],
         "Branch Office": [
@@ -1026,11 +1291,10 @@
     "GroupDisplayName": "Energy",
     "ModifierGroups": [
       {
-        "Produces": [
+        "Upkeep": [
           {
-            "Add": "mod_energy_produces_add",
-            "Mult": "mod_energy_produces_mult",
-            "Mult Negative": "mod_energy_produces_mult_negative"
+            "Mult": "mod_energy_upkeep_mult",
+            "Add": "mod_energy_upkeep_add"
           }
         ],
         "Cost": [
@@ -1039,10 +1303,11 @@
             "Add": "mod_energy_cost_add"
           }
         ],
-        "Upkeep": [
+        "Produces": [
           {
-            "Mult": "mod_energy_upkeep_mult",
-            "Add": "mod_energy_upkeep_add"
+            "Mult Negative": "mod_energy_produces_mult_negative",
+            "Add": "mod_energy_produces_add",
+            "Mult": "mod_energy_produces_mult"
           }
         ]
       }
@@ -1053,11 +1318,15 @@
     "GroupDisplayName": "Engineering Research",
     "ModifierGroups": [
       {
-        "Produces": [
+        "Upkeep": [
           {
-            "Add": "mod_engineering_research_produces_add",
-            "Mult": "mod_engineering_research_produces_mult",
-            "Mult Negative": "mod_engineering_research_produces_mult_negative"
+            "Mult": "mod_engineering_research_upkeep_mult",
+            "Add": "mod_engineering_research_upkeep_add"
+          }
+        ],
+        "Technology Cost": [
+          {
+            "Mult": "mod_engineering_tech_cost_mult"
           }
         ],
         "Cost": [
@@ -1066,10 +1335,60 @@
             "Add": "mod_engineering_research_cost_add"
           }
         ],
-        "Upkeep": [
+        "Produces": [
           {
-            "Mult": "mod_engineering_research_upkeep_mult",
-            "Add": "mod_engineering_research_upkeep_add"
+            "Mult Negative": "mod_engineering_research_produces_mult_negative",
+            "Add": "mod_engineering_research_produces_add",
+            "Mult": "mod_engineering_research_produces_mult"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Envoy",
+    "GroupDisplayName": "Envoy",
+    "ModifierGroups": [
+      {
+        "Experience Gain": [
+          {
+            "Experience Gain": "mod_envoy_exp_gain"
+          }
+        ],
+        "Harm Relations": [
+          {
+            "Mult": "mod_envoy_harm_relations_mult"
+          }
+        ],
+        "Improve Relations": [
+          {
+            "Mult": "mod_envoy_improve_relations_mult"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Ethic",
+    "GroupDisplayName": "Ethic",
+    "ModifierGroups": [
+      {
+        "Attraction": [
+          {
+            "Mult": "mod_ethic_attraction_mult"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Exhibit Unlocking",
+    "GroupDisplayName": "Exhibit Unlocking",
+    "ModifierGroups": [
+      {
+        "Cost": [
+          {
+            "Mult": "mod_country_exhibit_unlocking_cost_mult"
           }
         ]
       }
@@ -1080,11 +1399,10 @@
     "GroupDisplayName": "Exotic Gases",
     "ModifierGroups": [
       {
-        "Produces": [
+        "Upkeep": [
           {
-            "Add": "mod_exotic_gases_produces_add",
-            "Add Negative": "mod_exotic_gases_produces_add_negative",
-            "Mult": "mod_exotic_gases_produces_mult"
+            "Mult": "mod_exotic_gases_upkeep_mult",
+            "Add": "mod_exotic_gases_upkeep_add"
           }
         ],
         "Cost": [
@@ -1093,10 +1411,24 @@
             "Add": "mod_exotic_gases_cost_add"
           }
         ],
-        "Upkeep": [
+        "Produces": [
           {
-            "Mult": "mod_exotic_gases_upkeep_mult",
-            "Add": "mod_exotic_gases_upkeep_add"
+            "Add": "mod_exotic_gases_produces_add",
+            "Add Negative": "mod_exotic_gases_produces_add_negative",
+            "Mult": "mod_exotic_gases_produces_mult"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Faction",
+    "GroupDisplayName": "Faction",
+    "ModifierGroups": [
+      {
+        "Approval": [
+          {
+            "Approval": "mod_faction_approval"
           }
         ]
       }
@@ -1107,14 +1439,14 @@
     "GroupDisplayName": "Federation",
     "ModifierGroups": [
       {
-        "Fleet Contribution Factor": [
+        "Cohesion": [
           {
-            "Base": "mod_federation_fleet_countribution_factor"
+            "Add": "mod_federation_cohesion_add"
           }
         ],
-        "Experience": [
+        "Fleet Contribution Factor": [
           {
-            "Add": "mod_federation_experience_add"
+            "Fleet Contribution Factor": "mod_federation_fleet_countribution_factor"
           }
         ],
         "Delegate Cohesion Effect": [
@@ -1122,24 +1454,9 @@
             "Mult": "mod_federation_delegate_cohesion_effect_mult"
           }
         ],
-        "Leader Fleet Scale Modifier": [
-          {
-            "Base": "mod_federation_leader_fleet_scale_modifier"
-          }
-        ],
-        "Cohesion": [
-          {
-            "Add": "mod_federation_cohesion_add"
-          }
-        ],
         "Diplomatic Weight Contribution": [
           {
             "Add": "mod_federation_diplo_weight_contribution_add"
-          }
-        ],
-        "Join Malus": [
-          {
-            "Mult": "mod_federation_join_malus_mult"
           }
         ],
         "Research Sharing": [
@@ -1147,9 +1464,24 @@
             "Mult": "mod_federation_research_sharing_mult"
           }
         ],
+        "Experience": [
+          {
+            "Add": "mod_federation_experience_add"
+          }
+        ],
         "Leave Malus": [
           {
             "Mult": "mod_federation_leave_malus_mult"
+          }
+        ],
+        "Leader Fleet Scale Modifier": [
+          {
+            "Leader Fleet Scale Modifier": "mod_federation_leader_fleet_scale_modifier"
+          }
+        ],
+        "Join Malus": [
+          {
+            "Mult": "mod_federation_join_malus_mult"
           }
         ],
         "Fleet Capacity": [
@@ -1165,6 +1497,11 @@
     "GroupDisplayName": "First Contact",
     "ModifierGroups": [
       {
+        "Clues": [
+          {
+            "Add": "mod_first_contact_clues_add"
+          }
+        ],
         "Defense": [
           {
             "Add": "mod_first_contact_defense_add"
@@ -1174,10 +1511,33 @@
           {
             "Mult": "mod_first_contact_speed_mult"
           }
-        ],
-        "Clues": [
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Fleet",
+    "GroupDisplayName": "Fleet",
+    "ModifierGroups": [
+      {
+        "Capture Defeated Leader Chance": [
           {
-            "Add": "mod_first_contact_clues_add"
+            "Capture Defeated Leader Chance": "mod_fleet_capture_defeated_leader_chance"
+          }
+        ],
+        "Size": [
+          {
+            "Mult": "mod_fleet_size_mult"
+          }
+        ],
+        "Cloaking Strength": [
+          {
+            "Add": "mod_fleet_cloaking_strength_add"
+          }
+        ],
+        "MIA Time": [
+          {
+            "Mult": "mod_fleet_mia_time_mult"
           }
         ]
       }
@@ -1188,10 +1548,11 @@
     "GroupDisplayName": "Food",
     "ModifierGroups": [
       {
-        "Produces": [
+        "Upkeep": [
           {
-            "Mult": "mod_food_produces_mult",
-            "Add": "mod_food_produces_add"
+            "Add": "mod_food_upkeep_add",
+            "Increased": "mod_food_upkeep_increased",
+            "Mult": "mod_food_upkeep_mult"
           }
         ],
         "Cost": [
@@ -1200,11 +1561,23 @@
             "Add": "mod_food_cost_add"
           }
         ],
-        "Upkeep": [
+        "Produces": [
           {
-            "Add": "mod_food_upkeep_add",
-            "Mult": "mod_food_upkeep_mult",
-            "Increased": "mod_food_upkeep_increased"
+            "Mult": "mod_food_produces_mult",
+            "Add": "mod_food_produces_add"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Galactic Community",
+    "GroupDisplayName": "Galactic Community",
+    "ModifierGroups": [
+      {
+        "Left": [
+          {
+            "Left": "mod_left_galactic_community"
           }
         ]
       }
@@ -1215,6 +1588,26 @@
     "GroupDisplayName": "Gateway Windup",
     "ModifierGroups": [
       {
+        "Ness Megastructure Bypass": [
+          {
+            "Mult": "mod_gateway_ness_megastructure_bypass_windup_mult"
+          }
+        ],
+        "Ness Empire": [
+          {
+            "Mult": "mod_gateway_ness_empire_windup_mult"
+          }
+        ],
+        "Ship": [
+          {
+            "Mult": "mod_gateway_ship_windup_mult"
+          }
+        ],
+        "Ness Ship": [
+          {
+            "Mult": "mod_gateway_ness_ship_windup_mult"
+          }
+        ],
         "Megastructure Bypass": [
           {
             "Mult": "mod_gateway_megastructure_bypass_windup_mult"
@@ -1225,9 +1618,63 @@
             "Mult": "mod_gateway_empire_windup_mult"
           }
         ],
-        "Ship": [
+        "Legitimacy": [
           {
-            "Mult": "mod_gateway_ship_windup_mult"
+            "Add": "mod_galactic_community_legitimacy_add"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Gravity Snare",
+    "GroupDisplayName": "Gravity Snare",
+    "ModifierGroups": [
+      {
+        "Cost": [
+          {
+            "Mult": "mod_gravity_snare_cost_mult"
+          }
+        ],
+        "Cooldown": [
+          {
+            "Mult": "mod_gravity_snare_cooldown_mult"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Habitability",
+    "GroupDisplayName": "Habitability",
+    "ModifierGroups": [
+      {
+        "Habitability": [
+          {
+            "Habitability": "mod_habitability"
+          }
+        ],
+        "Ceil": [
+          {
+            "Add": "mod_habitability_ceil_add"
+          }
+        ],
+        "Floor": [
+          {
+            "Add": "mod_habitability_floor_add"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Habitat",
+    "GroupDisplayName": "Habitat",
+    "ModifierGroups": [
+      {
+        "Jobs Produces": [
+          {
+            "Mult": "mod_habitat_jobs_produces_mult"
           }
         ]
       }
@@ -1238,16 +1685,20 @@
     "GroupDisplayName": "Influence",
     "ModifierGroups": [
       {
-        "Produces": [
-          {
-            "Mult": "mod_influence_produces_mult",
-            "Add": "mod_influence_produces_add"
-          }
-        ],
         "Upkeep": [
           {
             "Mult": "mod_influence_upkeep_mult",
             "Add": "mod_influence_upkeep_add"
+          }
+        ],
+        "Negative": [
+          {
+            "Negative": "mod_influence_negative"
+          }
+        ],
+        "Field": [
+          {
+            "Add": "mod_influence_field_add"
           }
         ],
         "Cost": [
@@ -1256,14 +1707,44 @@
             "Add": "mod_influence_cost_add"
           }
         ],
-        "Field": [
+        "Produces": [
           {
-            "Add": "mod_influence_field_add"
+            "Mult": "mod_influence_produces_mult",
+            "Add": "mod_influence_produces_add"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Intel",
+    "GroupDisplayName": "Intel",
+    "ModifierGroups": [
+      {
+        "Decryption": [
+          {
+            "Add": "mod_intel_decryption_add"
           }
         ],
-        "Negative": [
+        "Encryption": [
           {
-            "Base": "mod_influence_negative"
+            "Add": "mod_intel_encryption_add"
+          }
+        ],
+        "Gain Speed": [
+          {
+            "Gain Speed": "mod_intel_gain_speed"
+          }
+        ],
+        "Reconnaissance Level": [
+          {
+            "Add": "mod_intel_reconnaissance_level_add"
+          }
+        ],
+        "Encryption Key": [
+          {
+            "Found": "mod_found_encryption_key",
+            "Lost": "mod_lost_encryption_key"
           }
         ]
       }
@@ -1274,199 +1755,14 @@
     "GroupDisplayName": "Job",
     "ModifierGroups": [
       {
-        "Technophant": [
-          {
-            "Add": "mod_job_technophant_add"
-          }
-        ],
-        "Healthcare": [
-          {
-            "Add": "mod_job_healthcare_add"
-          }
-        ],
-        "Servant": [
-          {
-            "Add": "mod_job_servant_add"
-          }
-        ],
-        "Clerk": [
-          {
-            "Add": "mod_job_clerk_add"
-          }
-        ],
-        "Industrial": [
-          {
-            "Add": "mod_job_industrial_add"
-          }
-        ],
-        "Haruspex": [
-          {
-            "Add": "mod_job_haruspex_add"
-          }
-        ],
-        "Hunter Gatherer": [
-          {
-            "Add": "mod_job_hunter_gatherer_add"
-          }
-        ],
-        "Squire": [
-          {
-            "Add": "mod_job_squire_add"
-          }
-        ],
-        "Archaeoengineers": [
-          {
-            "Add": "mod_job_archaeoengineers_add"
-          }
-        ],
-        "Artisan": [
-          {
-            "Add": "mod_job_artisan_add"
-          }
-        ],
-        "Priest": [
-          {
-            "Add": "mod_job_death_priest_add"
-          }
-        ],
-        "Augmentor": [
-          {
-            "Add": "mod_job_augmentor_add"
-          }
-        ],
-        "Astrometeorologist Machine": [
-          {
-            "Add": "mod_job_astrometeorologist_machine_add"
-          }
-        ],
-        "Criminal": [
-          {
-            "Add": "mod_job_criminal_add"
-          }
-        ],
-        "Puddle Technician": [
-          {
-            "Add": "mod_job_puddle_technician_add"
-          }
-        ],
-        "Bath Attendant Machine": [
-          {
-            "Add": "mod_job_bath_attendant_machine_add"
-          }
-        ],
-        "Technician": [
-          {
-            "Add": "mod_job_technician_add"
-          }
-        ],
-        "Bio Trophy": [
-          {
-            "Add": "mod_job_bio_trophy_add"
-          }
-        ],
-        "Enforcer": [
-          {
-            "Add": "mod_job_enforcer_add"
-          }
-        ],
-        "Fallen Empire Hedonist": [
-          {
-            "Add": "mod_job_fe_hedonist_add"
-          }
-        ],
-        "Farmer": [
-          {
-            "Add": "mod_job_farmer_add"
-          }
-        ],
-        "Livestock Zoo Beast": [
-          {
-            "Add": "mod_job_livestock_zoo_beast_add"
-          }
-        ],
-        "Chemist": [
-          {
-            "Add": "mod_job_chemist_add"
-          }
-        ],
-        "Bath Attendant": [
-          {
-            "Add": "mod_job_bath_attendant_add"
-          }
-        ],
-        "Calculator": [
-          {
-            "Add": "mod_job_calculator_add"
-          }
-        ],
-        "Foundry": [
-          {
-            "Add": "mod_job_foundry_add"
-          }
-        ],
-        "Astral Researcher": [
-          {
-            "Add": "mod_job_astral_researcher_add"
-          }
-        ],
-        "Angler": [
-          {
-            "Add": "mod_job_angler_add"
-          }
-        ],
-        "Munition Decommissioner": [
-          {
-            "Add": "mod_job_munitions_decommissioner_add"
-          }
-        ],
-        "Cyberdome Duelist": [
-          {
-            "Add": "mod_job_cyberdome_duelist_add"
-          }
-        ],
-        "Gas Extractor": [
-          {
-            "Add": "mod_job_gas_extractor_add"
-          }
-        ],
-        "Researcher": [
-          {
-            "Add": "mod_job_researcher_add"
-          }
-        ],
-        "Machine Nurse": [
-          {
-            "Add": "mod_job_machine_nurse_add"
-          }
-        ],
-        "Chip Slave": [
-          {
-            "Add": "mod_job_chip_slave_add"
-          }
-        ],
-        "Bath Attendant Individual Machine": [
-          {
-            "Add": "mod_job_bath_attendant_individual_machine_add"
-          }
-        ],
         "Mind Thrall": [
           {
             "Add": "mod_job_mind_thrall_add"
           }
         ],
-        "Coordinator": [
+        "Treasure Gatherer": [
           {
-            "Add": "mod_job_coordinator_add"
-          }
-        ],
-        "Administrator": [
-          {
-            "Add": "mod_job_administrator_add"
-          }
-        ],
-        "Mote Harvester": [
-          {
-            "Add": "mod_job_mote_harvester_add"
+            "Add": "mod_job_treasure_gatherer_add"
           }
         ],
         "Xeno Zoo Keeper": [
@@ -1474,299 +1770,9 @@
             "Add": "mod_job_xeno_zoo_keeper_add"
           }
         ],
-        "Evaluator": [
+        "Chip Slave": [
           {
-            "Add": "mod_job_evaluator_add"
-          }
-        ],
-        "Colonist": [
-          {
-            "Add": "mod_job_colonist_add"
-          }
-        ],
-        "Nanotech Research Unit": [
-          {
-            "Add": "mod_job_nanotech_research_unit_add"
-          }
-        ],
-        "Organic Battery": [
-          {
-            "Add": "mod_job_organic_battery_add"
-          }
-        ],
-        "Ratling Scavenger": [
-          {
-            "Add": "mod_job_ratling_scavenger_add"
-          }
-        ],
-        "Storm Dancer": [
-          {
-            "Add": "mod_job_storm_dancer_add"
-          }
-        ],
-        "High Priest": [
-          {
-            "Add": "mod_job_high_priest_add"
-          }
-        ],
-        "Knight": [
-          {
-            "Add": "mod_job_knight_add"
-          }
-        ],
-        "Executive": [
-          {
-            "Add": "mod_job_executive_add"
-          }
-        ],
-        "Livestock Zoo Animal": [
-          {
-            "Add": "mod_job_livestock_zoo_animal_add"
-          }
-        ],
-        "Battle Thrall": [
-          {
-            "Add": "mod_job_battle_thrall_add"
-          }
-        ],
-        "Robot Caretaker": [
-          {
-            "Add": "mod_job_robot_caretaker_add"
-          }
-        ],
-        "Mortal Initiate": [
-          {
-            "Add": "mod_job_mortal_initiate_add"
-          }
-        ],
-        "Apprentice": [
-          {
-            "Add": "mod_job_apprentice_add"
-          }
-        ],
-        "Aid Worker": [
-          {
-            "Add": "mod_job_aid_worker_add"
-          }
-        ],
-        "Noble": [
-          {
-            "Add": "mod_job_noble_add"
-          }
-        ],
-        "Astrometeorologist": [
-          {
-            "Add": "mod_job_astrometeorologist_add"
-          }
-        ],
-        "Bureaucrat Upkeep": [
-          {
-            "Add": "mod_job_bureaucrat_upkeep_mult"
-          }
-        ],
-        "Culture Worker": [
-          {
-            "Add": "mod_job_culture_worker_add"
-          }
-        ],
-        "Nanotech Researcher": [
-          {
-            "Add": "mod_job_nanotech_researcher_add"
-          }
-        ],
-        "Archaeo Unit": [
-          {
-            "Add": "mod_job_archaeo_unit_add"
-          }
-        ],
-        "Gas Refiner": [
-          {
-            "Add": "mod_job_gas_refiner_add"
-          }
-        ],
-        "Translucer": [
-          {
-            "Add": "mod_job_translucer_add"
-          }
-        ],
-        "Livestock": [
-          {
-            "Add": "mod_job_livestock_add"
-          }
-        ],
-        "Roboticist": [
-          {
-            "Add": "mod_job_roboticist_add"
-          }
-        ],
-        "Astrometeorologist Hive": [
-          {
-            "Add": "mod_job_astrometeorologist_hive_add"
-          }
-        ],
-        "Bureaucrat Produces": [
-          {
-            "Add": "mod_job_bureaucrat_produces_mult"
-          }
-        ],
-        "Laborer": [
-          {
-            "Add": "mod_job_laborer_add"
-          }
-        ],
-        "Necromancer": [
-          {
-            "Add": "mod_job_necromancer_add"
-          }
-        ],
-        "Entertainer": [
-          {
-            "Add": "mod_job_entertainer_add"
-          }
-        ],
-        "Peasant": [
-          {
-            "Add": "mod_job_peasant_add"
-          }
-        ],
-        "Artificer": [
-          {
-            "Add": "mod_job_artificer_add"
-          }
-        ],
-        "Pre Sapient": [
-          {
-            "Add": "mod_job_pre_sapient_add"
-          }
-        ],
-        "Catalytic Technician": [
-          {
-            "Add": "mod_job_catalytic_technician_add"
-          }
-        ],
-        "Odd Factory Worker": [
-          {
-            "Add": "mod_job_odd_factory_worker_add"
-          }
-        ],
-        "Manager": [
-          {
-            "Add": "mod_job_manager_add"
-          }
-        ],
-        "Merchant": [
-          {
-            "Add": "mod_job_merchant_add"
-          }
-        ],
-        "Fallen Empire Archivist": [
-          {
-            "Add": "mod_job_fe_archivist_add"
-          }
-        ],
-        "Organic Exhibit": [
-          {
-            "Add": "mod_job_organic_exhibit_add"
-          }
-        ],
-        "Purge": [
-          {
-            "Add": "mod_job_purge_add"
-          }
-        ],
-        "Duelist": [
-          {
-            "Add": "mod_job_duelist_add"
-          }
-        ],
-        "Xeno Zoo Animal": [
-          {
-            "Add": "mod_job_xeno_zoo_animal_add"
-          }
-        ],
-        "Cyberdome Spectator": [
-          {
-            "Add": "mod_job_cyberdome_spectator_add"
-          }
-        ],
-        "Replicator": [
-          {
-            "Add": "mod_job_replicator_add"
-          }
-        ],
-        "Ranger": [
-          {
-            "Add": "mod_job_ranger_add"
-          }
-        ],
-        "Subterranean Liaison": [
-          {
-            "Add": "mod_job_subterranean_liaison"
-          }
-        ],
-        "Fallen Empire Xeno Ward": [
-          {
-            "Add": "mod_job_fe_xeno_ward_add"
-          }
-        ],
-        "Broken Shackles Scavenger": [
-          {
-            "Add": "mod_job_broken_shackles_scavenger_add"
-          }
-        ],
-        "Lord Commander": [
-          {
-            "Add": "mod_job_lord_commander"
-          }
-        ],
-        "Event Purge": [
-          {
-            "Add": "mod_job_event_purge_add"
-          }
-        ],
-        "Telepath": [
-          {
-            "Add": "mod_job_telepath_add"
-          }
-        ],
-        "Numistic Priest": [
-          {
-            "Add": "mod_job_numistic_priest_add"
-          }
-        ],
-        "Soldier": [
-          {
-            "Add": "mod_job_soldier_add"
-          }
-        ],
-        "Artist": [
-          {
-            "Add": "mod_job_artist_add"
-          }
-        ],
-        "Corpse Farmer": [
-          {
-            "Add": "mod_job_corpse_farmer_add"
-          }
-        ],
-        "Underground Trade Worker": [
-          {
-            "Add": "mod_job_underground_trade_worker_add"
-          }
-        ],
-        "Xeno Zoo Beast": [
-          {
-            "Add": "mod_job_xeno_zoo_beast_add"
-          }
-        ],
-        "Knight Commander": [
-          {
-            "Add": "mod_job_knight_commander_add"
-          }
-        ],
-        "Death Chronicler": [
-          {
-            "Add": "mod_job_death_chronicler_add"
+            "Add": "mod_job_chip_slave_add"
           }
         ],
         "Bureaucrat": [
@@ -1774,19 +1780,134 @@
             "Add": "mod_job_bureaucrat_add"
           }
         ],
+        "Mote Harvester": [
+          {
+            "Add": "mod_job_mote_harvester_add"
+          }
+        ],
+        "Death Chronicler": [
+          {
+            "Add": "mod_job_death_chronicler_add"
+          }
+        ],
+        "Wrangler": [
+          {
+            "Add": "mod_job_wrangler_add"
+          }
+        ],
+        "Livestock Zoo Animal": [
+          {
+            "Add": "mod_job_livestock_zoo_animal_add"
+          }
+        ],
+        "Knight": [
+          {
+            "Add": "mod_job_knight_add"
+          }
+        ],
+        "Servant": [
+          {
+            "Add": "mod_job_servant_add"
+          }
+        ],
+        "Xeno Zoo Beast": [
+          {
+            "Add": "mod_job_xeno_zoo_beast_add"
+          }
+        ],
+        "Industrial": [
+          {
+            "Add": "mod_job_industrial_add"
+          }
+        ],
+        "Chemist": [
+          {
+            "Add": "mod_job_chemist_add"
+          }
+        ],
+        "Bio Trophy": [
+          {
+            "Add": "mod_job_bio_trophy_add"
+          }
+        ],
+        "Numistic Priest": [
+          {
+            "Add": "mod_job_numistic_priest_add"
+          }
+        ],
+        "Pre Sapient": [
+          {
+            "Add": "mod_job_pre_sapient_add"
+          }
+        ],
+        "Translucer": [
+          {
+            "Add": "mod_job_translucer_add"
+          }
+        ],
+        "Nanotech Researcher": [
+          {
+            "Add": "mod_job_nanotech_researcher_add"
+          }
+        ],
+        "High Priest": [
+          {
+            "Add": "mod_job_high_priest_add"
+          }
+        ],
+        "Colonist": [
+          {
+            "Add": "mod_job_colonist_add"
+          }
+        ],
+        "Bureaucrat Produces": [
+          {
+            "Mult": "mod_job_bureaucrat_produces_mult"
+          }
+        ],
+        "Animal Handler": [
+          {
+            "Add": "mod_job_animal_handler_add"
+          }
+        ],
+        "Corpse Farmer": [
+          {
+            "Add": "mod_job_corpse_farmer_add"
+          }
+        ],
         "Fabricator": [
           {
             "Add": "mod_job_fabricator_add"
           }
         ],
-        "Pearl Diver": [
+        "Clerk": [
           {
-            "Add": "mod_job_pearl_diver_add"
+            "Add": "mod_job_clerk_add"
           }
         ],
-        "Munition Decommissioning Unit": [
+        "Astrometeorologist Hive": [
           {
-            "Add": "mod_job_munitions_decommissioning_unit_add"
+            "Add": "mod_job_astrometeorologist_hive_add"
+          }
+        ],
+        "Astrometeorologist Machine": [
+          {
+            "Add": "mod_job_astrometeorologist_machine_add"
+          }
+        ],
+        "Artificer": [
+          {
+            "Add": "mod_job_artificer_add"
+          }
+        ],
+        "Bureaucrat Upkeep": [
+          {
+            "Add": "mod_job_bureaucrat_upkeep_mult"
+          }
+        ],
+        "Soldier": [
+          {
+            "Add": "mod_job_soldier_add"
           }
         ],
         "Miner": [
@@ -1794,14 +1915,69 @@
             "Add": "mod_job_miner_add"
           }
         ],
-        "Identity Designer": [
+        "Fallen Empire Hedonist": [
           {
-            "Add": "mod_job_identity_designer_add"
+            "Add": "mod_job_fe_hedonist_add"
           }
         ],
-        "Bath Attendant Hive": [
+        "Coordinator": [
           {
-            "Add": "mod_job_bath_attendant_hive_add"
+            "Add": "mod_job_coordinator_add"
+          }
+        ],
+        "Event Purge": [
+          {
+            "Add": "mod_job_event_purge_add"
+          }
+        ],
+        "Squire": [
+          {
+            "Add": "mod_job_squire_add"
+          }
+        ],
+        "Replicator": [
+          {
+            "Add": "mod_job_replicator_add"
+          }
+        ],
+        "Cyberdome Duelist": [
+          {
+            "Add": "mod_job_cyberdome_duelist_add"
+          }
+        ],
+        "Organic Battery": [
+          {
+            "Add": "mod_job_organic_battery_add"
+          }
+        ],
+        "Livestock": [
+          {
+            "Add": "mod_job_livestock_add"
+          }
+        ],
+        "Aid Worker": [
+          {
+            "Add": "mod_job_aid_worker_add"
+          }
+        ],
+        "Robot Caretaker": [
+          {
+            "Add": "mod_job_robot_caretaker_add"
+          }
+        ],
+        "Trophy Hunter": [
+          {
+            "Add": "mod_job_trophy_hunter_add"
+          }
+        ],
+        "Fallen Empire Xeno Ward": [
+          {
+            "Add": "mod_job_fe_xeno_ward_add"
+          }
+        ],
+        "Storm Dancer": [
+          {
+            "Add": "mod_job_storm_dancer_add"
           }
         ],
         "Crystal Miner": [
@@ -1809,9 +1985,359 @@
             "Add": "mod_job_crystal_miner_add"
           }
         ],
+        "Historical Curator": [
+          {
+            "Add": "mod_job_historical_curator_add"
+          }
+        ],
+        "Livestock Zoo Beast": [
+          {
+            "Add": "mod_job_livestock_zoo_beast_add"
+          }
+        ],
+        "Bath Attendant Hive": [
+          {
+            "Add": "mod_job_bath_attendant_hive_add"
+          }
+        ],
+        "Munition Decommissioning Unit": [
+          {
+            "Add": "mod_job_munitions_decommissioning_unit_add"
+          }
+        ],
+        "Artisan": [
+          {
+            "Add": "mod_job_artisan_add"
+          }
+        ],
+        "Knight Commander": [
+          {
+            "Add": "mod_job_knight_commander_add"
+          }
+        ],
+        "Criminal": [
+          {
+            "Add": "mod_job_criminal_add"
+          }
+        ],
+        "Beast Fighter": [
+          {
+            "Add": "mod_job_beastfighter_add"
+          }
+        ],
+        "Culture Worker": [
+          {
+            "Add": "mod_job_culture_worker_add"
+          }
+        ],
+        "Entertainer": [
+          {
+            "Add": "mod_job_entertainer_add"
+          }
+        ],
+        "Astral Researcher": [
+          {
+            "Add": "mod_job_astral_researcher_add"
+          }
+        ],
+        "Odd Factory Worker": [
+          {
+            "Add": "mod_job_odd_factory_worker_add"
+          }
+        ],
+        "Underground Trade Worker": [
+          {
+            "Add": "mod_job_underground_trade_worker_add"
+          }
+        ],
+        "Angler": [
+          {
+            "Add": "mod_job_angler_add"
+          }
+        ],
+        "Telepath": [
+          {
+            "Add": "mod_job_telepath_add"
+          }
+        ],
+        "Pearl Diver": [
+          {
+            "Add": "mod_job_pearl_diver_add"
+          }
+        ],
+        "Catalytic Technician": [
+          {
+            "Add": "mod_job_catalytic_technician_add"
+          }
+        ],
+        "Cyberdome Spectator": [
+          {
+            "Add": "mod_job_cyberdome_spectator_add"
+          }
+        ],
+        "Astrometeorologist": [
+          {
+            "Add": "mod_job_astrometeorologist_add"
+          }
+        ],
+        "Technophant": [
+          {
+            "Add": "mod_job_technophant_add"
+          }
+        ],
+        "Duelist": [
+          {
+            "Add": "mod_job_duelist_add"
+          }
+        ],
+        "Peasant": [
+          {
+            "Add": "mod_job_peasant_add"
+          }
+        ],
+        "Bath Attendant": [
+          {
+            "Add": "mod_job_bath_attendant_add"
+          }
+        ],
         "Assimilation": [
           {
             "Add": "mod_job_assimilation_add"
+          }
+        ],
+        "Necromancer": [
+          {
+            "Add": "mod_job_necromancer_add"
+          }
+        ],
+        "Lord Commander": [
+          {
+            "Add": "mod_job_lord_commander"
+          }
+        ],
+        "Laborer": [
+          {
+            "Add": "mod_job_laborer_add"
+          }
+        ],
+        "Enforcer": [
+          {
+            "Add": "mod_job_enforcer_add"
+          }
+        ],
+        "Augmentor": [
+          {
+            "Add": "mod_job_augmentor_add"
+          }
+        ],
+        "Geologist": [
+          {
+            "Add": "mod_job_geologist_add"
+          }
+        ],
+        "Subterranean Liaison": [
+          {
+            "Add": "mod_job_subterranean_liaison"
+          }
+        ],
+        "Roboticist": [
+          {
+            "Add": "mod_job_roboticist_add"
+          }
+        ],
+        "Organic Exhibit": [
+          {
+            "Add": "mod_job_organic_exhibit_add"
+          }
+        ],
+        "Archaeoengineers": [
+          {
+            "Add": "mod_job_archaeoengineers_add"
+          }
+        ],
+        "Bath Attendant Individual Machine": [
+          {
+            "Add": "mod_job_bath_attendant_individual_machine_add"
+          }
+        ],
+        "Puddle Technician": [
+          {
+            "Add": "mod_job_puddle_technician_add"
+          }
+        ],
+        "Gas Refiner": [
+          {
+            "Add": "mod_job_gas_refiner_add"
+          }
+        ],
+        "Machine Nurse": [
+          {
+            "Add": "mod_job_machine_nurse_add"
+          }
+        ],
+        "Rancher": [
+          {
+            "Add": "mod_job_rancher_add"
+          }
+        ],
+        "Gas Extractor": [
+          {
+            "Add": "mod_job_gas_extractor_add"
+          }
+        ],
+        "Archaeo Unit": [
+          {
+            "Add": "mod_job_archaeo_unit_add"
+          }
+        ],
+        "Purge": [
+          {
+            "Add": "mod_job_purge_add"
+          }
+        ],
+        "Farmer": [
+          {
+            "Add": "mod_job_farmer_add"
+          }
+        ],
+        "Bath Attendant Machine": [
+          {
+            "Add": "mod_job_bath_attendant_machine_add"
+          }
+        ],
+        "Xeno Zoo Animal": [
+          {
+            "Add": "mod_job_xeno_zoo_animal_add"
+          }
+        ],
+        "Executive": [
+          {
+            "Add": "mod_job_executive_add"
+          }
+        ],
+        "Foundry": [
+          {
+            "Add": "mod_job_foundry_add"
+          }
+        ],
+        "Merchant": [
+          {
+            "Add": "mod_job_merchant_add"
+          }
+        ],
+        "Hunter Gatherer": [
+          {
+            "Add": "mod_job_hunter_gatherer_add"
+          }
+        ],
+        "Nanotech Research Unit": [
+          {
+            "Add": "mod_job_nanotech_research_unit_add"
+          }
+        ],
+        "Broken Shackles Scavenger": [
+          {
+            "Add": "mod_job_broken_shackles_scavenger_add"
+          }
+        ],
+        "Healthcare": [
+          {
+            "Add": "mod_job_healthcare_add"
+          }
+        ],
+        "Technician": [
+          {
+            "Add": "mod_job_technician_add"
+          }
+        ],
+        "Mortal Initiate": [
+          {
+            "Add": "mod_job_mortal_initiate_add"
+          }
+        ],
+        "Fallen Empire Archivist": [
+          {
+            "Add": "mod_job_fe_archivist_add"
+          }
+        ],
+        "Calculator": [
+          {
+            "Add": "mod_job_calculator_add"
+          }
+        ],
+        "Battle Thrall": [
+          {
+            "Add": "mod_job_battle_thrall_add"
+          }
+        ],
+        "Administrator": [
+          {
+            "Add": "mod_job_administrator_add"
+          }
+        ],
+        "Haruspex": [
+          {
+            "Add": "mod_job_haruspex_add"
+          }
+        ],
+        "Wonder Curator": [
+          {
+            "Add": "mod_job_wonder_curator_add"
+          }
+        ],
+        "Researcher": [
+          {
+            "Add": "mod_job_researcher_add"
+          }
+        ],
+        "Artist": [
+          {
+            "Add": "mod_job_artist_add"
+          }
+        ],
+        "Noble": [
+          {
+            "Add": "mod_job_noble_add"
+          }
+        ],
+        "Evaluator": [
+          {
+            "Add": "mod_job_evaluator_add"
+          }
+        ],
+        "Manager": [
+          {
+            "Add": "mod_job_manager_add"
+          }
+        ],
+        "Munition Decommissioner": [
+          {
+            "Add": "mod_job_munitions_decommissioner_add"
+          }
+        ],
+        "Ranger": [
+          {
+            "Add": "mod_job_ranger_add"
+          }
+        ],
+        "Identity Designer": [
+          {
+            "Add": "mod_job_identity_designer_add"
+          }
+        ],
+        "Ratling Scavenger": [
+          {
+            "Add": "mod_job_ratling_scavenger_add"
+          }
+        ],
+        "Apprentice": [
+          {
+            "Add": "mod_job_apprentice_add"
+          }
+        ],
+        "Priest": [
+          {
+            "Add": "mod_job_death_priest_add"
           }
         ]
       }
@@ -1822,24 +2348,54 @@
     "GroupDisplayName": "Job",
     "ModifierGroups": [
       {
-        "Transluder Drone": [
+        "Catalytic Drone": [
           {
-            "Add": "mod_job_translucer_drone_add"
+            "Add": "mod_job_catalytic_drone_add"
           }
         ],
-        "Overlord Spawning Drone": [
+        "Historical Curator": [
           {
-            "Add": "mod_job_overlord_spawning_drone_add"
+            "Add": "mod_job_drone_historical_curator_add"
+          }
+        ],
+        "Archaeo Drone": [
+          {
+            "Add": "mod_job_archaeo_drone_add"
+          }
+        ],
+        "Alloy Drone": [
+          {
+            "Add": "mod_job_alloy_drone_add"
+          }
+        ],
+        "Puddle Technician Drone": [
+          {
+            "Add": "mod_job_puddle_technician_drone_add"
+          }
+        ],
+        "Brain Drone": [
+          {
+            "Add": "mod_job_brain_drone_add"
+          }
+        ],
+        "Wonder Curator": [
+          {
+            "Add": "mod_job_drone_wonder_curator_add"
+          }
+        ],
+        "Synapse Drone": [
+          {
+            "Add": "mod_job_synapse_drone_add"
+          }
+        ],
+        "Odd Factory Drone": [
+          {
+            "Add": "mod_job_odd_factory_drone_add"
           }
         ],
         "Spawning Drone": [
           {
             "Add": "mod_job_spawning_drone_add"
-          }
-        ],
-        "Chemist Drone": [
-          {
-            "Add": "mod_job_chemist_drone_add"
           }
         ],
         "Warrior Drone": [
@@ -1852,64 +2408,9 @@
             "Add": "mod_job_patrol_drone_add"
           }
         ],
-        "Mote Harvesting Drone": [
+        "Geologist": [
           {
-            "Add": "mod_job_mote_harvesting_drone_add"
-          }
-        ],
-        "Crystal Mining Drone": [
-          {
-            "Add": "mod_job_crystal_mining_drone_add"
-          }
-        ],
-        "Synapse Drone": [
-          {
-            "Add": "mod_job_synapse_drone_add"
-          }
-        ],
-        "Catalytic Drone": [
-          {
-            "Add": "mod_job_catalytic_drone_add"
-          }
-        ],
-        "Alloy Drone": [
-          {
-            "Add": "mod_job_alloy_drone_add"
-          }
-        ],
-        "Mining Drone": [
-          {
-            "Add": "mod_job_mining_drone_add"
-          }
-        ],
-        "Gas Extraction Drone": [
-          {
-            "Add": "mod_job_gas_extraction_drone_add"
-          }
-        ],
-        "Odd Factory Drone": [
-          {
-            "Add": "mod_job_odd_factory_drone_add"
-          }
-        ],
-        "Agri Drone": [
-          {
-            "Add": "mod_job_agri_drone_add"
-          }
-        ],
-        "Technician Drone": [
-          {
-            "Add": "mod_job_technician_drone_add"
-          }
-        ],
-        "Puddle Technician Drone": [
-          {
-            "Add": "mod_job_puddle_technician_drone_add"
-          }
-        ],
-        "Munition Decommissioning Drone": [
-          {
-            "Add": "mod_job_munitions_decommissioning_drone_add"
+            "Add": "mod_job_drone_geologist_add"
           }
         ],
         "Artisan Drone": [
@@ -1917,9 +2418,14 @@
             "Add": "mod_job_artisan_drone_add"
           }
         ],
-        "Maintenance Drone": [
+        "Munition Decommissioning Drone": [
           {
-            "Add": "mod_job_maintenance_drone_add"
+            "Add": "mod_job_munitions_decommissioning_drone_add"
+          }
+        ],
+        "Technician Drone": [
+          {
+            "Add": "mod_job_technician_drone_add"
           }
         ],
         "Gas Refiner Drone": [
@@ -1927,19 +2433,59 @@
             "Add": "mod_job_gas_refiner_drone_add"
           }
         ],
-        "Archaeo Drone": [
+        "Chemist Drone": [
           {
-            "Add": "mod_job_archaeo_drone_add"
+            "Add": "mod_job_chemist_drone_add"
           }
         ],
-        "Brain Drone": [
+        "Mote Harvesting Drone": [
           {
-            "Add": "mod_job_brain_drone_add"
+            "Add": "mod_job_mote_harvesting_drone_add"
           }
         ],
         "Chronicle Drone": [
           {
             "Add": "mod_job_chronicle_drone_add"
+          }
+        ],
+        "Overlord Spawning Drone": [
+          {
+            "Add": "mod_job_overlord_spawning_drone_add"
+          }
+        ],
+        "Transluder Drone": [
+          {
+            "Add": "mod_job_translucer_drone_add"
+          }
+        ],
+        "Mining Drone": [
+          {
+            "Add": "mod_job_mining_drone_add"
+          }
+        ],
+        "Agri Drone": [
+          {
+            "Add": "mod_job_agri_drone_add"
+          }
+        ],
+        "Crystal Mining Drone": [
+          {
+            "Add": "mod_job_crystal_mining_drone_add"
+          }
+        ],
+        "Maintenance Drone": [
+          {
+            "Add": "mod_job_maintenance_drone_add"
+          }
+        ],
+        "Gas Extraction Drone": [
+          {
+            "Add": "mod_job_gas_extraction_drone_add"
+          }
+        ],
+        "Wrangler": [
+          {
+            "Add": "mod_job_drone_wrangler_add"
           }
         ]
       }
@@ -1950,14 +2496,9 @@
     "GroupDisplayName": "Job",
     "ModifierGroups": [
       {
-        "Low Tech Warrior": [
+        "Low Tech Farmer": [
           {
-            "Add": "mod_job_low_tech_warrior_add"
-          }
-        ],
-        "Low Tech Laborer": [
-          {
-            "Add": "mod_job_low_tech_laborer_add"
+            "Add": "mod_job_low_tech_farmer_add"
           }
         ],
         "Low Tech Bureaucrat": [
@@ -1965,9 +2506,14 @@
             "Add": "mod_job_low_tech_bureaucrat_add"
           }
         ],
-        "Low Tech Researcher": [
+        "Low Tech Laborer": [
           {
-            "Add": "mod_job_low_tech_researcher_add"
+            "Add": "mod_job_low_tech_laborer_add"
+          }
+        ],
+        "Low Tech Warrior": [
+          {
+            "Add": "mod_job_low_tech_warrior_add"
           }
         ],
         "Low Tech Priest": [
@@ -1975,9 +2521,9 @@
             "Add": "mod_job_low_tech_priest_add"
           }
         ],
-        "Low Tech Farmer": [
+        "Low Tech Researcher": [
           {
-            "Add": "mod_job_low_tech_farmer_add"
+            "Add": "mod_job_low_tech_researcher_add"
           }
         ]
       }
@@ -1988,19 +2534,19 @@
     "GroupDisplayName": "Job",
     "ModifierGroups": [
       {
+        "Overlord Academic": [
+          {
+            "Add": "mod_job_overlord_academic_add"
+          }
+        ],
+        "Overlord Healthcare": [
+          {
+            "Add": "mod_job_overlord_healthcare_add"
+          }
+        ],
         "Overlord Breeder": [
           {
             "Add": "mod_job_overlord_breeder_add"
-          }
-        ],
-        "Overlord Beholder": [
-          {
-            "Add": "mod_job_overlord_beholder_add"
-          }
-        ],
-        "Overlord Replicator": [
-          {
-            "Add": "mod_job_overlord_replicator_add"
           }
         ],
         "Overlord Propagandist": [
@@ -2008,9 +2554,9 @@
             "Add": "mod_job_overlord_propagandist_add"
           }
         ],
-        "Overlord Academic": [
+        "Overlord Replicator": [
           {
-            "Add": "mod_job_overlord_academic_add"
+            "Add": "mod_job_overlord_replicator_add"
           }
         ],
         "Overlord Trader": [
@@ -2018,9 +2564,9 @@
             "Add": "mod_job_overlord_trader_add"
           }
         ],
-        "Overlord Healthcare": [
+        "Overlord Beholder": [
           {
-            "Add": "mod_job_overlord_healthcare_add"
+            "Add": "mod_job_overlord_beholder_add"
           }
         ]
       }
@@ -2036,29 +2582,9 @@
             "Add": "mod_job_primitive_priest_2_add"
           }
         ],
-        "Primitive Warrior 2": [
+        "Primitive Warrior": [
           {
-            "Add": "mod_job_primitive_warrior_2_add"
-          }
-        ],
-        "Primitive Bureaucrat": [
-          {
-            "Add": "mod_job_primitive_bureaucrat_add"
-          }
-        ],
-        "Primitive Farmer": [
-          {
-            "Add": "mod_job_primitive_farmer_add"
-          }
-        ],
-        "Primitive Laborer": [
-          {
-            "Add": "mod_job_primitive_laborer_add"
-          }
-        ],
-        "Primitive Priest": [
-          {
-            "Add": "mod_job_primitive_priest_add"
+            "Add": "mod_job_primitive_warrior_add"
           }
         ],
         "Primitive Researcher 2": [
@@ -2066,9 +2592,14 @@
             "Add": "mod_job_primitive_researcher_2_add"
           }
         ],
-        "Primitive Warrior": [
+        "Primitive Warrior 2": [
           {
-            "Add": "mod_job_primitive_warrior_add"
+            "Add": "mod_job_primitive_warrior_2_add"
+          }
+        ],
+        "Primitive Laborer": [
+          {
+            "Add": "mod_job_primitive_laborer_add"
           }
         ],
         "Primitive Noble": [
@@ -2076,9 +2607,24 @@
             "Add": "mod_job_primitive_noble_add"
           }
         ],
+        "Primitive Priest": [
+          {
+            "Add": "mod_job_primitive_priest_add"
+          }
+        ],
+        "Primitive Bureaucrat": [
+          {
+            "Add": "mod_job_primitive_bureaucrat_add"
+          }
+        ],
         "Primitive Researcher": [
           {
             "Add": "mod_job_primitive_researcher_add"
+          }
+        ],
+        "Primitive Farmer": [
+          {
+            "Add": "mod_job_primitive_farmer_add"
           }
         ]
       }
@@ -2089,35 +2635,36 @@
     "GroupDisplayName": "Leader",
     "ModifierGroups": [
       {
-        "Trait Selection Options": [
-          {
-            "Add": "mod_leader_trait_selection_options_add"
-          }
-        ],
-        "Experience Gain": [
-          {
-            "Official": "mod_leader_official_exp_gain",
-            "General": "mod_leader_general_exp_gain",
-            "Councilor": "mod_leader_councilor_exp_gain",
-            "Scientist": "mod_leader_scientist_exp_gain",
-            "Commander": "mod_leader_commander_exp_gain",
-            "Species": "mod_leader_species_exp_gain"
-          }
-        ],
-        "Cost": [
-          {
-            "Base": "mod_leader_cost"
-          }
-        ],
         "Lifespan": [
           {
             "Add": "mod_leader_lifespan_add"
           }
         ],
+        "Experience Gain": [
+          {
+            "Scientist": "mod_leader_scientist_exp_gain",
+            "Commander": "mod_leader_commander_exp_gain",
+            "Official": "mod_leader_official_exp_gain",
+            "General": "mod_general_exp_gain",
+            "Councilor": "mod_leader_councilor_exp_gain",
+            "Species": "mod_leader_species_exp_gain",
+            "Official2": "mod_official_exp_gain"
+          }
+        ],
         "Skill Levels": [
           {
-            "Ruler": "mod_leader_ruler_skill_levels",
-            "Base": "mod_leader_skill_levels"
+            "Skill Levels": "mod_leader_skill_levels",
+            "Ruler": "mod_leader_ruler_skill_levels"
+          }
+        ],
+        "Cost": [
+          {
+            "Cost": "mod_leader_cost"
+          }
+        ],
+        "Trait Selection Options": [
+          {
+            "Add": "mod_leader_trait_selection_options_add"
           }
         ]
       }
@@ -2128,11 +2675,6 @@
     "GroupDisplayName": "L-Gate Windup",
     "ModifierGroups": [
       {
-        "Megastructure Bypass": [
-          {
-            "Mult": "mod_lgate_megastructure_bypass_windup_mult"
-          }
-        ],
         "Empire": [
           {
             "Mult": "mod_lgate_empire_windup_mult"
@@ -2141,6 +2683,11 @@
         "Ship": [
           {
             "Mult": "mod_lgate_ship_windup_mult"
+          }
+        ],
+        "Megastructure Bypass": [
+          {
+            "Mult": "mod_lgate_megastructure_bypass_windup_mult"
           }
         ]
       }
@@ -2151,10 +2698,10 @@
     "GroupDisplayName": "Living Metal",
     "ModifierGroups": [
       {
-        "Produces": [
+        "Upkeep": [
           {
-            "Mult": "mod_sr_living_metal_produces_mult",
-            "Add": "mod_sr_living_metal_produces_add"
+            "Mult": "mod_sr_living_metal_upkeep_mult",
+            "Add": "mod_sr_living_metal_upkeep_add"
           }
         ],
         "Cost": [
@@ -2163,10 +2710,57 @@
             "Add": "mod_sr_living_metal_cost_add"
           }
         ],
-        "Upkeep": [
+        "Produces": [
           {
-            "Mult": "mod_sr_living_metal_upkeep_mult",
-            "Add": "mod_sr_living_metal_upkeep_add"
+            "Add": "mod_sr_living_metal_produces_add",
+            "Add Negative": "mod_living_metal_produces_add_negative",
+            "Mult": "mod_sr_living_metal_produces_mult"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Monthly Loyalty",
+    "GroupDisplayName": "Monthly Loyalty",
+    "ModifierGroups": [
+      {
+        "From Synthetic Subjects": [
+          {
+            "From Synthetic Subjects": "mod_monthly_loyalty_from_synthetic_subjects"
+          }
+        ],
+        "From Organic Subjects": [
+          {
+            "From Organic Subjects": "mod_monthly_loyalty_from_organic_subjects"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Monthly Loyalty Gain",
+    "GroupDisplayName": "Monthly Loyalty Gain",
+    "ModifierGroups": [
+      {
+        "Gain": [
+          {
+            "Gain": "mod_monthly_loyalty_gain"
+          }
+        ],
+        "From Synthetic Subjects": [
+          {
+            "From Synthetic Subjects": "mod_monthly_loyalty_gain_from_synthetic_subjects"
+          }
+        ],
+        "From Organic Subjects": [
+          {
+            "From Organic Subjects": "mod_monthly_loyalty_gain_from_organic_subjects"
+          }
+        ],
+        "From Subjects": [
+          {
+            "From Subjects": "mod_monthly_loyalty_gain_from_subjects"
           }
         ]
       }
@@ -2177,10 +2771,10 @@
     "GroupDisplayName": "Lulxury Goods",
     "ModifierGroups": [
       {
-        "Produces": [
+        "Upkeep": [
           {
-            "Mult": "mod_luxury_goods_produces_mult",
-            "Add": "mod_luxury_goods_produces_add"
+            "Mult": "mod_luxury_goods_upkeep_mult",
+            "Add": "mod_luxury_goods_upkeep_add"
           }
         ],
         "Cost": [
@@ -2189,10 +2783,24 @@
             "Add": "mod_luxury_goods_cost_add"
           }
         ],
-        "Upkeep": [
+        "Produces": [
           {
-            "Mult": "mod_luxury_goods_upkeep_mult",
-            "Add": "mod_luxury_goods_upkeep_add"
+            "Mult": "mod_luxury_goods_produces_mult",
+            "Add": "mod_luxury_goods_produces_add"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Mega Structure",
+    "GroupDisplayName": "Mega Structure",
+    "ModifierGroups": [
+      {
+        "Build Speed": [
+          {
+            "Mult": "mod_megastructure_build_speed_mult",
+            "Add": "mod_megastructure_build_speed_add"
           }
         ]
       }
@@ -2203,10 +2811,10 @@
     "GroupDisplayName": "Menace",
     "ModifierGroups": [
       {
-        "Produces": [
+        "Upkeep": [
           {
-            "Mult": "mod_menace_produces_mult",
-            "Add": "mod_menace_produces_add"
+            "Mult": "mod_menace_upkeep_mult",
+            "Add": "mod_menace_upkeep_add"
           }
         ],
         "Cost": [
@@ -2215,10 +2823,10 @@
             "Add": "mod_menace_cost_add"
           }
         ],
-        "Upkeep": [
+        "Produces": [
           {
-            "Mult": "mod_menace_upkeep_mult",
-            "Add": "mod_menace_upkeep_add"
+            "Mult": "mod_menace_produces_mult",
+            "Add": "mod_menace_produces_add"
           }
         ]
       }
@@ -2229,39 +2837,9 @@
     "GroupDisplayName": "Menace Perk",
     "ModifierGroups": [
       {
-        "Base Breaker": [
-          {
-            "Add": "mod_menace_perk_basebreaker"
-          }
-        ],
-        "Death From Above": [
-          {
-            "Add": "mod_menace_perk_deathfromabove"
-          }
-        ],
-        "Mobile Bulwark": [
-          {
-            "Add": "mod_menace_perk_mobilebulwark"
-          }
-        ],
-        "Relentless Aggression": [
-          {
-            "Add": "mod_menace_perk_relentlessaggression"
-          }
-        ],
         "Ruthless Raiders": [
           {
             "Add": "mod_menace_perk_ruthlessraiders"
-          }
-        ],
-        "Undertaker": [
-          {
-            "Add": "mod_menace_perk_undertaker"
-          }
-        ],
-        "Intimidation": [
-          {
-            "Add": "mod_menace_perk_intimidation"
           }
         ],
         "Flyswatter": [
@@ -2269,9 +2847,19 @@
             "Add": "mod_menace_perk_flyswatter"
           }
         ],
+        "Relentless Aggression": [
+          {
+            "Add": "mod_menace_perk_relentlessaggression"
+          }
+        ],
         "Ship Chipper": [
           {
             "Add": "mod_menace_perk_shipchipper"
+          }
+        ],
+        "Mobile Bulwark": [
+          {
+            "Add": "mod_menace_perk_mobilebulwark"
           }
         ],
         "Easily Replaced": [
@@ -2279,9 +2867,52 @@
             "Add": "mod_menace_perk_easilyreplaced"
           }
         ],
+        "Undertaker": [
+          {
+            "Add": "mod_menace_perk_undertaker"
+          }
+        ],
+        "Base Breaker": [
+          {
+            "Add": "mod_menace_perk_basebreaker"
+          }
+        ],
+        "Intimidation": [
+          {
+            "Add": "mod_menace_perk_intimidation"
+          }
+        ],
         "Mobile Bulwark copy": [
           {
             "Add": "mod_menace_perk_mobilebulwark copy"
+          }
+        ],
+        "Death From Above": [
+          {
+            "Add": "mod_menace_perk_deathfromabove"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Military Station",
+    "GroupDisplayName": "Military Station",
+    "ModifierGroups": [
+      {
+        "Build Cost": [
+          {
+            "Mult": "mod_shipclass_military_station_build_cost_mult"
+          }
+        ],
+        "Damage": [
+          {
+            "Mult": "mod_shipclass_military_station_damage_mult"
+          }
+        ],
+        "Hull": [
+          {
+            "Mult": "mod_shipclass_military_station_hull_mult"
           }
         ]
       }
@@ -2292,10 +2923,10 @@
     "GroupDisplayName": "Minerals",
     "ModifierGroups": [
       {
-        "Produces": [
+        "Upkeep": [
           {
-            "Mult": "mod_minerals_produces_mult",
-            "Add": "mod_minerals_produces_add"
+            "Mult": "mod_minerals_upkeep_mult",
+            "Add": "mod_minerals_upkeep_add"
           }
         ],
         "Cost": [
@@ -2304,10 +2935,10 @@
             "Add": "mod_minerals_cost_add"
           }
         ],
-        "Upkeep": [
+        "Produces": [
           {
-            "Mult": "mod_minerals_upkeep_mult",
-            "Add": "mod_minerals_upkeep_add"
+            "Mult": "mod_minerals_produces_mult",
+            "Add": "mod_minerals_produces_add"
           }
         ]
       }
@@ -2318,10 +2949,10 @@
     "GroupDisplayName": "Minor Artifacts",
     "ModifierGroups": [
       {
-        "Produces": [
+        "Upkeep": [
           {
-            "Mult": "mod_minor_artifacts_produces_mult",
-            "Add": "mod_minor_artifacts_produces_add"
+            "Mult": "mod_minor_artifacts_upkeep_mult",
+            "Add": "mod_minor_artifacts_upkeep_add"
           }
         ],
         "Cost": [
@@ -2330,10 +2961,313 @@
             "Add": "mod_minor_artifacts_cost_add"
           }
         ],
+        "Produces": [
+          {
+            "Mult": "mod_minor_artifacts_produces_mult",
+            "Add": "mod_minor_artifacts_produces_add"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Misc",
+    "GroupDisplayName": "Misc",
+    "ModifierGroups": [
+      {
+        "Create Debris Chance": [
+          {
+            "Create Debris Chance": "mod_create_debris_chance"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Misc",
+    "GroupDisplayName": "Misc",
+    "ModifierGroups": [
+      {
+        "Shroud Unavailable": [
+          {
+            "Shroud Unavailable": "mod_shroud_unavailable"
+          }
+        ],
+        "Defense Armies": [
+          {
+            "Add": "mod_defense_armies_add"
+          }
+        ],
+        "Commander Experience Gain": [
+          {
+            "Commander Experience Gain": "mod_commander_exp_gain"
+          }
+        ],
+        "Speed": [
+          {
+            "Mult": "mod_speed_mult"
+          }
+        ],
+        "Unknown": [
+          {
+            "Unknown": "mod_unknown"
+          }
+        ],
+        "Force Disparity Fire Rate": [
+          {
+            "Mult": "mod_force_disparity_fire_rate_mult"
+          }
+        ],
+        "Edict Cap": [
+          {
+            "Add": "mod_edict_cap_add"
+          }
+        ],
+        "Nucleus Sample Boils": [
+          {
+            "Nucleus Sample Boils": "mod_nucleus_sample_boils"
+          }
+        ],
+        "Difficulty Modifier": [
+          {
+            "Mult": "mod_difficulty_modifier_mult"
+          }
+        ],
+        "Ship Destroyed Energy": [
+          {
+            "Add": "mod_enemy_ship_destroyed_energy_add"
+          }
+        ],
+        "Carrion Eaters": [
+          {
+            "Carrion Eaters": "mod_carrion_eaters"
+          }
+        ],
+        "Stuffed Toy": [
+          {
+            "Stuffed Toy": "mod_stuffed_toy"
+          }
+        ],
+        "Historical Item Specimens Produces": [
+          {
+            "Mult": "mod_historical_item_specimens_produces_mult"
+          }
+        ],
+        "Inetian Trader": [
+          {
+            "Inetian Trader": "mod_inetian_trader"
+          }
+        ],
+        "Veto Cost": [
+          {
+            "Mult": "mod_veto_cost_mult"
+          }
+        ],
+        "Heal Random Fleet Creature On Death": [
+          {
+            "Heal Random Fleet Creature On Death": "mod_heal_random_fleet_creature_on_death"
+          }
+        ],
+        "Trade Value": [
+          {
+            "Mult Negative": "mod_trade_value_mult_negative",
+            "Add": "mod_trade_value_add",
+            "Mult": "mod_trade_value_mult"
+          }
+        ],
+        "Mult": [
+          {
+            "Mult": "mod_cost_mult"
+          }
+        ],
+        "Artificial Planet Jobs Produces": [
+          {
+            "Mult": "mod_artificial_planet_jobs_produces_mult"
+          }
+        ],
+        "Produces": [
+          {
+            "Mult": "mod_produces_mult",
+            "Add": "mod_produces_add"
+          }
+        ],
+        "Reshape Form Agenda": [
+          {
+            "Reshape Form Agenda": "mod_reshape_form_agenda"
+          }
+        ],
+        "Salvage Chance": [
+          {
+            "Add": "mod_salvage_chance_add"
+          }
+        ],
+        "Base Country Intel": [
+          {
+            "Add": "mod_add_base_country_intel"
+          }
+        ],
+        "Weapon Fire Rate": [
+          {
+            "Mult": "mod_weapon_fire_rate_mult"
+          }
+        ],
+        "Treasure Trove Reward": [
+          {
+            "Mult": "mod_treasure_trove_reward_mult"
+          }
+        ],
+        "Xeno Geology Specimens Produces": [
+          {
+            "Mult": "mod_xeno_geology_specimens_produces_mult"
+          }
+        ],
+        "Biological Pop Happiness": [
+          {
+            "Biological Pop Happiness": "mod_biological_pop_happiness"
+          }
+        ],
+        "Assist Research": [
+          {
+            "Mult": "mod_assist_research_mult"
+          }
+        ],
+        "Ruler Skill": [
+          {
+            "Add": "mod_ruler_skill_add"
+          }
+        ],
+        "Negative Traits": [
+          {
+            "Negative Traits": "mod_negative_traits"
+          }
+        ],
+        "Ghost Signal": [
+          {
+            "Ghost Signal": "mod_ghost_signal"
+          }
+        ],
+        "Weapon Damage": [
+          {
+            "Mult": "mod_weapon_damage_mult"
+          }
+        ],
+        "Relic Cooldown": [
+          {
+            "Relic Cooldown": "mod_relic_cooldown"
+          }
+        ],
+        "Impertial Security Directorate": [
+          {
+            "Impertial Security Directorate": "mod_imperial_security_directorate"
+          }
+        ],
+        "Spirit Of Our Ancestors": [
+          {
+            "Spirit Of Our Ancestors": "mod_spirit_of_our_ancestors"
+          }
+        ],
+        "Star": [
+          {
+            "Star": "mod_star"
+          }
+        ],
+        "Javorian Pox": [
+          {
+            "Javorian Pox": "mod_javorian_pox"
+          }
+        ],
+        "No Artificial Planet Jobs Produces": [
+          {
+            "Mult": "mod_non_artificial_planet_jobs_produces_mult"
+          }
+        ],
+        "Artificial Ship Naval Capacity Usage": [
+          {
+            "Mutl": "mod_artificial_ship_naval_cap_usage_mult"
+          }
+        ],
+        "Deposit Increase On Survey Chance": [
+          {
+            "Deposit Increase On Survey Chance": "mod_deposit_increase_on_survey_chance"
+          }
+        ],
+        "War Economy Defensive": [
+          {
+            "War Economy Defensive": "mod_war_economy_defensive"
+          }
+        ],
+        "Weapon Type Energy - Weapon Damage": [
+          {
+            "Mult": "mod_weapon_type_energy_weapon_damage_mult"
+          }
+        ],
+        "Counter Intel Gain Speed": [
+          {
+            "Counter Intel Gain Speed": "mod_counter_intel_gain_speed"
+          }
+        ],
+        "Add": [
+          {
+            "Add": "mod_cost_add"
+          }
+        ],
+        "Reject Lesson": [
+          {
+            "Reject Lesson": "mod_rejectlesson"
+          }
+        ],
+        "Blank": [
+          {
+            "Blank": "mod_blank_modifier"
+          }
+        ],
+        "Accept Lesson": [
+          {
+            "Accept Lesson": "mod_acceptlesson"
+          }
+        ],
+        "War Economy Offensive": [
+          {
+            "War Economy Offensive": "mod_war_economy_offensive"
+          }
+        ],
+        "Sector Max Jumps": [
+          {
+            "Add": "mod_sector_max_jumps_add"
+          }
+        ],
+        "Scientist Experience Gain": [
+          {
+            "Scientist Experience Gain": "mod_scientist_exp_gain"
+          }
+        ],
+        "Founder Species Growth": [
+          {
+            "Mult": "mod_founder_species_growth_mult"
+          }
+        ],
         "Upkeep": [
           {
-            "Mult": "mod_minor_artifacts_upkeep_mult",
-            "Add": "mod_minor_artifacts_upkeep_add"
+            "Mult": "mod_upkeep_mult",
+            "Add": "mod_upkeep_add"
+          }
+        ],
+        "Black Hole": [
+          {
+            "Black Hole": "mod_black_hole"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Mutation",
+    "GroupDisplayName": "Mutation",
+    "ModifierGroups": [
+      {
+        "Slots": [
+          {
+            "Add": "mod_country_mutation_slots_add"
           }
         ]
       }
@@ -2344,10 +3278,10 @@
     "GroupDisplayName": "Nanites",
     "ModifierGroups": [
       {
-        "Produces": [
+        "Upkeep": [
           {
-            "Mult": "mod_nanites_produces_mult",
-            "Add": "mod_nanites_produces_add"
+            "Mult": "mod_nanites_upkeep_mult",
+            "Add": "mod_nanites_upkeep_add"
           }
         ],
         "Cost": [
@@ -2356,10 +3290,24 @@
             "Add": "mod_nanites_cost_add"
           }
         ],
-        "Upkeep": [
+        "Produces": [
           {
-            "Mult": "mod_nanites_upkeep_mult",
-            "Add": "mod_nanites_upkeep_add"
+            "Mult": "mod_nanites_produces_mult",
+            "Add": "mod_nanites_produces_add"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Navy",
+    "GroupDisplayName": "Navy",
+    "ModifierGroups": [
+      {
+        "Size": [
+          {
+            "Mult": "mod_navy_size_mult",
+            "Add": "mod_navy_size_add"
           }
         ]
       }
@@ -2370,10 +3318,10 @@
     "GroupDisplayName": "Neutronium",
     "ModifierGroups": [
       {
-        "Produces": [
+        "Upkeep": [
           {
-            "Mult": "mod_sr_neutronium_produces_mult",
-            "Add": "mod_sr_neutronium_produces_add"
+            "Mult": "mod_sr_neutronium_upkeep_mult",
+            "Add": "mod_sr_neutronium_upkeep_add"
           }
         ],
         "Cost": [
@@ -2382,10 +3330,63 @@
             "Add": "mod_sr_neutronium_cost_add"
           }
         ],
-        "Upkeep": [
+        "Produces": [
           {
-            "Mult": "mod_sr_neutronium_upkeep_mult",
-            "Add": "mod_sr_neutronium_upkeep_add"
+            "Mult": "mod_sr_neutronium_produces_mult",
+            "Add": "mod_sr_neutronium_produces_add"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Operation",
+    "GroupDisplayName": "Operation",
+    "ModifierGroups": [
+      {
+        "Technology": [
+          {
+            "Technology": "mod_cat_technology"
+          }
+        ],
+        "Sabotage": [
+          {
+            "Sabotage": "mod_cat_sabotage_small"
+          }
+        ],
+        "Government": [
+          {
+            "Government": "mod_cat_government"
+          }
+        ],
+        "Provocation": [
+          {
+            "Provocation": "mod_cat_provocation_small"
+          }
+        ],
+        "Manipulation": [
+          {
+            "Manipulation": "mod_cat_manipulation_small"
+          }
+        ],
+        "Subterfuge": [
+          {
+            "Subterfuge": "mod_cat_subterfuge_small"
+          }
+        ],
+        "Diplomacy": [
+          {
+            "Diplomacy": "mod_cat_diplomacy"
+          }
+        ],
+        "Military": [
+          {
+            "Military": "mod_cat_military"
+          }
+        ],
+        "Economy": [
+          {
+            "Economy": "mod_cat_economy"
           }
         ]
       }
@@ -2396,64 +3397,68 @@
     "GroupDisplayName": "Operation Category",
     "ModifierGroups": [
       {
-        "Diplomacy": [
-          {
-            "Skill Add": "mod_op_cat_diplomacy_skill_add",
-            "Base": "mod_op_cat_diplomacy"
-          }
-        ],
-        "Government": [
-          {
-            "Skill Add": "mod_op_cat_government_skill_add",
-            "Base": "mod_op_cat_government"
-          }
-        ],
-        "Economy": [
-          {
-            "Skill Add": "mod_op_cat_economy_skill_add",
-            "Base": "mod_op_cat_economy"
-          }
-        ],
-        "Infiltration": [
-          {
-            "Skill Add": "mod_op_cat_infiltration_skill_add",
-            "Base": "mod_op_cat_infiltration"
-          }
-        ],
-        "Provocation": [
-          {
-            "Skill Add": "mod_op_cat_provocation_skill_add",
-            "Base": "mod_op_cat_provocation"
-          }
-        ],
         "Technology": [
           {
-            "Skill Add": "mod_op_cat_technology_skill_add",
-            "Base": "mod_op_cat_technology"
-          }
-        ],
-        "Subterfuge": [
-          {
-            "Skill Add": "mod_op_cat_subterfuge_skill_add",
-            "Base": "mod_op_cat_subterfuge"
+            "Technology": "mod_op_cat_technology",
+            "Skill Add": "mod_op_cat_technology_skill_add"
           }
         ],
         "Sabotage": [
           {
             "Skill Add": "mod_op_cat_sabotage_skill_add",
-            "Base": "mod_op_cat_sabotage"
+            "Sabotage": "mod_op_cat_sabotage"
           }
         ],
-        "Military": [
+        "Government": [
           {
-            "Skill Add": "mod_op_cat_military_skill_add",
-            "Base": "mod_op_cat_military"
+            "Government": "mod_op_cat_government",
+            "Skill Add": "mod_op_cat_government_skill_add"
+          }
+        ],
+        "Economy": [
+          {
+            "Skill Add": "mod_op_cat_economy_skill_add",
+            "Economy": "mod_op_cat_economy"
+          }
+        ],
+        "Add": [
+          {
+            "Skill Add": "mod_op_cat_subterfuge_skill_add"
           }
         ],
         "Manipulation": [
           {
-            "Skill Add": "mod_op_cat_manipulation_skill_add",
-            "Base": "mod_op_cat_manipulation"
+            "Manipulation": "mod_op_cat_manipulation",
+            "Skill Add": "mod_op_cat_manipulation_skill_add"
+          }
+        ],
+        "Subterfuge": [
+          {
+            "Subterfuge": "mod_op_cat_subterfuge"
+          }
+        ],
+        "Diplomacy": [
+          {
+            "Diplomacy": "mod_op_cat_diplomacy",
+            "Skill Add": "mod_op_cat_diplomacy_skill_add"
+          }
+        ],
+        "Military": [
+          {
+            "Military": "mod_op_cat_military",
+            "Skill Add": "mod_op_cat_military_skill_add"
+          }
+        ],
+        "Infiltration": [
+          {
+            "Skill Add": "mod_op_cat_infiltration_skill_add",
+            "Infiltration": "mod_op_cat_infiltration"
+          }
+        ],
+        "Provocation": [
+          {
+            "Skill Add": "mod_op_cat_provocation_skill_add",
+            "Provocation": "mod_op_cat_provocation"
           }
         ]
       }
@@ -2469,14 +3474,14 @@
             "Mult": "mod_owned_ship_evasion_mult"
           }
         ],
-        "Speed": [
-          {
-            "Mult": "mod_owned_ship_speed_mult"
-          }
-        ],
         "Accuracy": [
           {
             "Mult": "mod_owned_ship_accuracy_mult"
+          }
+        ],
+        "Speed": [
+          {
+            "Mult": "mod_owned_ship_speed_mult"
           }
         ],
         "Fire Rate": [
@@ -2492,12 +3497,12 @@
     "GroupDisplayName": "Pheromone Cocktail",
     "ModifierGroups": [
       {
-        "Base": [
+        "Pheromone Cocktail": [
           {
-            "Mid": "mod_pheromone_cocktail_mid",
-            "Worst": "mod_pheromone_cocktail_worst",
             "Best": "mod_pheromone_cocktail_best",
-            "Normal": "mod_pheromone_cocktail"
+            "Normal": "mod_pheromone_cocktail",
+            "Worst": "mod_pheromone_cocktail_worst",
+            "Mid": "mod_pheromone_cocktail_mid"
           }
         ]
       }
@@ -2508,11 +3513,15 @@
     "GroupDisplayName": "Physics Research",
     "ModifierGroups": [
       {
-        "Produces": [
+        "Upkeep": [
           {
-            "Add": "mod_physics_research_produces_add",
-            "Mult": "mod_physics_research_produces_mult",
-            "Mult Negative": "mod_physics_research_produces_mult_negative"
+            "Mult": "mod_physics_research_upkeep_mult",
+            "Add": "mod_physics_research_upkeep_add"
+          }
+        ],
+        "Technology Cost": [
+          {
+            "Mult": "mod_physics_tech_cost_mult"
           }
         ],
         "Cost": [
@@ -2521,10 +3530,621 @@
             "Add": "mod_physics_research_cost_add"
           }
         ],
-        "Upkeep": [
+        "Produces": [
           {
-            "Mult": "mod_physics_research_upkeep_mult",
-            "Add": "mod_physics_research_upkeep_add"
+            "Mult Negative": "mod_physics_research_produces_mult_negative",
+            "Add": "mod_physics_research_produces_add",
+            "Mult": "mod_physics_research_produces_mult"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Piracy",
+    "GroupDisplayName": "Piracy",
+    "ModifierGroups": [
+      {
+        "Growt": [
+          {
+            "Mult": "mod_piracy_growth_mult"
+          }
+        ],
+        "Suppression": [
+          {
+            "Mult": "mod_piracy_suppression_mult"
+          }
+        ],
+        "Protection": [
+          {
+            "Mult": "mod_piracy_protection_mult"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Planet",
+    "GroupDisplayName": "Planet",
+    "ModifierGroups": [
+      {
+        "Amneties": [
+          {
+            "No Happiness Add": "mod_planet_amenities_no_happiness_add",
+            "Add": "mod_planet_amenities_add",
+            "No Happiness Mult": "mod_planet_amenities_no_happiness_mult",
+            "Mult": "mod_planet_amenities_mult"
+          }
+        ],
+        "Colony Development Speed": [
+          {
+            "Mult": "mod_planet_colony_development_speed_mult"
+          }
+        ],
+        "Crime": [
+          {
+            "No Happiness Add": "mod_planet_crime_no_happiness_add",
+            "Add": "mod_planet_crime_add",
+            "No Happiness Mult": "mod_planet_crime_no_happiness_mult",
+            "Mult": "mod_planet_crime_mult"
+          }
+        ],
+        "Decision Enact Speed": [
+          {
+            "Mult": "mod_planet_decision_enact_speed_mult"
+          }
+        ],
+        "Max Buildings": [
+          {
+            "Add": "mod_planet_max_buildings_add"
+          }
+        ],
+        "Orbital Bombardment Damage": [
+          {
+            "Orbital Bombardment Damage": "mod_planet_orbital_bombardment_damage"
+          }
+        ],
+        "Planetary Ascension Cost": [
+          {
+            "Mult": "mod_planetary_ascension_cost_mult"
+          }
+        ],
+        "Army Build Cost": [
+          {
+            "Mult": "mod_planet_army_build_cost_mult"
+          }
+        ],
+        "Max Branch Office Buildings": [
+          {
+            "Self Add": "mod_planet_max_branch_office_buildings_self_add",
+            "Add": "mod_planet_max_branch_office_buildings_add"
+          }
+        ],
+        "Building Cost": [
+          {
+            "Mult": "mod_planet_building_cost_mult"
+          }
+        ],
+        "Stability": [
+          {
+            "Mult Negative": "mod_planet_stability_mult_negative",
+            "Add": "mod_planet_stability_add",
+            "Mult": "mod_planet_stability_mult"
+          }
+        ],
+        "Treasure Gatherers Produces": [
+          {
+            "Mult": "mod_planet_treasure_gatherers_produces_mult"
+          }
+        ],
+        "Max Non Artificial Buildings": [
+          {
+            "Add": "mod_planet_non_artificial_max_buildings_add"
+          }
+        ],
+        "Clear Blocker Cost": [
+          {
+            "Mult": "mod_planet_clear_blocker_cost_mult"
+          }
+        ],
+        "Army Build Time": [
+          {
+            "Mult": "mod_planet_army_build_time_mult"
+          }
+        ],
+        "Resettlement Unemployed Destination": [
+          {
+            "Mult": "mod_planet_resettlement_unemployed_destination_mult"
+          }
+        ],
+        "Max Districts": [
+          {
+            "Mult": "mod_planet_max_districts_mult"
+          }
+        ],
+        "Immigration Pull": [
+          {
+            "Mult": "mod_planet_immigration_pull_mult",
+            "Add": "mod_planet_immigration_pull_add"
+          }
+        ],
+        "Housing": [
+          {
+            "Mult": "mod_planet_housing_mult",
+            "Add": "mod_planet_housing_add"
+          }
+        ],
+        "Clear Blocker Time": [
+          {
+            "Mult": "mod_planet_clear_blocker_time_mult"
+          }
+        ],
+        "Storm Devastation": [
+          {
+            "Mult": "mod_planet_storm_devastation_mult"
+          }
+        ],
+        "Migration All": [
+          {
+            "Mult": "mod_planet_migration_all_mult"
+          }
+        ],
+        "Max Subject Holding Buildings": [
+          {
+            "Add": "mod_planet_max_subject_holding_buildings_add"
+          }
+        ],
+        "Combat Width": [
+          {
+            "Add": "mod_planet_combat_width_add"
+          }
+        ],
+        "Resource Food": [
+          {
+            "Add": "mod_planet_resource_food_add"
+          }
+        ],
+        "Pop Assembly": [
+          {
+            "Reduction": "mod_planet_pop_assembly_reduction",
+            "Add": "mod_planet_pop_assembly_add",
+            "Mult": "mod_planet_pop_assembly_mult"
+          }
+        ],
+        "Building Time": [
+          {
+            "Mult": "mod_planet_building_time_mult"
+          }
+        ],
+        "Carry Capacity": [
+          {
+            "Add": "mod_planet_carry_cap_add"
+          }
+        ],
+        "Emigration Push": [
+          {
+            "Mult": "mod_planet_emigration_push_mult",
+            "Add": "mod_planet_emigration_push_add"
+          }
+        ],
+        "Hyperlane Range": [
+          {
+            "Hyperlane Range": "mod_planet_hyperlane_range"
+          }
+        ],
+        "Organic Batteries": [
+          {
+            "Mult": "mod_planet_organic_batteries_mult"
+          }
+        ],
+        "Max Non Artificial Districts": [
+          {
+            "Add": "mod_planet_non_artificial_max_districts_add"
+          }
+        ],
+        "Building Build Speed": [
+          {
+            "Mult": "mod_planet_building_build_speed_mult"
+          }
+        ],
+        "Max Overlord Holding Buildings": [
+          {
+            "Add": "mod_planet_max_overlord_holding_buildings_add"
+          }
+        ],
+        "Border": [
+          {
+            "Mult": "mod_planet_border_mult"
+          }
+        ],
+        "Ship Build Speed": [
+          {
+            "Mult": "mod_planet_ship_build_speed_mult"
+          }
+        ],
+        "Pops Cyborgs Upkeep": [
+          {
+            "Mult": "mod_planet_pops_cyborgs_upkeep_mult"
+          }
+        ],
+        "Sensor Range": [
+          {
+            "Mult": "mod_planet_sensor_range_mult"
+          }
+        ],
+        "Resettlement Unemployed": [
+          {
+            "Mult": "mod_planet_resettlement_unemployed_mult"
+          }
+        ],
+        "Pop Assembly Organic": [
+          {
+            "Reduction": "mod_planet_pop_assembly_organic_reduction",
+            "Add": "mod_planet_pop_assembly_organic_add",
+            "Mult": "mod_planet_pop_assembly_organic_mult"
+          }
+        ],
+        "Clear Blocker Speed": [
+          {
+            "Mult": "mod_planet_clear_blocker_speed_mult"
+          }
+        ],
+        "Building refund": [
+          {
+            "Mult": "mod_planet_building_refund_mult"
+          }
+        ],
+        "Resource Unity": [
+          {
+            "Add": "mod_planet_resource_unity_add"
+          }
+        ],
+        "Planetary Ascension Effect": [
+          {
+            "Mult": "mod_planetary_ascension_effect_mult"
+          }
+        ],
+        "Crime Floor": [
+          {
+            "Add": "mod_planet_crime_floor_add"
+          }
+        ],
+        "Researchers Upkeep": [
+          {
+            "Mult": "mod_planet_researchers_upkeep_mult"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Planet Jobs",
+    "GroupDisplayName": "Planet Jobs",
+    "ModifierGroups": [
+      {
+        "Specialist Produces": [
+          {
+            "Mult": "mod_planet_jobs_specialist_produces_mult"
+          }
+        ],
+        "Psionics Produces": [
+          {
+            "Mult": "mod_planet_psionic_jobs_produces_mult"
+          }
+        ],
+        "Slave Produces": [
+          {
+            "Mult": "mod_planet_jobs_slave_produces_mult"
+          }
+        ],
+        "Roboticist Produces": [
+          {
+            "Mult": "mod_planet_jobs_robotic_produces_mult"
+          }
+        ],
+        "Simple Drone Produces": [
+          {
+            "Mult": "mod_planet_jobs_simple_drone_produces_mult"
+          }
+        ],
+        "Robot Worker Produces": [
+          {
+            "Mult": "mod_planet_jobs_robot_worker_produces_mult"
+          }
+        ],
+        "Cyborg Worker Produces": [
+          {
+            "Mult": "mod_planet_jobs_cyborg_worker_produces_mult"
+          }
+        ],
+        "Virtual Produces": [
+          {
+            "Mult": "mod_planet_virtual_jobs_produces_mult"
+          }
+        ],
+        "Cyborg Produces": [
+          {
+            "Mult": "mod_planet_cyborg_jobs_produces_mult"
+          }
+        ],
+        "Organics Produces": [
+          {
+            "Mult": "mod_planet_jobs_organics_produces_mult"
+          }
+        ],
+        "Simple Drone": [
+          {
+            "Reduced Mult": "mod_planet_jobs_simple_drone_reduced_mult"
+          }
+        ],
+        "Worker Produces": [
+          {
+            "Mult": "mod_planet_jobs_worker_produces_mult"
+          }
+        ],
+        "Worker Ownership Produces": [
+          {
+            "Mult": "mod_planet_worker_ownership_jobs_produces_mult"
+          }
+        ],
+        "Ruler Produces": [
+          {
+            "Mult": "mod_planet_jobs_ruler_produces_mult"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Pop",
+    "GroupDisplayName": "Pop",
+    "ModifierGroups": [
+      {
+        "Slave Mineral Output": [
+          {
+            "Slave Mineral Output": "mod_pop_slave_mineral_output"
+          }
+        ],
+        "Negative Growth Requirement": [
+          {
+            "Negative Growth Requirement": "mod_negative_pop_growth_req"
+          }
+        ],
+        "Defense Armies": [
+          {
+            "Add": "mod_pop_defense_armies_add"
+          }
+        ],
+        "Growth Speed": [
+          {
+            "Reduction": "mod_pop_growth_speed_reduction",
+            "Growth Speed": "mod_pop_growth_speed"
+          }
+        ],
+        "Assembly Speed": [
+          {
+            "Assembly Speed": "mod_pop_assembly_speed"
+          }
+        ],
+        "Demotion Time": [
+          {
+            "Mult": "mod_pop_demotion_time_mult"
+          }
+        ],
+        "Puge": [
+          {
+            "Mult": "mod_pop_purge_mult"
+          }
+        ],
+        "Non Slave Resource Output": [
+          {
+            "Non Slave Resource Output": "mod_pop_non_slave_resource_output"
+          }
+        ],
+        "Surrendered": [
+          {
+            "Surrendered": "mod_pop_surrendered"
+          }
+        ],
+        "Resource Output": [
+          {
+            "Resource Output": "mod_pop_resource_output"
+          }
+        ],
+        "Ethic Shift Speed": [
+          {
+            "Ethic Shift Speed": "mod_pop_ethics_shift_speed"
+          }
+        ],
+        "Decline Speed": [
+          {
+            "Decline Speed": "mod_pop_decline_speed"
+          }
+        ],
+        "Robot Production Output": [
+          {
+            "Robot Production Output": "mod_pop_robot_production_output"
+          }
+        ],
+        "Resource Output Reduction": [
+          {
+            "Resource Output Reduction": "mod_pop_resource_output_reduction"
+          }
+        ],
+        "Citizen Happiness": [
+          {
+            "Citizen Happiness": "mod_pop_citizen_happiness"
+          }
+        ],
+        "Robot Upkeep": [
+          {
+            "Mult": "mod_pop_robot_upkeep_mult"
+          }
+        ],
+        "Negative Hapiness": [
+          {
+            "Negative Hapiness": "mod_negative_pop_happiness"
+          }
+        ],
+        "Bad Vibes": [
+          {
+            "Bad Vibes": "mod_pop_bad_vibes"
+          }
+        ],
+        "Government Ethic Attraction": [
+          {
+            "Government Ethic Attraction": "mod_pop_government_ethic_attraction"
+          }
+        ],
+        "Food": [
+          {
+            "Add": "mod_pop_food_add"
+          }
+        ],
+        "Ethic Shift": [
+          {
+            "Ethic Shift": "mod_pop_ethic_shift"
+          }
+        ],
+        "Housing Usage": [
+          {
+            "Add": "mod_pop_housing_usage_add",
+            "Base": "mod_pop_housing_usage_base",
+            "Mult": "mod_pop_housing_usage_mult"
+          }
+        ],
+        "Eff Wo Slaves": [
+          {
+            "Eff Wo Slaves": "mod_pop_eff_wo_slaves"
+          }
+        ],
+        "Growth Requirement": [
+          {
+            "Growth Requirement": "mod_pop_growth_req"
+          }
+        ],
+        "Consumer Goods": [
+          {
+            "Mult": "mod_pop_consumer_goods_mult",
+            "Add": "mod_pop_consumer_goods_add"
+          }
+        ],
+        "Food Req": [
+          {
+            "Mult": "mod_pop_food_req_mult",
+            "Food Req": "mod_pop_food_req"
+          }
+        ],
+        "Energy": [
+          {
+            "Add": "mod_pop_energy_add"
+          }
+        ],
+        "Other Species Hapiness": [
+          {
+            "Other Species Hapiness": "mod_pop_other_species_happiness"
+          }
+        ],
+        "Radiation Happiness": [
+          {
+            "Radiation Happiness": "mod_pop_radiation_happiness"
+          }
+        ],
+        "Happiness": [
+          {
+            "Happiness": "mod_pop_happiness"
+          }
+        ],
+        "Purge Speed": [
+          {
+            "Purge Speed": "mod_pop_purge_speed"
+          }
+        ],
+        "Environment Tolerance": [
+          {
+            "Environment Tolerance": "mod_pop_environment_tolerance"
+          }
+        ],
+        "War Happiness": [
+          {
+            "War Happiness": "mod_pop_war_happiness"
+          }
+        ],
+        "Resettlement Cost": [
+          {
+            "Mult": "mod_pop_resettlement_cost_mult"
+          }
+        ],
+        "Decline From Emigration": [
+          {
+            "Decline From Emigration": "mod_pop_decline_from_emigration"
+          }
+        ],
+        "Growth From Immigration": [
+          {
+            "Growth From Immigration": "mod_pop_growth_from_immigration"
+          }
+        ],
+        "Robot Non Energy Output": [
+          {
+            "Robot Non Energy Output": "mod_pop_robot_non_energy_output"
+          }
+        ],
+        "Non Food Resource Output": [
+          {
+            "Non Food Resource Output": "mod_pop_non_food_resource_output"
+          }
+        ],
+        "Owner Hapiness": [
+          {
+            "Owner Hapiness": "mod_pop_owner_happiness"
+          }
+        ],
+        "Political Power": [
+          {
+            "Political Power": "mod_pop_political_power"
+          }
+        ],
+        "Slave Food Output": [
+          {
+            "Slave Food Output": "mod_pop_slave_food_output"
+          }
+        ],
+        "Processing Output": [
+          {
+            "Processing Output": "mod_pop_processing_output"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Pop Amenities",
+    "GroupDisplayName": "Pop Amenities",
+    "ModifierGroups": [
+      {
+        "Usage No Happiness": [
+          {
+            "Add": "mod_pop_amenities_usage_no_happiness_add",
+            "Base": "mod_pop_amenities_usage_no_happiness_base",
+            "Mult": "mod_pop_amenities_usage_no_happiness_mult"
+          }
+        ],
+        "Usage Organic": [
+          {
+            "Mult": "mod_pop_amenities_usage_organic_mult"
+          }
+        ],
+        "Usage Robotic": [
+          {
+            "Mult": "mod_pop_amenities_usage_robotic_mult"
+          }
+        ],
+        "Usage": [
+          {
+            "Add": "mod_pop_amenities_usage_add",
+            "Base": "mod_pop_amenities_usage_base",
+            "Mult": "mod_pop_amenities_usage_mult"
           }
         ]
       }
@@ -2535,11 +4155,6 @@
     "GroupDisplayName": "Quantum Catapult Windup",
     "ModifierGroups": [
       {
-        "Megastructure Bypass": [
-          {
-            "Mult": "mod_quantum_catapult_megastructure_bypass_windup_mult"
-          }
-        ],
         "Empire": [
           {
             "Mult": "mod_quantum_catapult_empire_windup_mult"
@@ -2548,6 +4163,11 @@
         "Ship": [
           {
             "Mult": "mod_quantum_catapult_ship_windup_mult"
+          }
+        ],
+        "Megastructure Bypass": [
+          {
+            "Mult": "mod_quantum_catapult_megastructure_bypass_windup_mult"
           }
         ]
       }
@@ -2558,11 +4178,10 @@
     "GroupDisplayName": "Rare Crystals",
     "ModifierGroups": [
       {
-        "Produces": [
+        "Upkeep": [
           {
-            "Add": "mod_rare_crystals_produces_add",
-            "Add Negative": "mod_rare_crystals_produces_add_negative",
-            "Mult": "mod_rare_crystals_produces_mult"
+            "Mult": "mod_rare_crystals_upkeep_mult",
+            "Add": "mod_rare_crystals_upkeep_add"
           }
         ],
         "Cost": [
@@ -2571,10 +4190,29 @@
             "Add": "mod_rare_crystals_cost_add"
           }
         ],
-        "Upkeep": [
+        "Produces": [
           {
-            "Mult": "mod_rare_crystals_upkeep_mult",
-            "Add": "mod_rare_crystals_upkeep_add"
+            "Add": "mod_rare_crystals_produces_add",
+            "Add Negative": "mod_rare_crystals_produces_add_negative",
+            "Mult": "mod_rare_crystals_produces_mult"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Reanimated Ship",
+    "GroupDisplayName": "Reanimated Ship",
+    "ModifierGroups": [
+      {
+        "Damage": [
+          {
+            "Mult": "mod_reanimated_ship_damage_mult"
+          }
+        ],
+        "Fire Rate": [
+          {
+            "Mult": "mod_reanimated_ship_fire_rate_mult"
           }
         ]
       }
@@ -2585,11 +4223,6 @@
     "GroupDisplayName": "Relay Bypass Windup",
     "ModifierGroups": [
       {
-        "Megastructure Bypass": [
-          {
-            "Mult": "mod_relay_bypass_megastructure_bypass_windup_mult"
-          }
-        ],
         "Empire": [
           {
             "Mult": "mod_relay_bypass_empire_windup_mult"
@@ -2599,21 +4232,586 @@
           {
             "Mult": "mod_relay_bypass_ship_windup_mult"
           }
+        ],
+        "Megastructure Bypass": [
+          {
+            "Mult": "mod_relay_bypass_megastructure_bypass_windup_mult"
+          }
         ]
       }
     ]
   },
   {
-    "GroupName": "ShipCloaking",
-    "GroupDisplayName": "ShipCloaking",
+    "GroupName": "Resources",
+    "GroupDisplayName": "Resources",
+    "ModifierGroups": [
+      {
+        "Muutagan": [
+          {
+            "Add": "mod_resource_sr_muutagan_add"
+          }
+        ],
+        "Minor Artifacts": [
+          {
+            "Mult": "mod_resource_minor_artifacts_mult"
+          }
+        ],
+        "Time": [
+          {
+            "Mult": "mod_resource_time_mult"
+          }
+        ],
+        "Rare Crystals": [
+          {
+            "Mult": "mod_resource_rare_crystals_mult"
+          }
+        ],
+        "Dark Matter": [
+          {
+            "Mult": "mod_resource_sr_dark_matter_mult"
+          }
+        ],
+        "Influence": [
+          {
+            "Mult": "mod_resource_influence_mult",
+            "Add": "mod_resource_influence_add"
+          }
+        ],
+        "Alloys": [
+          {
+            "Mult": "mod_resource_alloys_mult"
+          }
+        ],
+        "Zro": [
+          {
+            "Mult": "mod_resource_sr_zro_mult"
+          }
+        ],
+        "Society Research": [
+          {
+            "Mult": "mod_resource_society_research_mult"
+          }
+        ],
+        "Food": [
+          {
+            "Mult": "mod_resource_food_mult",
+            "Add": "mod_resource_food_add"
+          }
+        ],
+        "Physices Research": [
+          {
+            "Mult": "mod_resource_physics_research_mult"
+          }
+        ],
+        "Volatile Motes": [
+          {
+            "Mult": "mod_resource_volatile_motes_mult"
+          }
+        ],
+        "Riggan": [
+          {
+            "Add": "mod_resource_sr_riggan_add"
+          }
+        ],
+        "Astral Threads": [
+          {
+            "Mult": "mod_resource_astral_threads_mult"
+          }
+        ],
+        "Nanites": [
+          {
+            "Mult": "mod_resource_nanites_mult"
+          }
+        ],
+        "Consumer Goods": [
+          {
+            "Mult": "mod_resource_consumer_goods_mult"
+          }
+        ],
+        "Energy": [
+          {
+            "Mult": "mod_resource_energy_mult",
+            "Add": "mod_resource_energy_add"
+          }
+        ],
+        "Minerals": [
+          {
+            "Mult": "mod_resource_minerals_mult",
+            "Add": "mod_resource_minerals_add"
+          }
+        ],
+        "Living Metal": [
+          {
+            "Mult": "mod_resource_sr_living_metal_mult"
+          }
+        ],
+        "Engineering Research": [
+          {
+            "Mult": "mod_resource_engineering_research_mult"
+          }
+        ],
+        "Unity": [
+          {
+            "Mult": "mod_resource_unity_mult",
+            "Add": "mod_resource_unity_add"
+          }
+        ],
+        "Xuran": [
+          {
+            "Add": "mod_resource_sr_xuran_add"
+          }
+        ],
+        "Luxury Goods": [
+          {
+            "Mult": "mod_resource_luxury_goods_mult"
+          }
+        ],
+        "Neutronium": [
+          {
+            "Mult": "mod_resource_sr_neutronium_mult"
+          }
+        ],
+        "Advanced Logic": [
+          {
+            "Mult": "mod_resource_advanced_logic_mult"
+          }
+        ],
+        "Exotic Gases": [
+          {
+            "Mult": "mod_resource_exotic_gases_mult"
+          }
+        ],
+        "Menace": [
+          {
+            "Mult": "mod_resource_menace_mult"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Ship",
+    "GroupDisplayName": "Ship",
+    "ModifierGroups": [
+      {
+        "Ship Speed Reduction": [
+          {
+            "Ship Speed Reduction": "mod_ship_speed_reduction"
+          }
+        ],
+        "Build Cost": [
+          {
+            "Mult": "mod_ship_build_cost_mult"
+          }
+        ],
+        "Base Speed": [
+          {
+            "Mult": "mod_ship_base_speed_mult"
+          }
+        ],
+        "Armor Hardening": [
+          {
+            "Add": "mod_ship_armor_hardening_add"
+          }
+        ],
+        "Weapon Range": [
+          {
+            "Mult": "mod_ship_weapon_range_mult"
+          }
+        ],
+        "Anomaly Research Speed": [
+          {
+            "Anomaly Research Speed": "mod_ship_anomaly_research_speed"
+          }
+        ],
+        "Astral Rift Speed": [
+          {
+            "Mult": "mod_ship_astral_rift_speed_mult"
+          }
+        ],
+        "Combat Speed": [
+          {
+            "Mult": "mod_ship_combat_speed_mult"
+          }
+        ],
+        "Emergency FTL": [
+          {
+            "Emergency FTL": "mod_ship_emergency_ftl"
+          }
+        ],
+        "Disengage": [
+          {
+            "Mult": "mod_ship_disengage_mult"
+          }
+        ],
+        "Hyperlane Range": [
+          {
+            "Add": "mod_ship_hyperlane_range_add"
+          }
+        ],
+        "Armor Reduction": [
+          {
+            "Armor Reduction": "mod_ship_armor_reduction"
+          }
+        ],
+        "Anomaly Generation Chance": [
+          {
+            "Anomaly Generation Chance": "mod_ship_anomaly_generation_chance"
+          }
+        ],
+        "Friendly Territory Accuracy": [
+          {
+            "Mult": "mod_ship_friendly_territory_accuracy_mult",
+            "Add": "mod_ship_friendly_territory_accuracy_add"
+          }
+        ],
+        "Hull Regeneration": [
+          {
+            "Add Percentage": "mod_ship_hull_regen_add_perc",
+            "Add Static": "mod_ship_hull_regen_add_static"
+          }
+        ],
+        "Experience Gain": [
+          {
+            "Mult": "mod_ship_experience_gain_mult"
+          }
+        ],
+        "Windup": [
+          {
+            "Mult": "mod_ship_windup_mult"
+          }
+        ],
+        "Military Station Small Cost": [
+          {
+            "Mult Positive": "mod_ship_military_station_small_cost_mult_positive",
+            "Mult Negative": "mod_ship_military_station_small_cost_mult_negative"
+          }
+        ],
+        "Piracy Suppression": [
+          {
+            "Mult": "mod_ship_piracy_suppression_mult",
+            "Add": "mod_ship_piracy_suppression_add"
+          }
+        ],
+        "Emergency FTL Min Days": [
+          {
+            "Mult": "mod_ship_emergency_ftl_min_days_mult",
+            "Add": "mod_ship_emergency_ftl_min_days_add"
+          }
+        ],
+        "Armor Regeneration": [
+          {
+            "Add Percentage": "mod_ship_armor_regen_add_perc"
+          }
+        ],
+        "Science Survey Speed": [
+          {
+            "Science Survey Speed": "mod_ship_science_survey_speed"
+          }
+        ],
+        "Damage Against Space Fauna": [
+          {
+            "Mult": "mod_ship_damage_against_space_fauna_mult"
+          }
+        ],
+        "Steal Defeated Ship Chance": [
+          {
+            "Steal Defeated Ship Chance": "mod_ship_steal_defeated_ship_chance"
+          }
+        ],
+        "Friendly Territory Fire Rate": [
+          {
+            "Mult": "mod_ship_friendly_territory_fire_rate_mult"
+          }
+        ],
+        "Orbit Upkeep": [
+          {
+            "Mult": "mod_ship_orbit_upkeep_mult"
+          }
+        ],
+        "Damage Against Starbases": [
+          {
+            "Mult": "mod_ship_damage_against_starbases_mult"
+          }
+        ],
+        "Auto Repair": [
+          {
+            "Add": "mod_ship_auto_repair_add"
+          }
+        ],
+        "Reparation Speed": [
+          {
+            "Mult": "mod_ship_reparation_speed_mult"
+          }
+        ],
+        "Home Territory Fire Rate": [
+          {
+            "Mult": "mod_ship_home_territory_fire_rate_mult"
+          }
+        ],
+        "Friendly Territory Evasion": [
+          {
+            "Mult": "mod_ship_friendly_territory_evasion_mult",
+            "Add": "mod_ship_friendly_territory_evasion_add"
+          }
+        ],
+        "Armor Damage": [
+          {
+            "Mult": "mod_ship_armor_damage_mult"
+          }
+        ],
+        "Federation Territory Speed": [
+          {
+            "Mult": "mod_ship_federation_territory_speed_mult"
+          }
+        ],
+        "Startint Experience": [
+          {
+            "Add": "mod_ship_starting_experience_add"
+          }
+        ],
+        "Shield": [
+          {
+            "Mult": "mod_ship_shield_mult",
+            "Add": "mod_ship_shield_add"
+          }
+        ],
+        "Friendly Territory Tracking": [
+          {
+            "Mult": "mod_ship_friendly_territory_tracking_mult",
+            "Add": "mod_ship_friendly_territory_tracking_add"
+          }
+        ],
+        "Disengage Chance Reduction": [
+          {
+            "Disengage Chance Reduction": "mod_ship_disengage_chance_reduction"
+          }
+        ],
+        "Upkeep": [
+          {
+            "Mult": "mod_ship_upkeep_mult"
+          }
+        ],
+        "Shield Penetration": [
+          {
+            "Mult": "mod_ship_shield_penetration_mult",
+            "Add": "mod_ship_shield_penetration_add"
+          }
+        ],
+        "Weapon Damage": [
+          {
+            "Weapon Damage": "mod_ship_weapon_damage"
+          }
+        ],
+        "Build Speed": [
+          {
+            "Mult": "mod_ship_build_speed_mult"
+          }
+        ],
+        "FTL Jumpdrive Range": [
+          {
+            "Mult": "mod_ship_ftl_jumpdrive_range_mult"
+          }
+        ],
+        "Hull": [
+          {
+            "Mult": "mod_ship_hull_mult",
+            "Add": "mod_ship_hull_add"
+          }
+        ],
+        "Cloaking Strength": [
+          {
+            "Mult Negative": "mod_ship_cloaking_strength_mult_negative",
+            "Add": "mod_ship_cloaking_strength_add",
+            "Add Negative": "mod_ship_cloaking_strength_add_negative",
+            "Mult": "mod_ship_cloaking_strength_mult"
+          }
+        ],
+        "Shield Regeneration": [
+          {
+            "Add Percentage": "mod_ship_shield_regen_add_perc"
+          }
+        ],
+        "Accuracy": [
+          {
+            "Mult": "mod_ship_accuracy_mult",
+            "Add": "mod_ship_accuracy_add"
+          }
+        ],
+        "Damage": [
+          {
+            "Mult": "mod_ship_damage_mult"
+          }
+        ],
+        "Interstellar Speed": [
+          {
+            "Mult": "mod_ship_interstellar_speed_mult"
+          }
+        ],
+        "Astral Rift Clues": [
+          {
+            "Add": "mod_ship_astral_rift_clues_add"
+          }
+        ],
+        "Ship Speed": [
+          {
+            "Mult": "mod_ship_speed_mult"
+          }
+        ],
+        "Hull Damage": [
+          {
+            "Mult": "mod_ship_hull_damage_mult"
+          }
+        ],
+        "Cloaking Detection": [
+          {
+            "Mult Negative": "mod_ship_cloaking_detection_mult_negative",
+            "Add": "mod_ship_cloaking_detection_add",
+            "Add Negative": "mod_ship_cloaking_detection_add_negative",
+            "Mult": "mod_ship_cloaking_detection_mult"
+          }
+        ],
+        "Winddown": [
+          {
+            "Mult": "mod_ship_winddown_mult"
+          }
+        ],
+        "Landing Time": [
+          {
+            "Mult": "mod_ship_landing_time_mult"
+          }
+        ],
+        "Capture Chance": [
+          {
+            "Add": "mod_ship_capture_chance_add"
+          }
+        ],
+        "Armor Penetration": [
+          {
+            "Mult": "mod_ship_armor_penetration_mult",
+            "Add": "mod_ship_armor_penetration_add"
+          }
+        ],
+        "Sensor Range": [
+          {
+            "Add": "mod_ship_sensor_range_add"
+          }
+        ],
+        "Tracking": [
+          {
+            "Mult": "mod_ship_tracking_mult",
+            "Add": "mod_ship_tracking_add"
+          }
+        ],
+        "Armor": [
+          {
+            "Mult": "mod_ship_armor_mult"
+          }
+        ],
+        "Shield Reduction": [
+          {
+            "Shield Reduction": "mod_ship_shield_reduction"
+          }
+        ],
+        "Evasion": [
+          {
+            "Mult": "mod_ship_evasion_mult",
+            "Add": "mod_ship_evasion_add"
+          }
+        ],
+        "Orbital Bombardment Pop Damage": [
+          {
+            "Mult": "mod_ship_orbital_bombardment_pop_damage_mult"
+          }
+        ],
+        "Science Speed": [
+          {
+            "Mult": "mod_ship_science_speed_mult"
+          }
+        ],
+        "Military Speed": [
+          {
+            "Mult": "mod_ship_military_speed_mult"
+          }
+        ],
+        "Friendly Territory Armor": [
+          {
+            "Mult": "mod_ship_friendly_territory_armor_mult",
+            "Add": "mod_ship_friendly_territory_armor_add"
+          }
+        ],
+        "Shield Damage": [
+          {
+            "Mult": "mod_ship_shield_damage_mult"
+          }
+        ],
+        "Community Territory Speed": [
+          {
+            "Mult": "mod_ship_community_territory_speed_mult"
+          }
+        ],
+        "Capture Amount": [
+          {
+            "Add": "mod_ship_capture_amount_add"
+          }
+        ],
+        "Friendly Territory Shield": [
+          {
+            "Mult": "mod_ship_friendly_territory_shield_mult",
+            "Add": "mod_ship_friendly_territory_shield_add"
+          }
+        ],
+        "Orbital Bombardment Army Damage": [
+          {
+            "Mult": "mod_ship_orbital_bombardment_army_damage_mult"
+          }
+        ],
+        "Shield Hardening": [
+          {
+            "Add": "mod_ship_shield_hardening_add"
+          }
+        ],
+        "Disengage Oppotunities": [
+          {
+            "Add": "mod_ship_disengage_opportunities_add"
+          }
+        ],
+        "Disengage Chance": [
+          {
+            "Mult": "mod_ship_disengage_chance_mult"
+          }
+        ],
+        "Orbital Bombardment": [
+          {
+            "Mult": "mod_ship_orbital_bombardment_mult"
+          }
+        ],
+        "Damage Against Boss": [
+          {
+            "Mult": "mod_ship_damage_against_boss_mult"
+          }
+        ],
+        "Fire Rate": [
+          {
+            "Mult": "mod_ship_fire_rate_mult"
+          }
+        ],
+        "Anomaly Fail Risk": [
+          {
+            "Anomaly Fail Risk": "mod_ship_anomaly_fail_risk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Ship Cloaking",
+    "GroupDisplayName": "Ship Cloaking",
     "ModifierGroups": [
       {
         "Detection": [
           {
-            "Add": "mod_ship_cloaking_detection_add",
-            "Add Negative": "mod_ship_cloaking_detection_add_negative",
-            "Mult": "mod_ship_cloaking_detection_mult",
-            "Mult Negative": "mod_ship_cloaking_detection_mult_negative"
+            "Add Negative": "mod_ship_cloaking_detection_add_negative"
           }
         ],
         "Strenght": [
@@ -2629,11 +4827,6 @@
     "GroupDisplayName": "Shroud Tunnel Windup",
     "ModifierGroups": [
       {
-        "Megastructure Bypass": [
-          {
-            "Mult": "mod_shroud_tunnel_megastructure_bypass_windup_mult"
-          }
-        ],
         "Empire": [
           {
             "Mult": "mod_shroud_tunnel_empire_windup_mult"
@@ -2642,6 +4835,11 @@
         "Ship": [
           {
             "Mult": "mod_shroud_tunnel_ship_windup_mult"
+          }
+        ],
+        "Megastructure Bypass": [
+          {
+            "Mult": "mod_shroud_tunnel_megastructure_bypass_windup_mult"
           }
         ]
       }
@@ -2652,10 +4850,15 @@
     "GroupDisplayName": "Society Research",
     "ModifierGroups": [
       {
-        "Produces": [
+        "Upkeep": [
           {
-            "Mult": "mod_society_research_produces_mult",
-            "Add": "mod_society_research_produces_add"
+            "Mult": "mod_society_research_upkeep_mult",
+            "Add": "mod_society_research_upkeep_add"
+          }
+        ],
+        "Technology Cost": [
+          {
+            "Mult": "mod_society_tech_cost_mult"
           }
         ],
         "Cost": [
@@ -2664,10 +4867,235 @@
             "Add": "mod_society_research_cost_add"
           }
         ],
-        "Upkeep": [
+        "Produces": [
           {
-            "Mult": "mod_society_research_upkeep_mult",
-            "Add": "mod_society_research_upkeep_add"
+            "Mult": "mod_society_research_produces_mult",
+            "Add": "mod_society_research_produces_add"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Space Fauna",
+    "GroupDisplayName": "Space Fauna",
+    "ModifierGroups": [
+      {
+        "Ship Upkeep": [
+          {
+            "Mult": "mod_space_fauna_ship_upkeep_mult"
+          }
+        ],
+        "Large - Ship Hull": [
+          {
+            "Mult": "mod_large_space_fauna_ship_hull_mult"
+          }
+        ],
+        "Ship Damage": [
+          {
+            "Mult": "mod_space_fauna_ship_damage_mult"
+          }
+        ],
+        "Titanic - Build Speed": [
+          {
+            "Mult": "mod_titanic_space_fauna_build_speed_mult"
+          }
+        ],
+        "Small - Ship Cost": [
+          {
+            "Mult": "mod_small_space_fauna_ship_cost_mult"
+          }
+        ],
+        "Titanic - Ship Hull": [
+          {
+            "Mult": "mod_titanic_space_fauna_ship_hull_mult"
+          }
+        ],
+        "Large - Build Speed": [
+          {
+            "Mult": "mod_large_space_fauna_build_speed_mult"
+          }
+        ],
+        "Ship Shield": [
+          {
+            "Mult": "mod_space_fauna_ship_shield_mult",
+            "Add": "mod_space_fauna_ship_shield_add"
+          }
+        ],
+        "Naval Cap Usage": [
+          {
+            "Mult": "mod_space_fauna_naval_cap_usage_mult"
+          }
+        ],
+        "Medium - Ship Hull": [
+          {
+            "Mult": "mod_medium_space_fauna_ship_hull_mult"
+          }
+        ],
+        "Medium - Build Speed": [
+          {
+            "Mult": "mod_medium_space_fauna_build_speed_mult"
+          }
+        ],
+        "Attached Component Damage": [
+          {
+            "Mult": "mod_attached_space_fauna_component_damage_mult"
+          }
+        ],
+        "Extra Large - Ship Hull": [
+          {
+            "Mult": "mod_extra_large_space_fauna_ship_hull_mult"
+          }
+        ],
+        "Monthly Increased Breeding Chance": [
+          {
+            "Add": "mod_space_fauna_monthly_increased_breeding_chance_add"
+          }
+        ],
+        "Extra Large - Build Speed": [
+          {
+            "Mult": "mod_extra_large_space_fauna_build_speed_mult"
+          }
+        ],
+        "Ship Size Shield": [
+          {
+            "Add": "mod_space_fauna_ship_size_shield_add"
+          }
+        ],
+        "Ship Size Shield Regen": [
+          {
+            "Add": "mod_space_fauna_ship_size_shield_regen_add"
+          }
+        ],
+        "Ship Speed": [
+          {
+            "Mult": "mod_space_fauna_ship_speed_mult"
+          }
+        ],
+        "Reanimation Cost": [
+          {
+            "Mult": "mod_space_fauna_reanimation_cost_mult"
+          }
+        ],
+        "Ship Hull": [
+          {
+            "Mult": "mod_space_fauna_ship_hull_mult",
+            "Add": "mod_space_fauna_ship_hull_add"
+          }
+        ],
+        "Large - Ship Cost": [
+          {
+            "Mult": "mod_large_space_fauna_ship_cost_mult"
+          }
+        ],
+        "Experience Gain": [
+          {
+            "Mult": "mod_space_fauna_experience_gain_mult"
+          }
+        ],
+        "Titanic - Ship Cost": [
+          {
+            "Mult": "mod_titanic_space_fauna_ship_cost_mult"
+          }
+        ],
+        "Attached Component Fire Rate": [
+          {
+            "Mult": "mod_attached_space_fauna_component_fire_rate_mult"
+          }
+        ],
+        "Growth Rate": [
+          {
+            "Mult": "mod_space_fauna_growth_rate_mult"
+          }
+        ],
+        "Ship Armor": [
+          {
+            "Mult": "mod_space_fauna_ship_armor_mult",
+            "Add": "mod_space_fauna_ship_armor_add"
+          }
+        ],
+        "Ship Fire Rate": [
+          {
+            "Mult": "mod_space_fauna_ship_fire_rate_mult"
+          }
+        ],
+        "Extra Large - Ship Cost": [
+          {
+            "Mult": "mod_extra_large_space_fauna_ship_cost_mult"
+          }
+        ],
+        "Medium - Ship Cost": [
+          {
+            "Mult": "mod_medium_space_fauna_ship_cost_mult"
+          }
+        ],
+        "Culling Reward": [
+          {
+            "Mult": "mod_space_fauna_culling_reward_mult"
+          }
+        ],
+        "Small - Ship Hull": [
+          {
+            "Mult": "mod_small_space_fauna_ship_hull_mult"
+          }
+        ],
+        "Small - Build Speed": [
+          {
+            "Mult": "mod_small_space_fauna_build_speed_mult"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Species",
+    "GroupDisplayName": "Species",
+    "ModifierGroups": [
+      {
+        "Empire Size": [
+          {
+            "Mult": "mod_species_empire_size_mult"
+          }
+        ],
+        "Trait Points": [
+          {
+            "Add": "mod_species_trait_points_add"
+          }
+        ],
+        "Trait Picks": [
+          {
+            "Add": "mod_species_trait_picks_add"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Specimen",
+    "GroupDisplayName": "Specimen",
+    "ModifierGroups": [
+      {
+        "Selling Cost": [
+          {
+            "Mult": "mod_country_specimen_selling_cost_mult"
+          }
+        ],
+        "Acquire Chance": [
+          {
+            "Mult": "mod_country_specimen_acquire_chance_mult"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Spy Network",
+    "GroupDisplayName": "Spy Network",
+    "ModifierGroups": [
+      {
+        "Levels": [
+          {
+            "Add": "mod_spy_network_levels_add"
           }
         ]
       }
@@ -2678,26 +5106,10 @@
     "GroupDisplayName": "Starbase",
     "ModifierGroups": [
       {
-        "Shipyard": [
+        "Trade": [
           {
-            "Build Speed Mult": "mod_starbase_shipyard_build_speed_mult",
-            "Capacity Add": "mod_starbase_shipyard_capacity_add",
-            "Build Cost Mult": "mod_starbase_shipyard_build_cost_mult",
-            "Build Time Mult": "mod_starbase_shipyard_build_time_mult"
-          }
-        ],
-        "Module": [
-          {
-            "Build Speed Mult": "mod_starbase_module_build_speed_mult",
-            "Capacity Add": "mod_starbase_module_capacity_add",
-            "Build Cost Mult": "mod_starbase_module_build_cost_mult",
-            "Build Time Mult": "mod_starbase_module_build_time_mult"
-          }
-        ],
-        "Defense Platform": [
-          {
-            "Capacity Mult": "mod_starbase_defense_platform_capacity_mult",
-            "Capacity Add": "mod_starbase_defense_platform_capacity_add"
+            "Protection Add": "mod_starbase_trade_protection_add",
+            "Protection Range Add": "mod_starbase_trade_protection_range_add"
           }
         ],
         "Upgrade": [
@@ -2707,11 +5119,10 @@
             "Cost Mult": "mod_starbase_upgrade_cost_mult"
           }
         ],
-        "Trade": [
+        "Defense Platform": [
           {
-            "Collection Range Add": "mod_starbase_trade_collection_range_add",
-            "Protection Range Add": "mod_starbase_trade_protection_range_add",
-            "Protection Add": "mod_starbase_trade_protection_add"
+            "Capacity Add": "mod_starbase_defense_platform_capacity_add",
+            "Capacity Mult": "mod_starbase_defense_platform_capacity_mult"
           }
         ],
         "Defensive War Ship Build Speed": [
@@ -2719,17 +5130,137 @@
             "Mult": "mod_starbase_defensive_war_ship_build_speed_mult"
           }
         ],
-        "Building": [
+        "Module": [
           {
-            "Build Speed Mult": "mod_starbase_building_build_speed_mult",
-            "Building Capacity": "mod_starbase_building_capacity_add",
-            "Build Time Mult": "mod_starbase_building_build_time_mult"
+            "Build Time Mult": "mod_starbase_module_build_time_mult",
+            "Build Speed Mult": "mod_starbase_module_build_speed_mult",
+            "Capacity Add": "mod_starbase_module_capacity_add",
+            "Build Cost Mult": "mod_starbase_module_build_cost_mult"
           }
         ],
         "Ship": [
           {
             "Build Cost Mult": "mod_starbase_ship_build_cost_mult",
             "Build Speed Mult": "mod_starbase_ship_build_speed_mult"
+          }
+        ],
+        "Building": [
+          {
+            "Build Time Mult": "mod_starbase_building_build_time_mult",
+            "Build Speed Mult": "mod_starbase_building_build_speed_mult",
+            "Building Capacity": "mod_starbase_building_capacity_add"
+          }
+        ],
+        "Shipyard Capacity": [
+          {
+            "Collection Range Add": "mod_starbase_trade_collection_range_add"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Starbase Shipyard",
+    "GroupDisplayName": "Starbase Shipyard",
+    "ModifierGroups": [
+      {
+        "Shipyard Build Time": [
+          {
+            "Mult": "mod_starbase_shipyard_build_time_mult"
+          }
+        ],
+        "Shipyard Space Fauna Build Cost": [
+          {
+            "Mult": "mod_starbase_shipyard_space_fauna_build_cost_mult"
+          }
+        ],
+        "Shipyard Capacity": [
+          {
+            "Add": "mod_starbase_shipyard_capacity_add"
+          }
+        ],
+        "Shipyard Build Speed": [
+          {
+            "Mult": "mod_starbase_shipyard_build_speed_mult"
+          }
+        ],
+        "Shipyard Build Cost": [
+          {
+            "Mult": "mod_starbase_shipyard_build_cost_mult"
+          }
+        ],
+        "Shipyard Space Fauna Build Time": [
+          {
+            "Mult": "mod_starbase_shipyard_space_fauna_build_time_mult"
+          }
+        ],
+        "Shipyard Space Fauna Build Speed": [
+          {
+            "Mult": "mod_starbase_shipyard_space_fauna_build_speed_mult"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Static Resource",
+    "GroupDisplayName": "Static Resource",
+    "ModifierGroups": [
+      {
+        "Minerals": [
+          {
+            "Add": "mod_static_resource_minerals_add"
+          }
+        ],
+        "Food": [
+          {
+            "Add": "mod_static_resource_food_add"
+          }
+        ],
+        "Energy": [
+          {
+            "Add": "mod_static_resource_energy_add"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Storm",
+    "GroupDisplayName": "Storm",
+    "ModifierGroups": [
+      {
+        "Trap Insight": [
+          {
+            "Trap Insight": "mod_storm_trap_insight"
+          }
+        ],
+        "Repellent Timed": [
+          {
+            "Repellent Timed": "mod_storm_repellent_timed"
+          }
+        ],
+        "Ship Hull Breaker": [
+          {
+            "Mult": "mod_storm_ship_hull_breaker_mult"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Storm Chasers",
+    "GroupDisplayName": "Storm Chasers",
+    "ModifierGroups": [
+      {
+        "Bad Vibes": [
+          {
+            "Bad Vibes": "mod_origin_storm_chasers_bad_vibes"
+          }
+        ],
+        "The Code": [
+          {
+            "The Code": "mod_origin_storm_chasers_the_code"
           }
         ]
       }
@@ -2740,11 +5271,6 @@
     "GroupDisplayName": "Strange Wormhole Windup",
     "ModifierGroups": [
       {
-        "Megastructure Bypass": [
-          {
-            "Mult": "mod_strange_wormhole_megastructure_bypass_windup_mult"
-          }
-        ],
         "Empire": [
           {
             "Mult": "mod_strange_wormhole_empire_windup_mult"
@@ -2753,6 +5279,24 @@
         "Ship": [
           {
             "Mult": "mod_strange_wormhole_ship_windup_mult"
+          }
+        ],
+        "Megastructure Bypass": [
+          {
+            "Mult": "mod_strange_wormhole_megastructure_bypass_windup_mult"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Tech Cost",
+    "GroupDisplayName": "Tech Cost",
+    "ModifierGroups": [
+      {
+        "Empire Size": [
+          {
+            "Mult": "mod_tech_cost_empire_size_mult"
           }
         ]
       }
@@ -2763,10 +5307,10 @@
     "GroupDisplayName": "Time",
     "ModifierGroups": [
       {
-        "Produces": [
+        "Upkeep": [
           {
-            "Mult": "mod_time_produces_mult",
-            "Add": "mod_time_produces_add"
+            "Mult": "mod_time_upkeep_mult",
+            "Add": "mod_time_upkeep_add"
           }
         ],
         "Cost": [
@@ -2775,10 +5319,42 @@
             "Add": "mod_time_cost_add"
           }
         ],
-        "Upkeep": [
+        "Produces": [
           {
-            "Mult": "mod_time_upkeep_mult",
-            "Add": "mod_time_upkeep_add"
+            "Mult": "mod_time_produces_mult",
+            "Add": "mod_time_produces_add"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Trade Piracy",
+    "GroupDisplayName": "Trade Piracy",
+    "ModifierGroups": [
+      {
+        "Maximum": [
+          {
+            "Mult": "mod_max_trade_piracy_mult",
+            "Add": "mod_max_trade_piracy_add"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "GroupName": "Tradition Cost",
+    "GroupDisplayName": "Tradition Cost",
+    "ModifierGroups": [
+      {
+        "Number Xenos": [
+          {
+            "Mult": "mod_tradition_cost_num_xenos_mult"
+          }
+        ],
+        "Empire Size": [
+          {
+            "Mult": "mod_tradition_cost_empire_size_mult"
           }
         ]
       }
@@ -2789,17 +5365,6 @@
     "GroupDisplayName": "Unity",
     "ModifierGroups": [
       {
-        "Loss": [
-          {
-            "Mult": "mod_unity_loss_mult"
-          }
-        ],
-        "Cost": [
-          {
-            "Mult": "mod_unity_cost_mult",
-            "Add": "mod_unity_cost_add"
-          }
-        ],
         "Gain": [
           {
             "Mult": "mod_unity_gain_mult"
@@ -2809,6 +5374,17 @@
           {
             "Mult": "mod_unity_upkeep_mult",
             "Add": "mod_unity_upkeep_add"
+          }
+        ],
+        "Loss": [
+          {
+            "Mult": "mod_unity_loss_mult"
+          }
+        ],
+        "Cost": [
+          {
+            "Mult": "mod_unity_cost_mult",
+            "Add": "mod_unity_cost_add"
           }
         ],
         "Produces": [
@@ -2821,15 +5397,28 @@
     ]
   },
   {
+    "GroupName": "Vivarium",
+    "GroupDisplayName": "Vivarium",
+    "ModifierGroups": [
+      {
+        "Max Capacity": [
+          {
+            "Mult": "mod_country_vivarium_max_capacity_mult",
+            "Add": "mod_country_vivarium_max_capacity_add"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "GroupName": "Volatile Motes",
     "GroupDisplayName": "Volatile Motes",
     "ModifierGroups": [
       {
-        "Produces": [
+        "Upkeep": [
           {
-            "Add": "mod_volatile_motes_produces_add",
-            "Add Negative": "mod_volatile_motes_produces_add_negative",
-            "Mult": "mod_volatile_motes_produces_mult"
+            "Mult": "mod_volatile_motes_upkeep_mult",
+            "Add": "mod_volatile_motes_upkeep_add"
           }
         ],
         "Cost": [
@@ -2838,10 +5427,11 @@
             "Add": "mod_volatile_motes_cost_add"
           }
         ],
-        "Upkeep": [
+        "Produces": [
           {
-            "Mult": "mod_volatile_motes_upkeep_mult",
-            "Add": "mod_volatile_motes_upkeep_add"
+            "Add": "mod_volatile_motes_produces_add",
+            "Add Negative": "mod_volatile_motes_produces_add_negative",
+            "Mult": "mod_volatile_motes_produces_mult"
           }
         ]
       }
@@ -2852,11 +5442,6 @@
     "GroupDisplayName": "Wormhole Windup",
     "ModifierGroups": [
       {
-        "Megastructure Bypass": [
-          {
-            "Mult": "mod_wormhole_megastructure_bypass_windup_mult"
-          }
-        ],
         "Empire": [
           {
             "Mult": "mod_wormhole_empire_windup_mult"
@@ -2865,6 +5450,11 @@
         "Ship": [
           {
             "Mult": "mod_wormhole_ship_windup_mult"
+          }
+        ],
+        "Megastructure Bypass": [
+          {
+            "Mult": "mod_wormhole_megastructure_bypass_windup_mult"
           }
         ]
       }
@@ -2875,10 +5465,10 @@
     "GroupDisplayName": "Zro",
     "ModifierGroups": [
       {
-        "Produces": [
+        "Upkeep": [
           {
-            "Mult": "mod_sr_zro_produces_mult",
-            "Add": "mod_sr_zro_produces_add"
+            "Mult": "mod_sr_zro_upkeep_mult",
+            "Add": "mod_sr_zro_upkeep_add"
           }
         ],
         "Cost": [
@@ -2887,10 +5477,11 @@
             "Add": "mod_sr_zro_cost_add"
           }
         ],
-        "Upkeep": [
+        "Produces": [
           {
-            "Mult": "mod_sr_zro_upkeep_mult",
-            "Add": "mod_sr_zro_upkeep_add"
+            "Add": "mod_sr_zro_produces_add",
+            "Add Negative": "mod_zro_produces_add_negative",
+            "Mult": "mod_sr_zro_produces_mult"
           }
         ]
       }
