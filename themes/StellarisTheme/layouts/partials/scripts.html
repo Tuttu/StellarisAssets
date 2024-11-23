@@ -4,6 +4,7 @@
 {{ if not .IsHome }}
 <script src="{{ relURL "js/clipboard.min.js" }}"></script>
 <script src="{{ relURL "js/jquery.unveil.js" }}"></script>
+<script src="{{ relURL "js/imagesloaded.pkgd.min.js" }}"></script>
 <script src="{{ relURL "js/isotope.pkgd.min.js" }}"></script>
 
 <script>
@@ -26,10 +27,15 @@
 {{ if eq .Title "Modifiers" }}
 <script>
     // init Isotope
-    /*var $grid = $('.complex_icon_flex').isotope({
+    var $grid = $('.complex_icon_flex').isotope({
         itemSelector: '.complex_icon_block',
         layoutMode: 'masonry'
-    });*/
+    });
+
+    $grid.imagesLoaded().progress( function() {
+        $grid.isotope('layout');
+      });
+
 </script>
 {{ end }}
 
