@@ -7,4 +7,4 @@ url = '/MEM/modifiers'
 
 HINT : If you are lazy, just click a picture to get its name copied to your clipboard.
 
-{{< simpleIconGallery source="Vanilla">}}
+{{< complexIconGalleryV2 source="Vanilla">}}

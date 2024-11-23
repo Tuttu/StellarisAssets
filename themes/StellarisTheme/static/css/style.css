@@ -174,3 +174,8 @@ body {
     overflow-y: auto;
     padding-top: 20px; /* Adjust as needed for spacing */
 }  
+
+.iconTable {
+    width: 300px;
+    margin-bottom: 25px;
+}

@@ -3,8 +3,8 @@
 
 <div class="complex_icon_flex d-flex justify-content-evenly flex-wrap">
 	{{ range $modifiers }}
-	<div class="complex_icon_block d-block flex-even p-2 text-nowrap">
-		<table class="iconTable table table-bordered table-sm w-auto">
+	<div class="complex_icon_block d-block flex-even p-2">
+		<table class="iconTable table table-bordered table-sm">
 			<thead class="thead-light">
 				<tr>
 					<th colspan="2" scope="col">{{ .GroupDisplayName }}</th>
@@ -18,7 +18,7 @@
 					{{ range . }}
 						<td>
 						{{ range $k, $v := . }}
-							<img src="/StellarisAssets/modifiers/pictures/{{ $source }}/{{ $v }}.png" alt="{{ $k }}" title="{{ $k }}" data-clipboard-text="{{ $v }}">
+							<img src="/StellarisAssets/modifiers/pictures/{{ $source }}/{{ $v }}.png" loading="lazy" alt="{{ $k }}" title="{{ $k }}" data-clipboard-text="{{ $v }}">
 						{{ end }}
 						</td>
 					{{ end }}
