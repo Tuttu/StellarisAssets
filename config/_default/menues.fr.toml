@@ -75,6 +75,11 @@
     pageref = '/modules'
     weight = 1
 [[menu.main]]
+    identifier = "mutations"
+    name = 'Mutations'
+    pageref = '/mutations'
+    weight = 1
+[[menu.main]]
     identifier = "relics"
     name = 'Relics'
     pageref = '/relics'
