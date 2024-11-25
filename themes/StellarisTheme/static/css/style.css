@@ -42,11 +42,11 @@ body {
 }
 
 .simple_picture_block, .complex_picture_block {
-    flex-basis: 25%;
+    width:400px;
 }
 
 .picture_text{
-    max-width:400px;
+    width:400px;
     text-overflow: ellipsis;
     margin: auto;
     word-break: break-all;
@@ -58,8 +58,8 @@ body {
     overflow: visible; 
     white-space: normal;
     /*height:auto;  /* just added this line */
-    width: auto;
-    max-width: 100%;
+
+    display: inline-flex;
 }
 
 /* Pictures gallery CSS */
