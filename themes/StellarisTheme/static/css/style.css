@@ -42,7 +42,7 @@ body {
 }
 
 .simple_picture_block, .complex_picture_block {
-    width:400px;
+    /*width:400px;*/
 }
 
 .picture_text{
