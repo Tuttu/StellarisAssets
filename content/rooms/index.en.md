@@ -6,4 +6,10 @@ title = 'Rooms'
 
 HINT : If you are lazy, just click a picture to get its name copied to your clipboard.
 
-{{< simplePictureGallery source="Vanilla">}}
+### Diplomatic rooms
+
+{{< simplePictureGallery source="Vanilla_Diplomatic">}}
+
+### Council rooms
+
+{{< simplePictureGallery source="Vanilla_Council">}}
