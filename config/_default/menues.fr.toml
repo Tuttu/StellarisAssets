@@ -1,4 +1,9 @@
 [[menu.main]]
+    identifier = "civics"
+    name = 'Civics'
+    pageref = '/civics'
+    weight = 1
+[[menu.main]]
     identifier = "events"
     name = "Events"
     weight = 1
