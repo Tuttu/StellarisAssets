@@ -131,3 +131,8 @@
     name = 'Traits'
     pageref = '/traits'
     weight = 1
+[[menu.main]]
+    identifier = "messages"
+    name = 'Messages'
+    pageref = '/messages'
+    weight = 1
