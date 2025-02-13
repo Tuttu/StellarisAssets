@@ -1,9 +1,12 @@
 {{ $source := .Get "source" }}
+{{ $borderType := .Get "borderType" }}
+{{ $class := printf "border border-white%s" (cond (eq $borderType "Round") " rounded-circle" "") }}
+
 {{ with $.Page.Resources.Match (printf "pictures/%s/*" ($source|string)) }}
     <div class="pictures_flex d-flex justify-content-evenly flex-wrap">
         {{ range . }}
-            <div class="simple_picture_block d-block flex-even p-2">
-                <img src="{{ .RelPermalink }}" loading="lazy" alt="{{ path.BaseName .Name }}" title="{{ path.BaseName .Name }}" class="border border-white" data-clipboard-text="{{ path.BaseName .Name }}"/>
+            <div class="simple_picture_block d-block flex-even p-2">                
+                <img src="{{ .RelPermalink }}" loading="lazy" alt="{{ path.BaseName .Name }}" title="{{ path.BaseName .Name }}" class="border border-white {{ $borderType }}" data-clipboard-text="{{ path.BaseName .Name }}"/>
                 <span class="d-block p-2 picture_text">{{ path.BaseName .Name }}</span>
             </div>
         {{ end }}
