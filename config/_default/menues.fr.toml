@@ -4,6 +4,11 @@
     pageref = '/civics'
     weight = 1
 [[menu.main]]
+    identifier = "crisis"
+    name = 'Crisis'
+    pageref = '/crisis'
+    weight = 1
+[[menu.main]]
     identifier = "events"
     name = "Events"
     weight = 1

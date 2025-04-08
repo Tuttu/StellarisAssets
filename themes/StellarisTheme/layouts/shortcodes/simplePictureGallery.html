@@ -1,14 +1,58 @@
 {{ $source := .Get "source" }}
 {{ $borderType := .Get "borderType" }}
-{{ $class := printf "border border-white%s" (cond (eq $borderType "Round") " rounded-circle" "") }}
+{{ $pictureType := .Get "pictureType" }}
 
-{{ with $.Page.Resources.Match (printf "pictures/%s/*" ($source|string)) }}
-    <div class="pictures_flex d-flex justify-content-evenly flex-wrap">
+{{ if eq $pictureType "Crisis" }}
+    {{ with $.Page.Resources.Match (printf "pictures/%s/*" ($source | string)) }}
+        {{ $groups := dict }}
+
         {{ range . }}
-            <div class="simple_picture_block d-block flex-even p-2">                
-                <img src="{{ .RelPermalink }}" loading="lazy" alt="{{ path.BaseName .Name }}" title="{{ path.BaseName .Name }}" class="border border-white {{ $borderType }}" data-clipboard-text="{{ path.BaseName .Name }}"/>
-                <span class="d-block p-2 picture_text">{{ path.BaseName .Name }}</span>
+            {{ $name := path.BaseName .Name }}
+            {{ $prefix := index (split $name "_") 0 }}
+
+            {{ $existing := index $groups $prefix }}
+            {{ $list := slice }}
+
+            {{ if $existing }}
+                {{ range $existing }}
+                    {{ $list = $list | append . }}
+                {{ end }}
+            {{ end }}
+
+            {{ $list = $list | append . }}
+            {{ $groups = merge $groups (dict $prefix $list) }}
+        {{ end }}
+
+        {{ range $prefix, $images := $groups }}
+            <h2 class="mt-4 text-center">{{ title $prefix }}</h2>
+            <div class="pictures_flex d-flex justify-content-evenly flex-wrap">
+                {{ range $images }}
+                    {{ $name := path.BaseName .Name }}
+                    {{ $cleanName := replace $name (print $prefix "_") "" }}
+                    <div class="simple_picture_block d-block flex-even p-2">
+                        <img src="{{ .RelPermalink }}" loading="lazy"
+                            alt="{{ $cleanName }}" title="{{ $cleanName }}"
+                            class="border border-white {{ $borderType }}"
+                            data-clipboard-text="{{ $cleanName }}"/>
+                        <span class="d-block p-2 picture_text">{{ $cleanName }}</span>
+                    </div>
+                {{ end }}
             </div>
         {{ end }}
-    </div>
+    {{ end }}
+{{ else }}
+    {{ with $.Page.Resources.Match (printf "pictures/%s/*" ($source|string)) }}
+        <div class="pictures_flex d-flex justify-content-evenly flex-wrap">
+            {{ range . }}
+                <div class="simple_picture_block d-block flex-even p-2">  
+                    <img src="{{ .RelPermalink }}" loading="lazy" 
+                        alt="{{ path.BaseName .Name }}" title="{{ path.BaseName .Name }}" 
+                        class="border border-white {{ $borderType }}" 
+                        data-clipboard-text="{{ path.BaseName .Name }}"/>
+                    <span class="d-block p-2 picture_text">{{ path.BaseName .Name }}</span>
+                </div>
+            {{ end }}
+        </div>
+    {{ end }}
 {{ end }}
+
