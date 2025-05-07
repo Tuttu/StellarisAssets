@@ -1,0 +1,159 @@
+{{ $source := .Get "source" }}
+{{ $borderType := .Get "borderType" }}
+{{ $headerFile := .Get "header" }}
+{{ $headerMetadata := index site.Data $headerFile }}
+{{ $images := .Page.Resources.Match (printf "pictures/%s/*" ($source | string)) }}
+
+{{ print $images}}
+
+{{/*
+{{ with $images }}
+    {{ range .}}
+        {{ print .Name }}
+        
+        <br/> 
+    {{ end }}
+{{ end}}
+*/}}
+
+{{/* Build uniq and sorted slice of group names. */}}
+{{ $groups := slice }}
+{{ range $headerMetadata }}
+    {{ $groups = $groups | append .HeaderName }}
+{{ end }}
+{{ $groups = $groups | uniq | sort }}
+
+{{/* Render the pictures. */}}
+{{ with $groups }}
+    {{ range . }}
+        <h2 class="mt-4 text-center">{{ title . }}</h2>
+        <div class="pictures_flex d-flex justify-content-evenly flex-wrap">
+            {{ with where $headerMetadata "HeaderName" . }}
+                {{ range .  }}
+                    {{ $name := .NameInScript }}
+                    <div class="simple_picture_block d-block flex-even p-2">
+                        <img src="{{ .RelPermalink }}" loading="lazy"
+                            alt="{{ $name }}" title="{{ $name }}"
+                            class="border border-white {{ $borderType }}"
+                            data-clipboard-text="{{ $name }}"/>
+                        <span class="d-block p-2 picture_text">{{ $name }}</span>                    
+                    </div>
+                    {{ $name := .NameInScript }}
+                    {{ $img := first 1 (where $images "Name" "eq" (printf "%s.png" $name)) }}
+
+                    <div class="simple_picture_block d-block flex-even p-2">
+                        <img src="{{ if $img }}{{ $img.RelPermalink }}{{ else }}#{{ end }}" loading="lazy"
+                            alt="{{ $name }}" title="{{ $name }}"
+                            class="border border-white {{ $borderType }}"
+                            data-clipboard-text="{{ $name }}"/>                            
+                        {{ if not $img }}
+                            <span class="text-danger">Missing image: {{ $name }}.png</span>
+                        {{ end }}
+                        <span class="d-block p-2 picture_text">{{ $name }}</span>
+                    </div>
+                {{ end }}
+            {{ end }}
+        </div>
+    {{ end }}
+{{ end }}
+
+{{ with $groups }}
+    {{ range . }}
+        <h2 class="mt-4 text-center">{{ title . }}</h2>
+        <div class="pictures_flex d-flex justify-content-evenly flex-wrap">
+            {{ with where $headerMetadata "HeaderName" . }}
+                {{ range . }}
+                    {{ $name := .NameInScript }}
+                    {{ $img := first 1 (where $images "Name" "eq" (printf "%s.png" $name)) }}
+                    
+                    <!-- Debugging -->
+                    {{ print "Looking for: " (printf "%s.png" $name) }}
+                    {{ print "Images: " $images }}
+
+                    <!-- Extract base name from $images -->
+                    {{ $matchingImage := first 1 (where $images "Name" "eq" (printf "%s.png" $name)) }}
+                    {{ $img := index $matchingImage 0 }}
+
+                    <div class="simple_picture_block d-block flex-even p-2">
+                        <img src="{{ if $img }}{{ $img.RelPermalink }}{{ else }}#{{ end }}" loading="lazy"
+                            alt="{{ $name }}" title="{{ $name }}"
+                            class="border border-white {{ $borderType }}"
+                            data-clipboard-text="{{ $name }}"/>
+                        {{ if not $img }}
+                            <span class="text-danger">Missing image: {{ $name }}.png</span>
+                        {{ end }}
+                        <span class="d-block p-2 picture_text">{{ $name }}</span>
+                    </div>
+                {{ end }}
+            {{ end }}
+        </div>
+    {{ end }}
+{{ end }}
+
+{{/* Build uniq and sorted slice of group names. */}}
+{{ $groups := slice }}
+{{ range site.Data.list }}
+  {{ $groups = $groups | append .parent }}
+{{ end }}
+{{ $groups = $groups | uniq | sort }}
+
+{{/* Render the unordered list. */}}
+{{ with $groups }}
+  <ul>
+    {{ range . }}
+      <li>{{ . }}
+        {{ with where site.Data.list "parent" . }}
+          <ul>
+            {{ range sort . "name" }}
+              <li>{{ .name }}</li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}
+
+
+
+
+{{/*
+{{ with $.Page.Resources.Match (printf "pictures/%s/*" ($source | string)) }}
+    {{ $groups := dict }}
+
+    {{ range . }}
+        {{ $name := path.BaseName .Name }}
+        {{ $prefix := index (split $name "_") 0 }}
+
+        {{ $existing := index $groups $prefix }}
+        {{ $list := slice }}
+
+        {{ if $existing }}
+            {{ range $existing }}
+                {{ $list = $list | append . }}
+            {{ end }}
+        {{ end }}
+
+        {{ $list = $list | append . }}
+        {{ $groups = merge $groups (dict $prefix $list) }}
+    {{ end }}
+
+    {{ range $prefix, $images := $groups }}
+        <h2 class="mt-4 text-center">{{ title $prefix }}</h2>
+        <div class="pictures_flex d-flex justify-content-evenly flex-wrap">
+            {{ range $images }}
+                {{ $name := path.BaseName .Name }}
+                {{ $cleanName := replace $name (print $prefix "_") "" }}
+                <div class="simple_picture_block d-block flex-even p-2">
+                    <img src="{{ .RelPermalink }}" loading="lazy"
+                        alt="{{ $cleanName }}" title="{{ $cleanName }}"
+                        class="border border-white {{ $borderType }}"
+                        data-clipboard-text="{{ $cleanName }}"/>
+                    <span class="d-block p-2 picture_text">{{ $cleanName }}</span>
+                </div>
+            {{ end }}
+        </div>
+    {{ end }}
+{{ end }}
+
+*/}}

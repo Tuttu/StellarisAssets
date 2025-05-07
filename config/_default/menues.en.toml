@@ -1,7 +1,18 @@
 [[menu.main]]
+    identifier = "governments"
+    name = "Governments"
+    weight = 1
+[[menu.main]]
+    identifier = "authorities"
+    name = 'Authorities'
+    pageref = '/authorities'
+    parent = "governments"
+    weight = 1    
+[[menu.main]]
     identifier = "civics"
     name = 'Civics'
     pageref = '/civics'
+    parent = "governments"
     weight = 1
 [[menu.main]]
     identifier = "crisis"

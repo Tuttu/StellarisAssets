@@ -54,15 +54,6 @@
     "Tier": "1"
   },
   {
-    "Name": "leader_trait_skirmisher_2",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_skirmisher",
-    "Rarity": "common",
-    "Council": "yes",
-    "Tier": "2"
-  },
-  {
     "Name": "leader_trait_aggressive",
     "Script": "trait/icon",
     "Class": "commander",
@@ -70,15 +61,6 @@
     "Rarity": "common",
     "Council": "no",
     "Tier": "1"
-  },
-  {
-    "Name": "leader_trait_aggressive_2",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_aggressive",
-    "Rarity": "common",
-    "Council": "no",
-    "Tier": "2"
   },
   {
     "Name": "leader_trait_cautious",
@@ -90,15 +72,6 @@
     "Tier": "1"
   },
   {
-    "Name": "leader_trait_cautious_2",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_cautious",
-    "Rarity": "common",
-    "Council": "no",
-    "Tier": "2"
-  },
-  {
     "Name": "leader_trait_unyielding",
     "Script": "trait/icon",
     "Class": "commander",
@@ -106,15 +79,6 @@
     "Rarity": "common",
     "Council": "no",
     "Tier": "1"
-  },
-  {
-    "Name": "leader_trait_unyielding_2",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_unyielding",
-    "Rarity": "common",
-    "Council": "no",
-    "Tier": "2"
   },
   {
     "Name": "leader_trait_engineer",
@@ -126,15 +90,6 @@
     "Tier": "1"
   },
   {
-    "Name": "leader_trait_engineer_2",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_engineer",
-    "Rarity": "common",
-    "Council": "no",
-    "Tier": "2"
-  },
-  {
     "Name": "leader_trait_trickster",
     "Script": "trait/icon",
     "Class": "commander",
@@ -142,15 +97,6 @@
     "Rarity": "common",
     "Council": "no",
     "Tier": "1"
-  },
-  {
-    "Name": "leader_trait_trickster_2",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_trickster",
-    "Rarity": "common",
-    "Council": "no",
-    "Tier": "2"
   },
   {
     "Name": "leader_trait_wrecker",
@@ -171,15 +117,6 @@
     "Tier": "2"
   },
   {
-    "Name": "leader_trait_wrecker_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_wrecker",
-    "Rarity": "veteran",
-    "Council": "no",
-    "Tier": "3"
-  },
-  {
     "Name": "leader_trait_annihilator",
     "Script": "trait/icon",
     "Class": "commander",
@@ -196,15 +133,6 @@
     "Rarity": "veteran",
     "Council": "no",
     "Tier": "2"
-  },
-  {
-    "Name": "leader_trait_annihilator_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_annihilator",
-    "Rarity": "veteran",
-    "Council": "no",
-    "Tier": "3"
   },
   {
     "Name": "leader_trait_artillerist",
@@ -225,15 +153,6 @@
     "Tier": "2"
   },
   {
-    "Name": "leader_trait_artillerist_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_artillerist",
-    "Rarity": "veteran",
-    "Council": "no",
-    "Tier": "3"
-  },
-  {
     "Name": "leader_trait_commanding_presence",
     "Script": "trait/icon",
     "Class": "commander",
@@ -250,15 +169,6 @@
     "Rarity": "veteran",
     "Council": "no",
     "Tier": "2"
-  },
-  {
-    "Name": "leader_trait_commanding_presence_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_commanding_presence",
-    "Rarity": "veteran",
-    "Council": "no",
-    "Tier": "3"
   },
   {
     "Name": "leader_trait_corsair",
@@ -279,15 +189,6 @@
     "Tier": "2"
   },
   {
-    "Name": "leader_trait_corsair_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_corsair",
-    "Rarity": "veteran",
-    "Council": "no",
-    "Tier": "3"
-  },
-  {
     "Name": "leader_trait_demolisher",
     "Script": "trait/icon",
     "Class": "commander",
@@ -304,15 +205,6 @@
     "Rarity": "veteran",
     "Council": "no",
     "Tier": "2"
-  },
-  {
-    "Name": "leader_trait_demolisher_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_demolisher",
-    "Rarity": "veteran",
-    "Council": "no",
-    "Tier": "3"
   },
   {
     "Name": "leader_trait_shipbreaker",
@@ -333,15 +225,6 @@
     "Tier": "2"
   },
   {
-    "Name": "leader_trait_shipbreaker_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_shipbreaker",
-    "Rarity": "veteran",
-    "Council": "no",
-    "Tier": "3"
-  },
-  {
     "Name": "leader_trait_archaeo_specialization",
     "Script": "trait/icon",
     "Class": "commander",
@@ -358,15 +241,6 @@
     "Rarity": "veteran",
     "Council": "no",
     "Tier": "2"
-  },
-  {
-    "Name": "leader_trait_archaeo_specialization_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_expertise_archaeostudies",
-    "Rarity": "veteran",
-    "Council": "no",
-    "Tier": "3"
   },
   {
     "Name": "leader_trait_artillery_specialization",
@@ -387,15 +261,6 @@
     "Tier": "2"
   },
   {
-    "Name": "leader_trait_artillery_specialization_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_artillery_specialization",
-    "Rarity": "veteran",
-    "Council": "no",
-    "Tier": "3"
-  },
-  {
     "Name": "leader_trait_carrier_specialization",
     "Script": "trait/icon",
     "Class": "commander",
@@ -412,15 +277,6 @@
     "Rarity": "veteran",
     "Council": "no",
     "Tier": "2"
-  },
-  {
-    "Name": "leader_trait_carrier_specialization_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_carrier_specialization",
-    "Rarity": "veteran",
-    "Council": "no",
-    "Tier": "3"
   },
   {
     "Name": "leader_trait_rocketry_specialization",
@@ -441,15 +297,6 @@
     "Tier": "2"
   },
   {
-    "Name": "leader_trait_rocketry_specialization_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_rocketry_specialization",
-    "Rarity": "veteran",
-    "Council": "no",
-    "Tier": "3"
-  },
-  {
     "Name": "leader_trait_gunship_specialization",
     "Script": "trait/icon",
     "Class": "commander",
@@ -466,15 +313,6 @@
     "Rarity": "veteran",
     "Council": "no",
     "Tier": "2"
-  },
-  {
-    "Name": "leader_trait_gunship_specialization_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_gunship_specialization",
-    "Rarity": "veteran",
-    "Council": "no",
-    "Tier": "3"
   },
   {
     "Name": "leader_trait_juryrigger",
@@ -495,15 +333,6 @@
     "Tier": "2"
   },
   {
-    "Name": "leader_trait_juryrigger_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_juryrigger",
-    "Rarity": "veteran",
-    "Council": "no",
-    "Tier": "3"
-  },
-  {
     "Name": "leader_trait_surgical_bombardment",
     "Script": "trait/icon",
     "Class": "commander",
@@ -520,15 +349,6 @@
     "Rarity": "veteran",
     "Council": "no",
     "Tier": "2"
-  },
-  {
-    "Name": "leader_trait_surgical_bombardment_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_surgical_bombardment",
-    "Rarity": "veteran",
-    "Council": "no",
-    "Tier": "3"
   },
   {
     "Name": "leader_trait_scout",
@@ -549,15 +369,6 @@
     "Tier": "2"
   },
   {
-    "Name": "leader_trait_scout_3",
-    "Script": "trait/icon",
-    "Class": "leader",
-    "Icon": "GFX_leader_trait_scout",
-    "Rarity": "veteran",
-    "Council": "no",
-    "Tier": "3"
-  },
-  {
     "Name": "leader_trait_gale_speed",
     "Script": "trait/icon",
     "Class": "commander",
@@ -574,15 +385,6 @@
     "Rarity": "free_or_veteran",
     "Council": "yes",
     "Tier": "2"
-  },
-  {
-    "Name": "leader_trait_gale_speed_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_gale_speed",
-    "Rarity": "veteran",
-    "Council": "yes",
-    "Tier": "3"
   },
   {
     "Name": "trait_ruler_fortifier",
@@ -603,15 +405,6 @@
     "Tier": "2"
   },
   {
-    "Name": "trait_ruler_fortifier_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_fortifier",
-    "Rarity": "veteran",
-    "Council": "yes",
-    "Tier": "3"
-  },
-  {
     "Name": "leader_trait_armada_logistician",
     "Script": "trait/icon",
     "Class": "commander",
@@ -628,15 +421,6 @@
     "Rarity": "free_or_veteran",
     "Council": "yes",
     "Tier": "2"
-  },
-  {
-    "Name": "leader_trait_armada_logistician_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_armada_logistician",
-    "Rarity": "veteran",
-    "Council": "yes",
-    "Tier": "3"
   },
   {
     "Name": "trait_ruler_military_pioneer",
@@ -657,15 +441,6 @@
     "Tier": "2"
   },
   {
-    "Name": "trait_ruler_military_pioneer_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_military_pioneer",
-    "Rarity": "veteran",
-    "Council": "yes",
-    "Tier": "3"
-  },
-  {
     "Name": "leader_trait_intimidator",
     "Script": "trait/icon",
     "Class": "commander",
@@ -682,15 +457,6 @@
     "Rarity": "veteran",
     "Council": "yes",
     "Tier": "2"
-  },
-  {
-    "Name": "leader_trait_intimidator_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_intimidator",
-    "Rarity": "veteran",
-    "Council": "yes",
-    "Tier": "3"
   },
   {
     "Name": "leader_trait_border_guard",
@@ -711,15 +477,6 @@
     "Tier": "2"
   },
   {
-    "Name": "leader_trait_border_guard_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_home_in_the_sky",
-    "Rarity": "veteran",
-    "Council": "yes",
-    "Tier": "3"
-  },
-  {
     "Name": "leader_trait_crew_trainer",
     "Script": "trait/icon",
     "Class": "commander",
@@ -736,15 +493,6 @@
     "Rarity": "veteran",
     "Council": "yes",
     "Tier": "2"
-  },
-  {
-    "Name": "leader_trait_crew_trainer_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_destroyer_focus",
-    "Rarity": "veteran",
-    "Council": "yes",
-    "Tier": "3"
   },
   {
     "Name": "leader_trait_master_gunner",
@@ -1026,15 +774,6 @@
     "Tier": "1"
   },
   {
-    "Name": "leader_trait_defence_engineer_2",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_defence_engineer",
-    "Rarity": "common",
-    "Council": "yes",
-    "Tier": "2"
-  },
-  {
     "Name": "leader_trait_butcher",
     "Script": "trait/icon",
     "Class": "commander",
@@ -1044,15 +783,6 @@
     "Tier": "1"
   },
   {
-    "Name": "leader_trait_butcher_2",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_butcher",
-    "Rarity": "common",
-    "Council": "no",
-    "Tier": "2"
-  },
-  {
     "Name": "leader_trait_restrained",
     "Script": "trait/icon",
     "Class": "commander",
@@ -1060,15 +790,6 @@
     "Rarity": "common",
     "Council": "no",
     "Tier": "1"
-  },
-  {
-    "Name": "leader_trait_restrained_2",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_restrained",
-    "Rarity": "common",
-    "Council": "no",
-    "Tier": "2"
   },
   {
     "Name": "leader_trait_dreaded",
@@ -1089,15 +810,6 @@
     "Tier": "2"
   },
   {
-    "Name": "leader_trait_dreaded_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_dreaded",
-    "Rarity": "veteran",
-    "Council": "no",
-    "Tier": "3"
-  },
-  {
     "Name": "leader_trait_heavy_hitter",
     "Script": "trait/icon",
     "Class": "commander",
@@ -1114,15 +826,6 @@
     "Rarity": "free_or_veteran",
     "Council": "no",
     "Tier": "2"
-  },
-  {
-    "Name": "leader_trait_heavy_hitter_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_heavy_hitter",
-    "Rarity": "veteran",
-    "Council": "no",
-    "Tier": "3"
   },
   {
     "Name": "leader_trait_interrogator",
@@ -1143,15 +846,6 @@
     "Tier": "2"
   },
   {
-    "Name": "leader_trait_interrogator_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_interrogator",
-    "Rarity": "veteran",
-    "Council": "no",
-    "Tier": "3"
-  },
-  {
     "Name": "leader_trait_crusader",
     "Script": "trait/icon",
     "Class": "commander",
@@ -1168,15 +862,6 @@
     "Rarity": "veteran",
     "Council": "no",
     "Tier": "2"
-  },
-  {
-    "Name": "leader_trait_crusader_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_crusader",
-    "Rarity": "veteran",
-    "Council": "no",
-    "Tier": "3"
   },
   {
     "Name": "leader_trait_overseer",
@@ -1197,15 +882,6 @@
     "Tier": "2"
   },
   {
-    "Name": "leader_trait_overseer_3",
-    "Script": "trait/icon",
-    "Class": "official",
-    "Icon": "GFX_leader_trait_overseer",
-    "Rarity": "veteran",
-    "Council": "yes",
-    "Tier": "3"
-  },
-  {
     "Name": "trait_ruler_from_the_ranks",
     "Script": "trait/icon",
     "Class": "commander",
@@ -1222,15 +898,6 @@
     "Rarity": "free_or_veteran",
     "Council": "yes",
     "Tier": "2"
-  },
-  {
-    "Name": "trait_ruler_from_the_ranks_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_from_the_ranks",
-    "Rarity": "veteran",
-    "Council": "yes",
-    "Tier": "3"
   },
   {
     "Name": "trait_ruler_recruiter",
@@ -1251,15 +918,6 @@
     "Tier": "2"
   },
   {
-    "Name": "trait_ruler_recruiter_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_recruiter",
-    "Rarity": "veteran",
-    "Council": "yes",
-    "Tier": "3"
-  },
-  {
     "Name": "leader_trait_consul_general",
     "Script": "trait/icon",
     "Class": "official",
@@ -1276,15 +934,6 @@
     "Rarity": "veteran",
     "Council": "yes",
     "Tier": "2"
-  },
-  {
-    "Name": "leader_trait_consul_general_3",
-    "Script": "trait/icon",
-    "Class": "official",
-    "Icon": "GFX_leader_trait_consul_general",
-    "Rarity": "veteran",
-    "Council": "yes",
-    "Tier": "3"
   },
   {
     "Name": "leader_trait_shadow_broker",
@@ -1305,15 +954,6 @@
     "Tier": "2"
   },
   {
-    "Name": "leader_trait_shadow_broker_3",
-    "Script": "trait/icon",
-    "Class": "official",
-    "Icon": "GFX_leader_trait_shadow_broker",
-    "Rarity": "veteran",
-    "Council": "yes",
-    "Tier": "3"
-  },
-  {
     "Name": "leader_trait_home_guard",
     "Script": "trait/icon",
     "Class": "commander",
@@ -1330,15 +970,6 @@
     "Rarity": "veteran",
     "Council": "yes",
     "Tier": "2"
-  },
-  {
-    "Name": "leader_trait_home_guard_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_home_guard",
-    "Rarity": "veteran",
-    "Council": "yes",
-    "Tier": "3"
   },
   {
     "Name": "leader_trait_hardy",
@@ -1359,15 +990,6 @@
     "Tier": "2"
   },
   {
-    "Name": "leader_trait_hardy_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_hardy",
-    "Rarity": "veteran",
-    "Council": "no",
-    "Tier": "3"
-  },
-  {
     "Name": "leader_trait_martinet",
     "Script": "trait/icon",
     "Class": "commander",
@@ -1384,15 +1006,6 @@
     "Rarity": "veteran",
     "Council": "no",
     "Tier": "2"
-  },
-  {
-    "Name": "leader_trait_martinet_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_martinet",
-    "Rarity": "veteran",
-    "Council": "no",
-    "Tier": "3"
   },
   {
     "Name": "leader_trait_warden",
@@ -1413,15 +1026,6 @@
     "Tier": "2"
   },
   {
-    "Name": "leader_trait_warden_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_warden",
-    "Rarity": "veteran",
-    "Council": "no",
-    "Tier": "3"
-  },
-  {
     "Name": "leader_trait_reinforcer",
     "Script": "trait/icon",
     "Class": "commander",
@@ -1438,15 +1042,6 @@
     "Rarity": "veteran",
     "Council": "no",
     "Tier": "2"
-  },
-  {
-    "Name": "leader_trait_reinforcer_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_reinforcer",
-    "Rarity": "veteran",
-    "Council": "no",
-    "Tier": "3"
   },
   {
     "Name": "leader_trait_guardian",
@@ -1467,15 +1062,6 @@
     "Tier": "2"
   },
   {
-    "Name": "leader_trait_guardian_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_guardian",
-    "Rarity": "veteran",
-    "Council": "yes",
-    "Tier": "3"
-  },
-  {
     "Name": "leader_trait_conscripter",
     "Script": "trait/icon",
     "Class": "commander",
@@ -1492,15 +1078,6 @@
     "Rarity": "veteran",
     "Council": "no",
     "Tier": "2"
-  },
-  {
-    "Name": "leader_trait_conscripter_3",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_conscripter",
-    "Rarity": "veteran",
-    "Council": "no",
-    "Tier": "3"
   },
   {
     "Name": "leader_trait_taskmaster",
@@ -1746,15 +1323,6 @@
     "Tier": "1"
   },
   {
-    "Name": "leader_trait_eager_2",
-    "Script": "trait/icon",
-    "Class": "leader",
-    "Icon": "GFX_leader_trait_eager",
-    "Rarity": "common",
-    "Council": "no",
-    "Tier": "2"
-  },
-  {
     "Name": "leader_trait_resilient",
     "Script": "trait/icon",
     "Class": "leader",
@@ -1762,15 +1330,6 @@
     "Rarity": "common",
     "Council": "no",
     "Tier": "1"
-  },
-  {
-    "Name": "leader_trait_resilient_2",
-    "Script": "trait/icon",
-    "Class": "leader",
-    "Icon": "GFX_leader_trait_resilient",
-    "Rarity": "common",
-    "Council": "no",
-    "Tier": "2"
   },
   {
     "Name": "leader_trait_adaptable",
@@ -1782,15 +1341,6 @@
     "Tier": "1"
   },
   {
-    "Name": "leader_trait_adaptable_2",
-    "Script": "trait/icon",
-    "Class": "leader",
-    "Icon": "GFX_leader_trait_adaptable",
-    "Rarity": "common",
-    "Council": "no",
-    "Tier": "2"
-  },
-  {
     "Name": "leader_trait_politician",
     "Script": "trait/icon",
     "Class": "leader",
@@ -1798,15 +1348,6 @@
     "Rarity": "common",
     "Council": "yes",
     "Tier": "1"
-  },
-  {
-    "Name": "leader_trait_politician_2",
-    "Script": "trait/icon",
-    "Class": "leader",
-    "Icon": "GFX_leader_trait_politician",
-    "Rarity": "common",
-    "Council": "yes",
-    "Tier": "2"
   },
   {
     "Name": "leader_trait_capitalist",
@@ -2295,15 +1836,6 @@
     "Tier": "1"
   },
   {
-    "Name": "leader_trait_bureaucrat_2",
-    "Script": "trait/icon",
-    "Class": "official",
-    "Icon": "GFX_leader_trait_bureaucrat",
-    "Rarity": "common",
-    "Council": "no",
-    "Tier": "2"
-  },
-  {
     "Name": "leader_trait_army_veteran",
     "Script": "trait/icon",
     "Class": "leader",
@@ -2311,15 +1843,6 @@
     "Rarity": "common",
     "Council": "yes",
     "Tier": "1"
-  },
-  {
-    "Name": "leader_trait_army_veteran_2",
-    "Script": "trait/icon",
-    "Class": "leader",
-    "Icon": "GFX_leader_trait_army_veteran",
-    "Rarity": "common",
-    "Council": "yes",
-    "Tier": "2"
   },
   {
     "Name": "leader_trait_retired_fleet_officer",
@@ -2331,15 +1854,6 @@
     "Tier": "1"
   },
   {
-    "Name": "leader_trait_retired_fleet_officer_2",
-    "Script": "trait/icon",
-    "Class": "leader",
-    "Icon": "GFX_leader_trait_retired_fleet_officer",
-    "Rarity": "common",
-    "Council": "yes",
-    "Tier": "2"
-  },
-  {
     "Name": "leader_trait_agrarian_upbringing",
     "Script": "trait/icon",
     "Class": "leader",
@@ -2349,15 +1863,6 @@
     "Tier": "1"
   },
   {
-    "Name": "leader_trait_agrarian_upbringing_2",
-    "Script": "trait/icon",
-    "Class": "leader",
-    "Icon": "GFX_leader_trait_agrarian_upbringing",
-    "Rarity": "common",
-    "Council": "no",
-    "Tier": "2"
-  },
-  {
     "Name": "trait_ruler_fertility_preacher",
     "Script": "trait/icon",
     "Class": "official",
@@ -2365,15 +1870,6 @@
     "Rarity": "common",
     "Council": "yes",
     "Tier": "1"
-  },
-  {
-    "Name": "trait_ruler_fertility_preacher_2",
-    "Script": "trait/icon",
-    "Class": "official",
-    "Icon": "GFX_leader_trait_fertility_preacher",
-    "Rarity": "common",
-    "Council": "yes",
-    "Tier": "2"
   },
   {
     "Name": "leader_trait_righteous",
@@ -2421,15 +1917,6 @@
     "Tier": "1"
   },
   {
-    "Name": "leader_trait_environmental_engineer_2",
-    "Script": "trait/icon",
-    "Class": "leader",
-    "Icon": "GFX_leader_trait_environmental_engineer",
-    "Rarity": "common",
-    "Council": "no",
-    "Tier": "2"
-  },
-  {
     "Name": "leader_trait_enlister",
     "Script": "trait/icon",
     "Class": "commander",
@@ -2437,15 +1924,6 @@
     "Rarity": "common",
     "Council": "no",
     "Tier": "1"
-  },
-  {
-    "Name": "leader_trait_enlister_2",
-    "Script": "trait/icon",
-    "Class": "commander",
-    "Icon": "GFX_leader_trait_enlister",
-    "Rarity": "common",
-    "Council": "no",
-    "Tier": "2"
   },
   {
     "Name": "leader_trait_shipwright",
@@ -2457,15 +1935,6 @@
     "Tier": "1"
   },
   {
-    "Name": "leader_trait_shipwright_2",
-    "Script": "trait/icon",
-    "Class": "official",
-    "Icon": "GFX_leader_trait_shipwright",
-    "Rarity": "common",
-    "Council": "yes",
-    "Tier": "2"
-  },
-  {
     "Name": "leader_trait_architectural_interest",
     "Script": "trait/icon",
     "Class": "leader",
@@ -2473,15 +1942,6 @@
     "Rarity": "common",
     "Council": "no",
     "Tier": "1"
-  },
-  {
-    "Name": "leader_trait_architectural_interest_2",
-    "Script": "trait/icon",
-    "Class": "leader",
-    "Icon": "GFX_leader_trait_architectural_interest",
-    "Rarity": "common",
-    "Council": "no",
-    "Tier": "2"
   },
   {
     "Name": "leader_trait_trade_focus",
@@ -2518,15 +1978,6 @@
     "Rarity": "veteran",
     "Council": "yes",
     "Tier": "2"
-  },
-  {
-    "Name": "leader_trait_frontier_spirit_3",
-    "Script": "trait/icon",
-    "Class": "official",
-    "Icon": "GFX_leader_trait_frontier_spirit",
-    "Rarity": "veteran",
-    "Council": "yes",
-    "Tier": "3"
   },
   {
     "Name": "leader_trait_cultural_focus",
@@ -2801,7 +2252,7 @@
   {
     "Name": "leader_trait_cartographer",
     "Script": "trait/icon",
-    "Class": "official",
+    "Class": "leader",
     "Icon": "GFX_leader_trait_cartographer",
     "Rarity": "veteran",
     "Council": "yes",
@@ -2810,7 +2261,7 @@
   {
     "Name": "leader_trait_cartographer_2",
     "Script": "trait/icon",
-    "Class": "official",
+    "Class": "leader",
     "Icon": "GFX_leader_trait_cartographer",
     "Rarity": "veteran",
     "Council": "yes",
@@ -2819,35 +2270,8 @@
   {
     "Name": "leader_trait_cartographer_3",
     "Script": "trait/icon",
-    "Class": "official",
+    "Class": "leader",
     "Icon": "GFX_leader_trait_cartographer",
-    "Rarity": "veteran",
-    "Council": "yes",
-    "Tier": "3"
-  },
-  {
-    "Name": "leader_trait_expeditionist",
-    "Script": "trait/icon",
-    "Class": "official",
-    "Icon": "GFX_leader_trait_expeditionist",
-    "Rarity": "veteran",
-    "Council": "yes",
-    "Tier": "1"
-  },
-  {
-    "Name": "leader_trait_expeditionist_2",
-    "Script": "trait/icon",
-    "Class": "official",
-    "Icon": "GFX_leader_trait_expeditionist",
-    "Rarity": "veteran",
-    "Council": "yes",
-    "Tier": "2"
-  },
-  {
-    "Name": "leader_trait_expeditionist_3",
-    "Script": "trait/icon",
-    "Class": "official",
-    "Icon": "GFX_leader_trait_expeditionist",
     "Rarity": "veteran",
     "Council": "yes",
     "Tier": "3"
@@ -3384,15 +2808,6 @@
     "Tier": "2"
   },
   {
-    "Name": "leader_trait_slippery_3",
-    "Script": "trait/icon",
-    "Class": "scientist",
-    "Icon": "GFX_leader_trait_slippery",
-    "Rarity": "veteran",
-    "Council": "no",
-    "Tier": "3"
-  },
-  {
     "Name": "leader_trait_prospector",
     "Script": "trait/icon",
     "Class": "scientist",
@@ -3436,15 +2851,6 @@
     "Rarity": "veteran",
     "Council": "no",
     "Tier": "2"
-  },
-  {
-    "Name": "leader_trait_observant_3",
-    "Script": "trait/icon",
-    "Class": "leader",
-    "Icon": "GFX_leader_trait_observant",
-    "Rarity": "veteran",
-    "Council": "no",
-    "Tier": "3"
   },
   {
     "Name": "leader_trait_academic_dig_site_expert",
@@ -3517,15 +2923,6 @@
     "Rarity": "veteran",
     "Council": "no",
     "Tier": "2"
-  },
-  {
-    "Name": "leader_trait_tuner_3",
-    "Script": "trait/icon",
-    "Class": "scientist",
-    "Icon": "GFX_leader_trait_tuner",
-    "Rarity": "veteran",
-    "Council": "no",
-    "Tier": "3"
   },
   {
     "Name": "leader_trait_explorer_cloaking_focus",
@@ -4241,7 +3638,7 @@
   {
     "Name": "leader_trait_robotist",
     "Script": "trait/icon",
-    "Class": "scientist",
+    "Class": "leader",
     "Icon": "GFX_leader_trait_robotist",
     "Rarity": "paragon",
     "Council": "no",
@@ -6624,6 +6021,33 @@
     "Tier": "none"
   },
   {
+    "Name": "leader_trait_storm_rider_commander",
+    "Script": "trait/icon_triggered_glow",
+    "Class": "commander",
+    "Icon": "GFX_leader_trait_storm_rider",
+    "Rarity": "common",
+    "Council": "triggered",
+    "Tier": "none"
+  },
+  {
+    "Name": "leader_trait_storm_rider_scientist",
+    "Script": "trait/icon_triggered_glow",
+    "Class": "scientist",
+    "Icon": "GFX_leader_trait_storm_rider",
+    "Rarity": "common",
+    "Council": "triggered",
+    "Tier": "none"
+  },
+  {
+    "Name": "leader_trait_storm_rider_official",
+    "Script": "trait/icon_triggered_glow",
+    "Class": "official",
+    "Icon": "GFX_leader_trait_storm_rider",
+    "Rarity": "common",
+    "Council": "triggered",
+    "Tier": "none"
+  },
+  {
     "Name": "leader_trait_limited_cyborg",
     "Script": "trait/icon",
     "Class": null,
@@ -6648,6 +6072,204 @@
     "Icon": "GFX_leader_trait_ritualistic_implants_cyborg",
     "Rarity": "common",
     "Council": "triggered",
+    "Tier": "none"
+  },
+  {
+    "Name": "leader_trait_buccaneer",
+    "Script": "trait/icon",
+    "Class": null,
+    "Icon": "GFX_leader_trait_buccaneer",
+    "Rarity": "common",
+    "Council": "yes",
+    "Tier": "1"
+  },
+  {
+    "Name": "leader_trait_buccaneer_2",
+    "Script": "trait/icon",
+    "Class": null,
+    "Icon": "GFX_leader_trait_buccaneer",
+    "Rarity": "common",
+    "Council": "yes",
+    "Tier": "2"
+  },
+  {
+    "Name": "leader_trait_buccaneer_3",
+    "Script": "trait/icon",
+    "Class": null,
+    "Icon": "GFX_leader_trait_buccaneer",
+    "Rarity": "common",
+    "Council": "yes",
+    "Tier": "3"
+  },
+  {
+    "Name": "leader_trait_trailblazer",
+    "Script": "trait/icon",
+    "Class": null,
+    "Icon": "GFX_leader_trait_trailblazer",
+    "Rarity": "common",
+    "Council": "yes",
+    "Tier": "1"
+  },
+  {
+    "Name": "leader_trait_trailblazer_2",
+    "Script": "trait/icon",
+    "Class": null,
+    "Icon": "GFX_leader_trait_trailblazer",
+    "Rarity": "common",
+    "Council": "yes",
+    "Tier": "2"
+  },
+  {
+    "Name": "leader_trait_trailblazer_3",
+    "Script": "trait/icon",
+    "Class": null,
+    "Icon": "GFX_leader_trait_trailblazer",
+    "Rarity": "common",
+    "Council": "yes",
+    "Tier": "3"
+  },
+  {
+    "Name": "leader_trait_treasure_hoarder",
+    "Script": "trait/icon",
+    "Class": null,
+    "Icon": "GFX_leader_trait_treasure_hoarder",
+    "Rarity": "common",
+    "Council": "yes",
+    "Tier": "1"
+  },
+  {
+    "Name": "leader_trait_treasure_hoarder_2",
+    "Script": "trait/icon",
+    "Class": null,
+    "Icon": "GFX_leader_trait_treasure_hoarder",
+    "Rarity": "common",
+    "Council": "yes",
+    "Tier": "2"
+  },
+  {
+    "Name": "leader_trait_treasure_hoarder_3",
+    "Script": "trait/icon",
+    "Class": null,
+    "Icon": "GFX_leader_trait_treasure_hoarder",
+    "Rarity": "common",
+    "Council": "yes",
+    "Tier": "3"
+  },
+  {
+    "Name": "leader_trait_pirate_queen",
+    "Script": "trait/icon",
+    "Class": "commander",
+    "Icon": "GFX_leader_trait_pirate_queen",
+    "Rarity": "paragon",
+    "Council": "no",
+    "Tier": "none"
+  },
+  {
+    "Name": "leader_trait_trophy_hunter",
+    "Script": "trait/icon",
+    "Class": "commander",
+    "Icon": "GFX_leader_trait_trophy_hunter",
+    "Rarity": "paragon",
+    "Council": "no",
+    "Tier": "none"
+  },
+  {
+    "Name": "leader_trait_gifted_trapper",
+    "Script": "trait/icon",
+    "Class": "scientist",
+    "Icon": "GFX_leader_trait_gifted_trapper",
+    "Rarity": "paragon",
+    "Council": "no",
+    "Tier": "none"
+  },
+  {
+    "Name": "leader_trait_void_hunter",
+    "Script": "trait/icon",
+    "Class": "commander",
+    "Icon": "GFX_leader_trait_void_hunter",
+    "Rarity": "common",
+    "Council": "no",
+    "Tier": "1"
+  },
+  {
+    "Name": "leader_trait_void_hunter_2",
+    "Script": "trait/icon",
+    "Class": "commander",
+    "Icon": "GFX_leader_trait_void_hunter",
+    "Rarity": "common",
+    "Council": "no",
+    "Tier": "2"
+  },
+  {
+    "Name": "leader_trait_void_tracker",
+    "Script": "trait/icon",
+    "Class": "scientist",
+    "Icon": "GFX_leader_trait_void_tracker",
+    "Rarity": "common",
+    "Council": "no",
+    "Tier": "1"
+  },
+  {
+    "Name": "leader_trait_void_tracker_2",
+    "Script": "trait/icon",
+    "Class": "scientist",
+    "Icon": "GFX_leader_trait_void_tracker",
+    "Rarity": "common",
+    "Council": "no",
+    "Tier": "2"
+  },
+  {
+    "Name": "leader_trait_cutholoid_victim",
+    "Script": "trait/icon_negative",
+    "Class": "leader",
+    "Icon": "GFX_leader_trait_maimed",
+    "Rarity": "common",
+    "Council": "yes",
+    "Tier": "none"
+  },
+  {
+    "Name": "leader_trait_has_backup_clone",
+    "Script": "trait/icon",
+    "Class": "leader",
+    "Icon": "GFX_leader_trait_backup_clone",
+    "Rarity": "common",
+    "Council": "triggered",
+    "Tier": "none"
+  },
+  {
+    "Name": "leader_trait_backup_clone",
+    "Script": "trait/icon_negative",
+    "Class": null,
+    "Icon": "GFX_leader_trait_backup_clone",
+    "Rarity": null,
+    "Council": "triggered",
+    "Tier": "1"
+  },
+  {
+    "Name": "leader_trait_backup_clone_2",
+    "Script": "trait/icon_negative",
+    "Class": null,
+    "Icon": "GFX_leader_trait_backup_clone",
+    "Rarity": null,
+    "Council": "triggered",
+    "Tier": "2"
+  },
+  {
+    "Name": "leader_trait_backup_clone_3",
+    "Script": "trait/icon_negative",
+    "Class": null,
+    "Icon": "GFX_leader_trait_backup_clone",
+    "Rarity": null,
+    "Council": "triggered",
+    "Tier": "3"
+  },
+  {
+    "Name": "trait_ruler_apex_predator",
+    "Script": "trait/icon",
+    "Class": "leader",
+    "Icon": "GFX_leader_trait_apex_predator",
+    "Rarity": "paragon",
+    "Council": "yes",
     "Tier": "none"
   },
   {

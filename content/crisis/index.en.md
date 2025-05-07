@@ -1,9 +1,10 @@
 +++
 title = 'Crisis'
+headerFile = 'crisis_metadata.json'
 +++
 
 # VANILLA CRISIS
 
 HINT : If you are lazy, just click a picture to get its name copied to your clipboard.
 
-{{< simplePictureGallery source="Vanilla" pictureType="Crisis" >}}
+{{< headerPictureGallery source="Vanilla" header="crisis_metadata" >}}

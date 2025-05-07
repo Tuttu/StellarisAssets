@@ -1,0 +1,287 @@
+[
+  {
+    "NameInScript": "GFX_crisis_icon_advanced_logic",
+    "PictureName": "cosmogenesis_icon_advanced_logic",
+    "HeaderName": "cosmogenesis"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_basebreaker",
+    "PictureName": "menace_icon_basebreaker_72",
+    "HeaderName": "menace"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_behemoth_bioship_1",
+    "PictureName": "behemoth_bioship_1",
+    "HeaderName": "behemoth"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_behemoth_bioship_2",
+    "PictureName": "behemoth_bioship_2",
+    "HeaderName": "behemoth"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_behemoth_bioship_3",
+    "PictureName": "behemoth_bioship_3",
+    "HeaderName": "behemoth"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_behemoth_bioship_4",
+    "PictureName": "behemoth_bioship_4",
+    "HeaderName": "behemoth"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_behemoth_egg",
+    "PictureName": "behemoth_egg",
+    "HeaderName": "behemoth"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_behemoth_egg_2",
+    "PictureName": "behemoth_egg_2",
+    "HeaderName": "behemoth"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_behemoth_ever_hungry",
+    "PictureName": "behemoth_ever_hungry",
+    "HeaderName": "behemoth"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_behemoth_food_1",
+    "PictureName": "behemoth_food_1",
+    "HeaderName": "behemoth"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_behemoth_food_2",
+    "PictureName": "behemoth_food_2",
+    "HeaderName": "behemoth"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_behemoth_hatchling",
+    "PictureName": "behemoth_hatchling",
+    "HeaderName": "behemoth"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_behemoth_hatchling_2",
+    "PictureName": "behemoth_hatchling_2",
+    "HeaderName": "behemoth"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_behemoth_mind_meld",
+    "PictureName": "behemoth_mind_meld",
+    "HeaderName": "behemoth"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_behemoth_mutation_research",
+    "PictureName": "behemoth_mutation_research",
+    "HeaderName": "behemoth"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_behemoth_objectives",
+    "PictureName": "behemoth_objectives",
+    "HeaderName": "behemoth"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_behemoth_primal_roar",
+    "PictureName": "behemoth_primal_roar",
+    "HeaderName": "behemoth"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_behemoth_society_1",
+    "PictureName": "behemoth_society_1",
+    "HeaderName": "behemoth"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_behemoth_society_2",
+    "PictureName": "behemoth_society_2",
+    "HeaderName": "behemoth"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_behemoth_society_3",
+    "PictureName": "behemoth_society_3",
+    "HeaderName": "behemoth"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_casusbelli",
+    "PictureName": "menace_icon_crisiscasusbelli_72",
+    "HeaderName": "menace"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_cataclysm",
+    "PictureName": "menace_icon_cataclysm_megastructure_72",
+    "HeaderName": "menace"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_crisiscorvettes",
+    "PictureName": "menace_icon_crisiscorvettes_72",
+    "HeaderName": "menace"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_crisiscruiser",
+    "PictureName": "menace_icon_crisiscruiser_72",
+    "HeaderName": "menace"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_crisisdestroyers",
+    "PictureName": "menace_icon_crisisdestroyers_72",
+    "HeaderName": "menace"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_crisisobjectives",
+    "PictureName": "menace_icon_crisisobjectives_72",
+    "HeaderName": "menace"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_dark_matter_1",
+    "PictureName": "cosmogenesis_icon_dark_matter_1",
+    "HeaderName": "cosmogenesis"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_dark_matter_2",
+    "PictureName": "cosmogenesis_icon_dark_matter_2",
+    "HeaderName": "cosmogenesis"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_dark_matter_3",
+    "PictureName": "cosmogenesis_icon_dark_matter_3",
+    "HeaderName": "cosmogenesis"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_deathfromabove",
+    "PictureName": "menace_icon_deathfromabove_72",
+    "HeaderName": "menace"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_easilyreplaced",
+    "PictureName": "menace_icon_easilyreplaced_72",
+    "HeaderName": "menace"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_eternal_expansion",
+    "PictureName": "cosmogenesis_icon_eternal_expansion",
+    "HeaderName": "cosmogenesis"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_fe_building_1",
+    "PictureName": "cosmogenesis_icon_fe_building_1",
+    "HeaderName": "cosmogenesis"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_fe_building_2",
+    "PictureName": "cosmogenesis_icon_fe_building_2",
+    "HeaderName": "cosmogenesis"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_fe_building_3",
+    "PictureName": "cosmogenesis_icon_fe_building_3",
+    "HeaderName": "cosmogenesis"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_fe_building_4",
+    "PictureName": "cosmogenesis_icon_fe_building_4",
+    "HeaderName": "cosmogenesis"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_fe_building_5",
+    "PictureName": "cosmogenesis_icon_fe_building_5",
+    "HeaderName": "cosmogenesis"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_fe_ship_1",
+    "PictureName": "cosmogenesis_icon_fe_ship_1",
+    "HeaderName": "cosmogenesis"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_fe_ship_2",
+    "PictureName": "cosmogenesis_icon_fe_ship_2",
+    "HeaderName": "cosmogenesis"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_fe_ship_3",
+    "PictureName": "cosmogenesis_icon_fe_ship_3",
+    "HeaderName": "cosmogenesis"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_flyswatter",
+    "PictureName": "menace_icon_flyswatter_72",
+    "HeaderName": "menace"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_gravitational_tools",
+    "PictureName": "cosmogenesis_icon_gravitational_tools",
+    "HeaderName": "cosmogenesis"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_intimidation",
+    "PictureName": "menace_icon_intimidation_72",
+    "HeaderName": "menace"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_megastructure",
+    "PictureName": "menace_icon_cataclysm_megastructure_72",
+    "HeaderName": "menace"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_mobilebulwark",
+    "PictureName": "menace_icon_mobilebulwark_72",
+    "HeaderName": "menace"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_nanotech",
+    "PictureName": "cosmogenesis_icon_nanotech",
+    "HeaderName": "cosmogenesis"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_objectives",
+    "PictureName": "menace_icon_crisisobjectives_72",
+    "HeaderName": "menace"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_paidinambition",
+    "PictureName": "menace_icon_paidinambition_72",
+    "HeaderName": "menace"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_rare_components",
+    "PictureName": "cosmogenesis_icon_rare_components",
+    "HeaderName": "cosmogenesis"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_reality_theses",
+    "PictureName": "cosmogenesis_icon_reality_theses",
+    "HeaderName": "cosmogenesis"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_relentlessaggression",
+    "PictureName": "menace_icon_relentlessaggression_72",
+    "HeaderName": "menace"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_ruthlessraiders",
+    "PictureName": "menace_icon_ruthlessraiders_72",
+    "HeaderName": "menace"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_shipchipper",
+    "PictureName": "menace_icon_shipchipper_72",
+    "HeaderName": "menace"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_stareater",
+    "PictureName": "menace_icon_stareater_72",
+    "HeaderName": "menace"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_undertaker",
+    "PictureName": "menace_icon_undertaker_72",
+    "HeaderName": "menace"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_void_voyagers",
+    "PictureName": "cosmogenesis_icon_void_voyagers",
+    "HeaderName": "cosmogenesis"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_wetware",
+    "PictureName": "cosmogenesis_icon_wetware",
+    "HeaderName": "cosmogenesis"
+  }
+]
