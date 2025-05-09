@@ -46,6 +46,9 @@
                 {{ range . }}
                     {{/* Single picture block rendering */}}
                     {{ $name := .NameInScript }}
+                    {{ if .DisplayName }}
+                        {{ $displaName := .DisplayName }}
+                    {{ end }}
                     {{ $matchingImagePath := printf "pictures/%s/%s.png" ($source | string) $name }}
                     {{ $imgSlice := first 1 (where $images "Name" "eq" $matchingImagePath) }}
 
@@ -64,7 +67,11 @@
                                 alt="{{ $name }} - Missing Image" title="{{ $name }} - Missing Image"
                                 class="border border-white {{ $borderType }} border-danger"/>
                         {{ end }}
-                        <span class="d-block p-2 picture_text">{{ $name }}</span>
+                        {{ if .DisplayName }}
+                            <span class="d-block p-2 picture_text">{{ .DisplayName }}</span>
+                        {{ else }}
+                            <span class="d-block p-2 picture_text">{{ $name }}</span>
+                        {{ end }}
                         {{ if not $imgSlice }}
                              {{/* Optional: Display missing image path for debugging */}}
                              <span class="text-danger small">Missing: {{ $matchingImagePath }}</span>

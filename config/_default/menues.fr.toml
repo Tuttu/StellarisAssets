@@ -9,6 +9,11 @@
     pageref = '/crisis'
     weight = 1
 [[menu.main]]
+    identifier = "dlc_icons"
+    name = 'DLC'
+    pageref = '/dlc_icons'
+    weight = 1   
+[[menu.main]]
     identifier = "events"
     name = "Events"
     weight = 1

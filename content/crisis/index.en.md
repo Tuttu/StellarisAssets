@@ -1,6 +1,5 @@
 +++
 title = 'Crisis'
-headerFile = 'crisis_metadata.json'
 +++
 
 # VANILLA CRISIS

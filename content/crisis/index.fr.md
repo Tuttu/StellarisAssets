@@ -7,8 +7,4 @@ url = '/MEM/crisis'
 
 HINT : If you are lazy, just click a picture to get its name copied to your clipboard.
 
-{{< simplePictureGallery source="Vanilla">}}
-
-# MEM CRISIS
-
-{{< simplePictureGallery source="MEM">}}
+{{< headerPictureGallery source="Vanilla" header="crisis_metadata" >}}

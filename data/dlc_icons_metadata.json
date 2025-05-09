@@ -1,0 +1,140 @@
+[
+  {
+    "NameInScript": "GFX_ancientrelicsstorypack",
+    "PictureName": "ancient_relics_big",
+    "DisplayName": "Ancient Relics Story Pack",
+    "HeaderName": "Story Pack"
+  },
+  {
+    "NameInScript": "GFX_apocalypse",
+    "PictureName": "apocalypse_big",
+    "DisplayName": "Apocalypse",
+    "HeaderName": "Content"
+  },
+  {
+    "NameInScript": "GFX_aquaticsspeciespack",
+    "PictureName": "aquatics_species_pack_big",
+    "DisplayName": "Aquatics Species Pack",
+    "HeaderName": "Species Pack"
+  },
+  {
+    "NameInScript": "GFX_astralplanes",
+    "PictureName": "astral_planes_big",
+    "DisplayName": "Astral Planes",
+    "HeaderName": "Content"
+  },
+  {
+    "NameInScript": "GFX_biogenesis",
+    "PictureName": "biogenesis_big",
+    "DisplayName": "BioGenesis",
+    "HeaderName": "Content"
+  },
+  {
+    "NameInScript": "GFX_cosmicstorms",
+    "PictureName": "cosmic_storms_big",
+    "DisplayName": "Cosmic Storms",
+    "HeaderName": "Content"
+  },
+  {
+    "NameInScript": "GFX_distantstarsstorypack",
+    "PictureName": "distant_stars_big",
+    "DisplayName": "Distant Stars Story Pack",
+    "HeaderName": "Story Pack"
+  },
+  {
+    "NameInScript": "GFX_federations",
+    "PictureName": "federations_big",
+    "DisplayName": "Federations",
+    "HeaderName": "Content"
+  },
+  {
+    "NameInScript": "GFX_firstcontactstorypack",
+    "PictureName": "first_contact_story_pack_big",
+    "DisplayName": "First Contact Story Pack",
+    "HeaderName": "Story Pack"
+  },
+  {
+    "NameInScript": "GFX_galacticparagons",
+    "PictureName": "galactic_paragons_big",
+    "DisplayName": "Galactic Paragons",
+    "HeaderName": "Content"
+  },
+  {
+    "NameInScript": "GFX_grandarchive",
+    "PictureName": "grand_archive_big",
+    "DisplayName": "Grand Archive",
+    "HeaderName": "Content"
+  },
+  {
+    "NameInScript": "GFX_humanoidsspeciespack",
+    "PictureName": "humanoid_species_pack_big",
+    "DisplayName": "Humanoids Species Pack",
+    "HeaderName": "Species Pack"
+  },
+  {
+    "NameInScript": "GFX_leviathansstorypack",
+    "PictureName": "leviathans_big",
+    "DisplayName": "Leviathans Story Pack",
+    "HeaderName": "Story Pack"
+  },
+  {
+    "NameInScript": "GFX_lithoidsspeciespack",
+    "PictureName": "lithoids_species_pack_big",
+    "DisplayName": "Lithoids Species Pack",
+    "HeaderName": "Species Pack"
+  },
+  {
+    "NameInScript": "GFX_megacorp",
+    "PictureName": "megacorp_big",
+    "DisplayName": "Megacorp",
+    "HeaderName": "Content"
+  },
+  {
+    "NameInScript": "GFX_necroidsspeciespack",
+    "PictureName": "necroids_species_pack_big",
+    "DisplayName": "Necroids Species Pack",
+    "HeaderName": "Species Pack"
+  },
+  {
+    "NameInScript": "GFX_nemesis",
+    "PictureName": "nemesis_big",
+    "DisplayName": "Nemesis",
+    "HeaderName": "Content"
+  },
+  {
+    "NameInScript": "GFX_overlord",
+    "PictureName": "overlord_big",
+    "DisplayName": "Overlord",
+    "HeaderName": "Content"
+  },
+  {
+    "NameInScript": "GFX_plantoidsspeciespack",
+    "PictureName": "plantoids_species_pack_big",
+    "DisplayName": "Plantoids Species Pack",
+    "HeaderName": "Species Pack"
+  },
+  {
+    "NameInScript": "GFX_syntheticdawnstorypack",
+    "PictureName": "synthetic_dawn_big",
+    "DisplayName": "Synthetic Dawn Story Pack",
+    "HeaderName": "Story Pack"
+  },
+  {
+    "NameInScript": "GFX_themachineage",
+    "PictureName": "machine_age_big",
+    "DisplayName": "The Machine Age",
+    "HeaderName": "Content"
+  },
+  {
+    "NameInScript": "GFX_toxoidsspeciespack",
+    "PictureName": "toxoids_species_pack_big",
+    "DisplayName": "Toxoids Species Pack",
+    "HeaderName": "Species Pack"
+  },
+  {
+    "NameInScript": "GFX_utopia",
+    "PictureName": "utopia_big",
+    "DisplayName": "Utopia",
+    "HeaderName": "Content"
+  }
+]
