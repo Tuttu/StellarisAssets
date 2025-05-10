@@ -34,7 +34,7 @@ body {
 
 /* Moves the content down because of the menu's fixed position */
 #content {
-    margin-top: 100px;
+    margin-top: 160px;
 }
 
 .flex-even {
