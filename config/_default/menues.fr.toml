@@ -68,6 +68,12 @@
     parent = "planets"
     weight = 1
 [[menu.main]]
+    identifier = "planet_districts"
+    name = 'Districts'
+    pageref = '/Districts'
+    parent = "planets"
+    weight = 1
+[[menu.main]]
     identifier = "planet_jobs"
     name = 'Jobs'
     pageref = '/jobs'
