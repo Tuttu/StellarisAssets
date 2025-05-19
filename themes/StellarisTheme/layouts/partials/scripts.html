@@ -148,7 +148,6 @@
 <script>
     function fetchDataFromJson(title, callback) {
         // You need to replace 'yourJsonFile.json' with the actual path to your JSON file
-        //$.getJSON('/json/leader_traits_metadata.json', function (data) {
         $.getJSON('{{ relURL "json/leader_traits_metadata.json" }}', function (data) {
             var matchingObject = data.find(function (item) {
                 return item.Name === title;
