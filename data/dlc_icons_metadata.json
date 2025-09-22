@@ -114,6 +114,12 @@
     "HeaderName": "Species Pack"
   },
   {
+    "NameInScript": "GFX_shadowsoftheshroud",
+    "PictureName": "shadows_shroud_big",
+    "DisplayName": "Shadows of the Shroud",
+    "HeaderName": "Content"
+  },
+  {
     "NameInScript": "GFX_syntheticdawnstorypack",
     "PictureName": "synthetic_dawn_big",
     "DisplayName": "Synthetic Dawn Story Pack",
