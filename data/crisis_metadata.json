@@ -210,6 +210,81 @@
     "HeaderName": "cosmogenesis"
   },
   {
+    "NameInScript": "GFX_crisis_icon_hyperthermia_ammunition",
+    "PictureName": "hyper_icon_ammunition",
+    "HeaderName": "hyper"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_hyperthermia_armada",
+    "PictureName": "hyper_icon_armada",
+    "HeaderName": "hyper"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_hyperthermia_battleship",
+    "PictureName": "hyper_icon_battleship",
+    "HeaderName": "hyper"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_hyperthermia_conc_entropy",
+    "PictureName": "hyper_icon_entropy",
+    "HeaderName": "hyper"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_hyperthermia_coronal",
+    "PictureName": "hyper_icon_coronal",
+    "HeaderName": "hyper"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_hyperthermia_critical_mass",
+    "PictureName": "hyper_icon_critical_mass",
+    "HeaderName": "hyper"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_hyperthermia_crucible",
+    "PictureName": "hyper_icon_crucible",
+    "HeaderName": "hyper"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_hyperthermia_cruiser",
+    "PictureName": "hyper_icon_cruiser",
+    "HeaderName": "hyper"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_hyperthermia_crystals",
+    "PictureName": "hyper_icon_crystals",
+    "HeaderName": "hyper"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_hyperthermia_flames",
+    "PictureName": "hyper_icon_flames",
+    "HeaderName": "hyper"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_hyperthermia_harnessing",
+    "PictureName": "hyper_icon_harnessing",
+    "HeaderName": "hyper"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_hyperthermia_ignition",
+    "PictureName": "hyper_icon_ignition",
+    "HeaderName": "hyper"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_hyperthermia_radiant",
+    "PictureName": "hyper_icon_radiant",
+    "HeaderName": "hyper"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_hyperthermia_reactors",
+    "PictureName": "hyper_icon_reactors",
+    "HeaderName": "hyper"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_hyperthermia_solarflare",
+    "PictureName": "hyper_icon_solarflare",
+    "HeaderName": "hyper"
+  },
+  {
     "NameInScript": "GFX_crisis_icon_intimidation",
     "PictureName": "menace_icon_intimidation_72",
     "HeaderName": "menace"

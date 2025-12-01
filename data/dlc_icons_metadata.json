@@ -72,6 +72,12 @@
     "HeaderName": "Species Pack"
   },
   {
+    "NameInScript": "GFX_infernalsspeciespack",
+    "PictureName": "infernals_species_pack_big",
+    "DisplayName": "Infernals Species Pack",
+    "HeaderName": "Species Pack"
+  },
+  {
     "NameInScript": "GFX_leviathansstorypack",
     "PictureName": "leviathans_big",
     "DisplayName": "Leviathans Story Pack",
