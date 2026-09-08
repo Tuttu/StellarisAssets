@@ -108,6 +108,12 @@
     "HeaderName": "Content"
   },
   {
+    "NameInScript": "GFX_nomads",
+    "PictureName": "nomads_big",
+    "DisplayName": "Nomads",
+    "HeaderName": "Content"
+  },
+  {
     "NameInScript": "GFX_overlord",
     "PictureName": "overlord_big",
     "DisplayName": "Overlord",

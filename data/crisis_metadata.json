@@ -110,6 +110,26 @@
     "HeaderName": "menace"
   },
   {
+    "NameInScript": "GFX_crisis_icon_crisis_damage_1",
+    "PictureName": "defenders_icon_crisis_damage_1",
+    "HeaderName": "defenders"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_crisis_damage_2",
+    "PictureName": "defenders_icon_crisis_damage_2",
+    "HeaderName": "defenders"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_crisis_damage_3",
+    "PictureName": "defenders_icon_crisis_damage_3",
+    "HeaderName": "defenders"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_crisis_damage_4",
+    "PictureName": "defenders_icon_crisis_damage_4",
+    "HeaderName": "defenders"
+  },
+  {
     "NameInScript": "GFX_crisis_icon_crisiscorvettes",
     "PictureName": "menace_icon_crisiscorvettes_72",
     "HeaderName": "menace"
@@ -130,6 +150,11 @@
     "HeaderName": "menace"
   },
   {
+    "NameInScript": "GFX_crisis_icon_custodian",
+    "PictureName": "defenders_icon_custodian",
+    "HeaderName": "defenders"
+  },
+  {
     "NameInScript": "GFX_crisis_icon_dark_matter_1",
     "PictureName": "cosmogenesis_icon_dark_matter_1",
     "HeaderName": "cosmogenesis"
@@ -148,6 +173,21 @@
     "NameInScript": "GFX_crisis_icon_deathfromabove",
     "PictureName": "menace_icon_deathfromabove_72",
     "HeaderName": "menace"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_defense_1",
+    "PictureName": "defenders_icon_defense_1",
+    "HeaderName": "defenders"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_defense_2",
+    "PictureName": "defenders_icon_defense_2",
+    "HeaderName": "defenders"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_defense_3",
+    "PictureName": "defenders_icon_defense_3",
+    "HeaderName": "defenders"
   },
   {
     "NameInScript": "GFX_crisis_icon_easilyreplaced",
@@ -200,9 +240,29 @@
     "HeaderName": "cosmogenesis"
   },
   {
+    "NameInScript": "GFX_crisis_icon_federation_1",
+    "PictureName": "defenders_icon_federation_1",
+    "HeaderName": "defenders"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_federation_2",
+    "PictureName": "defenders_icon_federation_2",
+    "HeaderName": "defenders"
+  },
+  {
     "NameInScript": "GFX_crisis_icon_flyswatter",
     "PictureName": "menace_icon_flyswatter_72",
     "HeaderName": "menace"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_galcom_1",
+    "PictureName": "defenders_icon_galcom_1",
+    "HeaderName": "defenders"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_galcom_2",
+    "PictureName": "defenders_icon_galcom_2",
+    "HeaderName": "defenders"
   },
   {
     "NameInScript": "GFX_crisis_icon_gravitational_tools",
@@ -285,6 +345,11 @@
     "HeaderName": "hyper"
   },
   {
+    "NameInScript": "GFX_crisis_icon_integrity",
+    "PictureName": "defenders_icon_integrity",
+    "HeaderName": "defenders"
+  },
+  {
     "NameInScript": "GFX_crisis_icon_intimidation",
     "PictureName": "menace_icon_intimidation_72",
     "HeaderName": "menace"
@@ -310,6 +375,21 @@
     "HeaderName": "menace"
   },
   {
+    "NameInScript": "GFX_crisis_icon_opinion_1",
+    "PictureName": "defenders_icon_opinion_1",
+    "HeaderName": "defenders"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_opinion_2",
+    "PictureName": "defenders_icon_opinion_2",
+    "HeaderName": "defenders"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_opinion_3",
+    "PictureName": "defenders_icon_opinion_3",
+    "HeaderName": "defenders"
+  },
+  {
     "NameInScript": "GFX_crisis_icon_paidinambition",
     "PictureName": "menace_icon_paidinambition_72",
     "HeaderName": "menace"
@@ -328,6 +408,16 @@
     "NameInScript": "GFX_crisis_icon_relentlessaggression",
     "PictureName": "menace_icon_relentlessaggression_72",
     "HeaderName": "menace"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_research_1",
+    "PictureName": "defenders_icon_research_1",
+    "HeaderName": "defenders"
+  },
+  {
+    "NameInScript": "GFX_crisis_icon_research_2",
+    "PictureName": "defenders_icon_research_2",
+    "HeaderName": "defenders"
   },
   {
     "NameInScript": "GFX_crisis_icon_ruthlessraiders",
